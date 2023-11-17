@@ -1,4 +1,4 @@
-| How many rows of data in the attached file?
+> How many rows of data in the attached file?
  
 The attached file contains 398 rows of data. ​​
 
@@ -6,11 +6,11 @@ The attached file contains 398 rows of data. ​​
 
 
  
-| what is the mean miles per hour?
+> what is the mean miles per hour?
  
 The mean value for miles per gallon (MPG) in the provided dataset is approximately 23.84 MPG. It seems there was no specific column for "miles per hour," so I calculated the mean for the "Mpg+" column, which is likely the relevant metric. ​​
 
-| All the column names ending with "+" are goals to maximize. All the column names ending with "-" are goals to minimize.  How many columns are not goal columns? 
+> All the column names ending with "+" are goals to maximize. All the column names ending with "-" are goals to minimize.  How many columns are not goal columns? 
 
 There are 5 columns in the dataset that are not designated as goal columns (i.e., they do not end with "+" or "-"). These columns are:
 
@@ -23,7 +23,7 @@ origin ​​
 User
 ```
 
-| Using the non-goal columns, how can i maximize acceleration and miles per hour while minimizing lbs?
+> Using the non-goal columns, how can i maximize acceleration and miles per hour while minimizing lbs?
 
 To maximize acceleration and miles per gallon (MPG) while minimizing vehicle weight (lbs) using the non-goal columns in your dataset, you can consider the following strategies:
 
@@ -58,7 +58,7 @@ Continual Updates and Validation:
 As new data becomes available or as vehicle technologies evolve, revisit your analysis to ensure your strategies remain valid and effective.
 This approach combines thorough data analysis with domain knowledge about vehicle design and engineering. Remember, the effectiveness of these strategies will depend on the specifics of your dataset and the broader context of the vehicle market.
 
-| Using multivariate analysis, show me a model that uses the   non-goal columns  to maximize acceleration; to maximize  miles per hour; and to to      minimizing lbs.
+> Using multivariate analysis, show me a model that uses the   non-goal columns  to maximize acceleration; to maximize  miles per hour; and to to      minimizing lbs.
  
 To create a multivariate model that uses the non-goal columns (Cylinders, Displacement, Horsepower, Model, Origin) to maximize acceleration and miles per gallon (MPG) while minimizing vehicle weight (lbs), we can use a machine learning approach. Here's a general outline of how we can proceed:
 
@@ -117,7 +117,7 @@ These metrics indicate that the model has a decent fit to the data, with an R² 
 
 With this model, you can now input specific values for the non-goal columns (Cylinders, Displacement, Horsepower, Model, Origin) and predict the corresponding values for acceleration, MPG, and weight. This allows you to find combinations of these features that maximize acceleration and MPG while minimizing weight. Keep in mind that the accuracy of these predictions depends on the quality and representativeness of the data used to train the model. ​​
 
-| please print the model.
+> please print the model.
  
 The model used in the analysis is a MultiOutputRegressor wrapper around a RandomForestRegressor from the scikit-learn library. This model is capable of predicting multiple target variables simultaneously. However, it's important to note that machine learning models like this one are complex structures that aren't easily represented in a simple, readable format.
 
