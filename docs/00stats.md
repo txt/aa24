@@ -1,5 +1,10 @@
 # stats
 
+is 43 > 42?
+
+stochastic search. repeat N times. need sways to survey poplation
+
+
 entropy
 
 std
