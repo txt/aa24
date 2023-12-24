@@ -9,6 +9,8 @@ random forest. n trees using X% of data and Y% or rows
 
 bayes
 
-precison , recall, etc.
+precison , recall, etc. mcc brier
+
+high recall implies high false alarm.
 
 classification is optimization 
