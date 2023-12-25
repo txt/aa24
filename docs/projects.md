@@ -1,5 +1,9 @@
 # projects
 
+## basic
+
+banchmark smo againt random, rrp
+
 ## process
 
 - management team: milestones management, user liason,
