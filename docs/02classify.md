@@ -15,4 +15,6 @@ precison , recall, etc. mcc brier
 
 high recall implies high false alarm.
 
+vivek's rule: bad classifiers can be good optimizers
+
 classification is optimization 
