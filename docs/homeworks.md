@@ -1,17 +1,24 @@
 # Homeworks
 
-Recode my Lua code in Python
+Recode my Lua code in Python. 
+- Understand my code
+- Use ChatGPT, if you are brave.
+- But you need to understange EVERY LINE of my code
+  - Exams will show you buggy version of my Lua and you will  be asked the following question:
+    -  Locate and list the bugs;
+    -  Described in Eglish the effects of those bugs
+    -  Describe in English  how to change the code  
 
-Use ChatGPT if you are brave. But you need to understange EVERY LINE of my code
-- Exams will show you buggy version of my Lua and you will  be asked the following question:
-
-> **In English, (a) locate and list the bugs; (b) described the effects of those bugs; (c) describe how to change the code".**
+Using minimal imports 
+- no: noscikitlearn,   pandas,   argparse,   optparse,   fire,   click
+- yes: re, ast, etc
 
 ## Resubmission
 
 Homeworks can be submitted once, then resubmitted twice more. But homeworks due week in week "i" will not be remarked after week "i+2".  
 
 ## Grading
+
 Graded weekly
 - 2 = good enough
 - 1 = do more
