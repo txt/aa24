@@ -1,16 +1,40 @@
 # Homeworks
 
-2 marks. Graded "good enough"=2, "do more"=1, "not enough" = -1
+Recode my Lua code in Python
 
-If no submission each week, then -1
+Use ChatGPT if you are brave. But you need to understange EVERY LINE of my code
+- Exams will show you buggy version of my Lua and you will  be asked the following question:
 
-Homeworks can be resubmitted twice. But homeworks due week i will not be remarked after week i+2  
+> **In English, (a) locate and list the bugs; (b) described the effects of those bugs; (c) describe how to change the code".**
 
-## Week2
+## Resubmission
+
+Homeworks can be submitted once, then resubmitted twice more. But homeworks due week in week "i" will not be remarked after week "i+2".  
+
+## Grading
+Graded weekly
+- 2 = good enough
+- 1 = do more
+- -1 = not enough
+
+If no submission each week, then -1.  If not enough submitted each week then -1.
+
+## Branches
+Work any braching system you like but  students will lose marks if we do not see, from each student,   regular submissions to a branch named "main".
+
+
+## Tasks
+
+For weeks 2,3,4,5 work from gate.lua. After that, move to mylo.lua
+
+### Week2
 
 - make maintainable: divide into N files
 - make readable: add documentation
+  - a "-h" flag on the command line.
+  - generation of pretty html pages for the code
 - make testable:
+  -  your code needs test cases (at least 3 per student per week)
   -  add pre-commit hook for tests pass/fail
   -  build a test engine where
      -   from command line can run one or all or tests (and if running all, return number of failing tests to oeprating system)
@@ -19,14 +43,14 @@ Homeworks can be resubmitted twice. But homeworks due week i will not be remarke
 - make automated : add a Makefile to automatically rebuild all the docs, rerun all the tests.
 - do eg.csv.
 
-## Week3
+### Week3
 
 - do eg.data
 
-## Week4
+### Week4
 
 - do eg.bayes and eg.km
 
-## Week5
+### Week5
 
 - do eg.gate
