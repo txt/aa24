@@ -1,5 +1,11 @@
 # Optimize
 
+boolean,
+
+zitlzer
+
+distance to heaven
+
 search : 5% is enought
 
 pareto
