@@ -4,6 +4,12 @@
 
 banchmark smo againt random, rrp
 
+for https://arxiv.org/pdf/2311.17483.pdf, fig 9, what support can you add to support (say) 5 of the lefthand side reqirements? comparing mylo and gate, which is better than the other
+
+table7 of https://arxiv.org/pdf/2311.17483.pdf: how many of these have goals we can optimize for?
+
+table9 of https://arxiv.org/pdf/2311.17483.pdf: how well do any of those work with < 30 samples? can you think of some hybrid of gate/mylo that mught augment/replace any of these?
+
 ## process
 
 - management team: milestones management, user liason,
@@ -23,6 +29,7 @@ banchmark smo againt random, rrp
      data to adjust the config options.
 
 ## Tasks
+- apply rrp to some new domain (in se)
 - x is y and when i code it that way, i get results (for x or y) that
   beat the prior state of the art (simpler and faster or better)
 - destroy all this tech. find someway to improta tables
@@ -45,3 +52,14 @@ banchmark smo againt random, rrp
 
 (\*) but see vivek's paper suggesting that don't matter.
 
+- comapre rrp vs cloassification or regresison algorithms for SE taksks
+- Table 1,2 of [this paper](https://csdl-downloads.ieeecomputer.org/trans/ts/5555/01/10314766.pdf?Expires=1703969010&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jc2RsLWRvd25sb2Fkcy5pZWVlY29tcHV0ZXIub3JnL3RyYW5zL3RzLzU1NTUvMDEvMTAzMTQ3NjYucGRmIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzAzOTY5MDEwfX19XX0_&Signature=vkbhgVvW8l9aPJz9K14TAH178rlS9sBiht6nrLq8X~BcgvnTax~LL6GRoIhRLUVMkmWVgyMW-eSqfi3Pe1WlHb5oMxmQxSSIyz4gN5tjAr3MYergqd4OPSfTxjEm2hN-pBXwVpaeMHZTJ077YMVcTIqMqn9bJmzaOHvhDKYeJa3K~ZmFQuvUzDL4263mT8NQr-nPTi6136O1DmqtxIOKXVpMSddcPhNx~2GWrEX63O7mEkSfS6vBfZpsYXMHqeEkqsoxd3H5SziuAcoHt0kr7ttdYGSUrmjicDXEOd19gXC8ksZmgx2Mw2dBLI-LBEvTsCfgwF0d8ueYR1F3AiFeFw__&Key-Pair-Id=K12PMWTCQBDMDT)
+  discussed ways to reduce human fatigure. any work at our scale? (les than 30 questions)
+  - R. Casamayor, C. Cetina, O. Pastor and F. Perez, "Studying the Influence and Distribution of the Human Effort in a Hybrid Fitness Function for Search-Based Model-Driven Engineering" in IEEE Transactions on Software Engineering, vol. 49, no. 12, pp. 5189-5202, 2023.
+doi: 10.1109/TSE.2023.3329730
+- another approach is to do fix the daa drougth via data synthesis
+  - take all that is known of the independent attributes
+  - generate a very large sample of those attributes. attach known labels. label everything 
+    else via (e.g.) expected value k=2 nearest neighbors.
+    - then do (say) classification on the result
+    - or do optimizaiton and when new isntaces are proposed, apply k=2 nNN.
