@@ -1,5 +1,7 @@
 # stats
 
+random number seeds
+
 is 43 > 42?
 
 stochastic search. repeat N times. need sways to survey poplation
