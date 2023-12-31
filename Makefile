@@ -1,3 +1,3 @@
 saved:
-		git commit -am saved; git push; git status
+		read -p "commit msg> " x; git commit -am "$$x"; git push; git status
 
