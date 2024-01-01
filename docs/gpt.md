@@ -1,3 +1,5 @@
+talk on use of LLM: https://www.youtube.com/watch?v=FfGZBRWxVAM&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU&index=4
+
 > How many rows of data in the attached file?
  
 The attached file contains 398 rows of data. ​​
