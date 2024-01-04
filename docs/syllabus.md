@@ -182,7 +182,8 @@ and [REG 02.20.01 Academic Accommodations for Students with Disabilities](https:
 
 
 ### Non-Discrimination Policy
- <img src="https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg" align=right width=500>
+
+img src="https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg" align=right width=500>
 North Carolina State University (NC State) is a diverse community committed to being welcoming, inclusive and supportive for all people. 
 
 NC State provides equal opportunity and affirmative action efforts,
