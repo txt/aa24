@@ -39,7 +39,18 @@
 
 ### Description
 
-AI for SE is different to standard AI. The data sets are different
+
+ Why “AI” is different for SE. [^diff].
+Management of AI software projects.
+AI,SE and ethics.
+AI methods as they relate to SE: explainable AI; classification, clustering, multi-objective optimization (for non-continuous models);
+ semi-supervised learning, theorem proving, generative methods.
+Experimental methods for SE and AI: statistics, experimental rigs, visualizations.
+AI application areas in SE: current methods, statistical methods, latest results in areas such as
+   software configuration, defect prediction, effort estimation, project planning, Github issue close time prediction, bad smell prediction, cloud
+    compute management, bad smell detection, static code warning detection,   etc.
+
+[^diff]: AI for SE is different to standard AI. The data sets are different
 (far more repetitive structures, far more unlabelled data, far more
 variance in the labels). The problems explored are different (e.g.
 software configuration, software project estimation). The goals are
@@ -49,19 +60,6 @@ different (more emphasis on the scripting and continuous development
 and operations). The results are different (many domains are
 controllable via surprisingly small theories). Hence the experimental
 and statistical methods are different.
-
-### Topics
-
-- Differences between “AI” and “AI for SE”.
-- Explainable AI.
-- AI for software configuration.
--  Classification, clustering, explanation.,
-- Multi-objective optimization (for non-continuous models).
-- Semi-supervised learning.
-- Theorem proving
-- Software analytics: current methods, statistical methods, latest results.
-- Management of AI software projects.
-- AI,SE and ethics.
 
 ### Course Objectives
 
