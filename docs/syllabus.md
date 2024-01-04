@@ -93,7 +93,7 @@ Exams are done individually. Everything else is done in  groups of 3 (groups of 
   - submitted each week (a URL, to Mooddle)
   - graded -1 (for no submission), 1 (for "please try again") and 2 for "good".
   - may be remarked if resubmitted within two weeks or original dues date 
-  
+
 - Projects comprise a  large tasks  (working in public Github repos-- not NCSU GH):
 
 ### Grades
@@ -114,6 +114,7 @@ With the final grades, the following grade scale will be used:
      D+ (67-69),   D (63-67),   D-(60-62)
      F (below 60).
 
+
 ### Late Marks
 
 Groups must post homeworks each  week, even if it is incomplete, OR THEY WILL LOSE ONE MARK.  Those lost marks are never returned.
@@ -121,6 +122,11 @@ Otherwise, students are marked 1 or 2 for "try again" and "ok". If you get a "1"
 
 For big project , students will lose 1 mark per day for late submissions (weekend = 1 day).
 
+### Remarking policy
+
+Homeworks can be remarked twice before that grade is finalized (but only if resubmitted in the 2 weeks since first due).
+
+For all other remark requests, see the lecturer during office hours.
 
 ## Policies
 
