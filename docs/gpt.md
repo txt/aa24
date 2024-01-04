@@ -146,3 +146,14 @@ Here is the configuration of the RandomForestRegressor within the MultiOutputReg
 - Warm Start: False (When set to True, reuse the solution of the previous call to fit and add more estimators to the ensemble)
 
 This configuration provides insights into the setup of the RandomForestRegressor, including the number of trees, the criteria for splitting the trees, and other parameters. However, it does not convey the actual decision-making process of the model, which is determined by the training data and the complex structure of the decision trees within the forest. ​
+
+--------------
+expract class diagram from mylo.lua. ire gard this as simplisitic and confusing
+
+![image](https://github.com/txt/aa24/assets/29195/8a595cdd-5036-4094-ac96-67da5951b385)
+
+that's pretty bad. confused inheritance with association. no methods. can you fix that?
+
+![image](https://github.com/txt/aa24/assets/29195/bbe93ebb-1787-4e06-9b2f-f10a1e8ec820)
+
+
