@@ -16,60 +16,86 @@ CSC 791-021 (5343) Advncd Topics CSC (Lecture)
 TuTh 11:45AM - 1:00PM    
 01025  Engineering Building 2  
 
-## Overview
+## Instrucor Information
 
-I for SE is different to standard AI. The data sets are different
+Lecturer: Tim Menzies, timm@ieee.org  
+Room 3304, EB2   
+Phone: 304 376 2859  
+
+Office hours: 11:30 to 3:30 Tuesdays, in my office    
+(no appointment necessary, first come, first serve)
+
+## Preferred Method of Communication ]& Response Time
+
+It is each student's responsibility to join the class Discord  
+group "ase23". Till Friday week1, the link to join there 
+is [here](https://discord.gg/GWsaxMkAWF).
+
+Most of the class communication from staff to students will be via this Discord group.
+
+If you need to contact me directly, my preferred method of communication is
+the discord group. However, for private matters, feel free to contact me via email.  
+If emailing then:
+- Always include a descriptive, specific but concise subject. 
+- Include your course number your email, and provide adequate context for your question in order to ensure full understanding of your email. 
+- Be sure to use your NC State email account, and sign in with your name and Student ID number.
+
+
+You can expect to receive a response within two business days (i.e. not over the weekend). 
+If I email/message you directly, please strive to respond within two business days. 
+It is recommended that you check your NC State email at least once a day to stay on top of course communications.
+
+ If you have a question about the course or its content, you can email me or post your question on our discord
+ group. You can expect to receive a response within two business days (i.e. not over the weekend)
+
+## Course Information
+
+Course website: http://github.com/txt/aa24
+
+Course Credit Hours: 3
+
+## Description
+
+AI for SE is different to standard AI. The data sets are different
 (far more repetitive structures, far more unlabelled data, far more
-variance in the labels ). The problems explored are different (e.g.
+variance in the labels). The problems explored are different (e.g.
 software configuration, software project estimation). The goals are
 different (more managerial level, more uncertainty management, more
-emphasis on explainability and repeatability).  The methods are
+emphasis on explaiability and repeatability).  The methods are
 different (more emphasis on the scripting and continuous development
 and operations). The results are different (many domains are
 controllable via surprisingly small theories). Hence the experimental
 and statistical methods are different.
 
-Topics
+Topics:
+
 - Differences between “AI” and “AI for SE”. Explainable AI. 
 - AI for software configuration. 
--  Classification. 
+-  Classification, clustering, explanation.,  
 - Multi-objective optimization (for non-continuous models). 
-- Semi-supervised learning.   
+- Semi-supervised learning.
+- Theorem proving
 - Software analytics: current methods, statistical methods, latest results.
 - Management of AI software projects.
+- AI,SE and ethics.
 
-A
-----
+Course Objectives:
 
-This subject is a peek under the hood of 
-   under the hood of data mining, optimization, theorem proving and all the other tricks of automated software engineering.
+- To enable students to develop as successful professionals for highly competitive positions, applying “AI to SE” and “SE to AI”  in academic departments, industry, and government.
+- To prepare students to be effective researchers in the field of  “AI for SE” and “SE for AI”
 
-This is a project-based class where students will use any
-scripting language they like to
-build and extend their own AI tools for software engineering. 500
-level students will work in groups.
+Outcomes
 
-Topics covered: theorem provers, data miners, multi-objective
-optimizers, semi-supervised learning, fairness/accountability/trust.
+- Students will achieve a high level of expertise in  “AI to SE” and “SE to AI” , mastery of the knowledge in that fields and the ability to apply this knowledge and graduate school experiences to critical research problems
+- Students will become independent researchers in “AI to SE” and “SE to AI”, developing a substantial expertise in that area that allows them to make an original contribution to it
+- Students will state a research problem in such a way that it clearly fits within the context of the literature in “AI to SE” and “SE to AI” and demonstrate the value of the solution to the research problem in advancing knowledge within that area
+- Students will apply sound research methods/tools to problems in “AI to SE” and “SE to AI” and describe the methods/tools effectively
+- Students will analyze/interpret research data
+- Students will communicate their research clearly and professionally in both written and oral forms appropriate to “AI to SE” and “SE to AI”
 
-Grading:  40% exams; 21% small homeworks, 39% for large
-end-of-term project.
 
-Textbook: none
-
-### Topics
-
-- scripting
-- clustering
-- optimization
-- data mining
-- theorem proving
-- requirements engineering
-- discretization  
-- explainable AI, 
-- statistics for experimental algorithms,
-- hyper parameter optimization
-- deep learning
+## Textbook
+None
 
 ### Prerequisites
 
@@ -84,39 +110,27 @@ None
 ### Class Discord Group
 
 
-It is each student's responsibility to join the class Discord  
-group "ase23". Till Friday week1, the link to join there 
-is [here](https://discord.gg/gbwSPqcB).
-
-
-All class communication from staff to students will be via this Discord group.
-
-
-+ Students are strongly encouraged to contribute their 
-  questions and answers to that shared resource.
-+ Note that, for communication of a more private nature, 
-  contact the lecturer on the email shown below.
 
 
 ## Assessment
 
 
-
 Grades come from 
-- 7 homeworks
+- 10 homeworks
 - 1 mid-session exam 
-- 1 final exam
-- 1 eight page report on a large project (6 weeks) 
-- For masters students, there are some bonus tasks for the project
-  - Those bonus tasks are mandatory for the Ph.D. students
+- 5 spot quizzes (called at any time)
+- 1 eight page report on a large project (due end of semester) 
 
 Exams are done individually. Everything else is done in  groups of 3 (groups of 1 for 700 level students)
 
 
 - Homeworks are small tasks 
-  - graded 0 (for no submission), 1 (for "please try again") and 3 for "good".
-  - may be submitted multiple times
-- Projects comprise a  large tasks  (groups of 3 people, working in public Github repos-- not NCSU GH):
+  - graded -1 (for no submission), 1 (for "please try again") and 2 for "good".
+  - may be remarked if resubmitted within two weeks or original dues date 
+  
+- Projects comprise a  large tasks  (working in public Github repos-- not NCSU GH):
+  - The project repo MUST have a branch called "MAIN". Groups will be assessed via their commit history (seen under "Insights") in MAIN. Projects were
+    all group members are not active doing commits will lose marks.
 
 
 ### Grades
@@ -124,10 +138,10 @@ Exams are done individually. Everything else is done in  groups of 3 (groups of 
 
 |group |mark   | notes                                                      | 
 |------|-------|------------------------------------------------------------|
-|homework (group)     | 7 \* 3    | setting up your repo/software/team      | 
-|exam (solo)          | 20        | mid-term                                | 
-|                     | 20        | final                                   |
-|project (group)      | 39        | project report                          |
+|homework      | 10 \* 2    |      | 
+|mid-term (solo)          | 30        | mid-term                                | 
+| quiz                    | 5 \* 2        |inal                                   |
+|project       | 40        | project report                          |
 
 
  
@@ -143,138 +157,41 @@ With the final grades, the following grade scale will be used:
 
 ### Late Marks
 
-
-During the homework periods, groups must post each week, even if it is incomplete, OR THEY WILL LOSE ONE MARK.  That said, until the end of September,
-homeworks can be submitted multiple times for regrading.
-
-
-For project deliverables, students will lose 1 mark per day for late submissions (weekend = 1 day).
+Groups must post homeworks each  week, even if it is incomplete, OR THEY WILL LOSE ONE MARK.  Those lost marks are never returned.
+Otherwse, students are makred 1 or 2 for "try again" and "ok". If you get a "1" mark and resubmit, that can be replaced with a "2".
 
 
-## Staff
+For big project , students will lose 1 mark per day for late submissions (weekend = 1 day).
 
-
-Consultation times between lecturer and staff are available via calendy. Bookings must arrive the day before the consultation
-sesssion. If there are no bookings, consultation time will be cancelled.
-
-
-Consultation times are Mon,Tue,Wed,Thurs,Frid at 2pm to 4pm. 
-
-
-Consultations will be conducted via ZOOMs (why? cause we polled students prior to class starting and that was the majority
-preference).
-- please ensure all relevant materials are acessible and on-line prior to the consultation. DO NOT waste your time and ours during
-  consultation finding the relevant links or enabling passwork access.
-
-
-### Lecturer
-
-
-<img src="http://www.csc.ncsu.edu/enews/images/1770.jpg" align=right width=200>
-
-
-Tim Menzies  (Prof. Monday)
-
-
-+ Github id: timm
-+ Discord name: timm
-+ E-Mail: timm@ieee.org: Only use this email for private matters. All other class communication should be via the class news group,    listed below.
-+ Phone: 304-376-2859: **Do not use** this number, except in the most dire of circumstances (best way to contact me is via email).
-+ Office Hours: Wednesday, 2:00-4:00 and by request.
-
-
-[![](https://academics.umw.edu/writing-fredericksburg/files/2013/08/schedule-appointment-button-orange-300x154.png)](https://calendly.com/timmenzies/15min)
-
-
-<br clear=all>
-
-
-### Tutors
-
-
-<img src="http://ai4se.net/img/AndreMotta.jpg" align=right width=200>
-Andre Lustosa (Mr. Wednesday)
-
-
-+ Github id:  andre-motta
-+ Discord name: SargeHawk#1591
-+ Office Hours: Wednesday, 2:00-4:00
-+ E-mail:  <alustos@ncsu.edu>
-
-[![](https://academics.umw.edu/writing-fredericksburg/files/2013/08/schedule-appointment-button-orange-300x154.png)](https://calendly.com/alustos)
-
-
-<br clear=all>
-
-
-<p>&nbsp;</p>
-
-
-<img width=200 align=right src="/etc/img/sherry.png">
-  
-Sherry (Xueqi) Yang (Ms. Thursday)
-
-
-+ Discord  name: Xueqi(Sherry) Yang#8548
-+ Office Hours: Thursday, 1:00-3:00  
-+ E-mail: xyang37@ncsu.edu
-
-
-[![](https://academics.umw.edu/writing-fredericksburg/files/2013/08/schedule-appointment-button-orange-300x154.png)](https://calendly.com/xyang37/15min)
-
-
-<br clear=all>
-
-
-<p>&nbsp;</p>
-
-
-<img width=200 align=right src="https://i.imgur.com/Z98l5vE.jpeg"> 
-  
-Rahul Yedida (Mr. Tuesday)
-
-
-+ Github id:  yrahul3910
-+ Discord  name: Rahul Yedida#1323
-+ Office Hours: Monday, 2:00-4:00  
-+ E-mail: yrahul3910@gmail.com
-
-[![](https://academics.umw.edu/writing-fredericksburg/files/2013/08/schedule-appointment-button-orange-300x154.png)](https://calendly.com/ryedida/csc591-office-hours)
-
-<br clear=all>
-
--------
-
++ Students must create a channel here for their group discussions. Projects without a vibrant group discussion (recorded here) will lose mark.s
 
 ## Other Information
 
 
 ### Attendance
 
+Lectures are twice a week. Attendance is not mandatory. Lectures will be recorded.
 
-- Lectures are once a week. Attendance is mandatory
-  - If the room has at least 90 students, there will not roll call. Else...
-  - Each week, 25 names at radnom will be selected. Those students must show their student Id to the tutor before end of class. Else they will earn a
-    "missed class" mark.
-  - After two missed classes, each additional missed class marks will cost students 1 mark UNLESS the abscense is something condonned by the 
-    university:
-     - Representing an official university function (e.g. athletics)
-     - Required court attendance as certified by the Clerk of Court.
-     - Students will be allowed a minimum of two excused absences per academic year for religious observances 
-     - Required military duty as certified by the student's commanding officer.
-     - Unanticipated absences. Examples include:
-       - Short-term illness or injury
-       - Death or serious illnesses in the family when documented appropriately. 
-- Tutorial sessions are optional, but please use our tutorial resources
-  to help you along.
-- Please make sure you experience the lectures (either live or watching
-  the recoding).
-- Aside from that, you have  to service all your homework, and project
-  commitments. It is very bad to be absent from your project except
-  for anticipated absences condonned by the univerisity:
-  
-On top of that, Covid-related issues will, of course, also be excused.
+However, there are spot quizzes for which you will earn zero marks if you are not present at the time
+of the quiz.
+If, for a quiz, you miss for reasons of sudden  illness, then go to lecturer's office hours and plead your case.
+If, for a quiz, you must be absence for a reason sanction by the university, contact the lecturer before time and other arrangements will be made.
+Those sanctioned times are:
 
+- Representing an official university function (e.g. athletics)
+- Required court attendance as certified by the Clerk of Court.
+- Students will be allowed a minimum of two excused absences per academic year for religious observances 
+- Required military duty as certified by the student's commanding officer.
+- Unanticipated absences. Examples include:
+  - Short-term illness or injury
+  - Death or serious illnesses in the family when documented appropriately. 
+
+Sometimes, the lecturer/tutor will require you to
+attend  mandatory office hours session.
+There, students may be asked to review code,
+concepts, or comment on the structure of the
+course. Those sessions are mandatory and failure to
+attend will result in marks being deducted.
 
 ### Expected Workload
 This is an _advanced graduate_ class at  R1 institution 
@@ -288,19 +205,12 @@ lecture meeting). Laboratory instruction is not included
 in this subject.
 
 
-Sometimes, the lecturer/tutor will require you to
-attend a review session, during their consultation
-time. There, students may be asked to review code,
-concepts, or comment on the structure of the
-course. Those sessions are mandatory and failure to
-attend will result in marks being deducted.
-
 
 ### Academic Integrity
 
 
 Cheating will be punished to the full extent permitted. Cheating
-includes plagerism of other people's work. All students will be working
+includes plagiarism of other people's work. All students will be working
 on public code repositories and **informed reuse** is encouraged where
 someone else's product is:
 
