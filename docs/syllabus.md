@@ -157,14 +157,6 @@ Those sanctioned events are:
   - Short-term illness or injury affecting the ability to attend or to be productive academically while in class, or that could jeopardize the health of the individual or the health of the classmates attending.  Students must notify instructors prior to the class absence, if possible, that they are temporarily unable to attend class or complete assignments on time.
   - Death or serious illnesses in the family when documented appropriately.  An attempt to verify deaths or serious illness will be made by the Division of Academic and Student Affairs (go.ncsu.edu/absence).
 
-- Representing an official university function (e.g. athletics)
-- Required court attendance as certified by the Clerk of Court.
-- Students will be allowed a minimum of two excused absences per academic year for religious observances 
-- Required military duty as certified by the student's commanding officer.
-- Unanticipated absences. Examples include:
-  - Short-term illness or injury
-  - Death or serious illnesses in the family when documented appropriately. 
-
 Sometimes, the lecturer/tutor will require you to
 attend  mandatory office hours session.
 There, students may be asked to review code,
