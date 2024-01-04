@@ -165,6 +165,88 @@ course. Those sessions are mandatory and failure to
 attend will result in marks being deducted.
 
 
+### Disabilities
+
+
+Reasonable accommodations will be made for students with verifiable
+disabilities. In order to take advantage of available accommodations,
+students must register with the [Disability Resource Office (DRO)](https://dro.dasa.ncsu.edu/)
+For more information on NC State’s policy on working with students
+with disabilities, please see the 
+[Policies, Rules and Regulations page maintained by the DRO](https://dro.dasa.ncsu.edu/about-us/policies-rules-regulations/)
+and [REG 02.20.01 Academic Accommodations for Students with Disabilities](https://policies.ncsu.edu/regulation/reg-02-20-01/).
+
+
+
+
+
+
+### Non-Discrimination Policy
+ <img src="https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg" align=right width=500>
+North Carolina State University (NC State) is a diverse community committed to being welcoming, inclusive and supportive for all people. 
+
+NC State provides equal opportunity and affirmative action efforts,
+and prohibits Discrimination and Harassment based upon the following,
+which is considered by NC State to be a “Protected Status”:
+- race
+- color
+- religion (including belief and non-belief)
+- sex, including but not limited to
+  - (i) pregnancy, childbirth, or related medical condition,
+  - (ii) parenting; and
+  - (iii) sexual harassment;
+- sexual orientation;
+- actual or perceived gender identity;
+- age;
+- national origin;
+- disability;
+- veteran status; or
+-  genetic information.
+
+NC State's policies and
+regulations covering discrimination, harassment, and retaliation
+may be accessed at https://policies.ncsu.edu/policy/pol-04-25-05/.
+Any person who feels that he or she
+has been the subject of prohibited discrimination, harassment, or
+retaliation should follow the procedures at
+https://policies.ncsu.edu/regulation/reg-04-25-02/.
+
++ Note that, as a lecturer, I am legally required to
+**report** all such acts to the appropriate campus authority,
+
+
+### Respecting our learning community
+The NC State Code of Student Conduct outlines expectations for behavior in the classroom (whether virtual or physical) and the
+consequences for students who violate these expectations. Any behavior that impacts other students’ ability to learn and succeed will be addressed, but expressing diverse viewpoints and interpretations of course content is welcome.
+Community guidelines for this course include:
+- Use a respectful tone in all forms of communication (email, messages, written, oral, visual)
+- Maintain professionalism (avoid slang, poor grammar, etc.) in your written communication.
+- Respect regional dialects and culturally embedded ways of oral communication.
+- Stay home or in your dorm room if you are exhibiting symptoms of a contagious illness (fever, chills, etc.).
+- Enter our virtual and/or physical classroom community respectfully by refraining from lewd or indecent speech or behavior, helping to maintain a safe physical environment, not using your cell phone for voice or text communication except when explicitly given leave to do so, and not attending class under the influence of any substance.
+- Treat each community member with respect by not recording others without their consent or engaging in any form of hazing, harassment, intimidation, or abuse.
+- Respect cultural differences that may influence communication styles and needs.]
+
+
+
+Any remark you make
+in some on-line comment tracking system like Github
+is a public document.
+So take heed of the following cautionary tale.
+One year, a student was joking around with
+his buddy in a Github issue report. Then he was
+rude enough and stupid enough to 
+add a remark about how the rest of the
+team was just so
+&#9632;&#9632;&#9632;&#9632;
+&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;.
+Needless to say,
+the rest of the team took great
+offense at this remark and invoked the University's
+non-discrimination policies. As a result, everyone
+lost much time that semester, as well as grades. 
+
+
 
 
 ### Preferred Method of Communication & Response Time
@@ -250,30 +332,6 @@ involve electronic sharing or posting of personally identifiable
 student work or other information with persons not taking or
 administering the course. 
 
-### Disabilities
-
-
-Reasonable accommodations will be made for students with verifiable disabilities. In order to take advantage of available accommodations, students must register with the Disability Resource Office at Holmes Hall, Suite 304, Campus Box 7509, 919-515-7653. For more information on NC State’s policy on working with students with disabilities, please see the Academic Accommodations for Students with Disabilities Regulation (REG02.20.01) (https://policies.ncsu.edu/regulation/reg-02-20-01/).
-
-
-
-
-Students are responsible for reviewing the PRRs
-which pertain to their course rights and
-responsibilities. These include:
-[http://policies.ncsu.edu/policy/pol-04-25-05](http://policies.ncsu.edu/policy/pol-04-25-05)
-(Equal
-Opportunity and Non-Discrimination Policy
-Statement),
-[https://oied.ncsu.edu/home/](https://oied.ncsu.edu/home/)
-(Office for Institutional Equity and
-Diversity),
-[http://policies.ncsu.edu/policy/pol-11-35-01](http://policies.ncsu.edu/policy/pol-11-35-01)
-(Code of Student Conduct), and
-[http://policies.ncsu.edu/regulation/reg-02-50-03](http://policies.ncsu.edu/regulation/reg-02-50-03)
-(Grades and Grade Point Average).
-
-
 ### Policy on Incomplete Grades
 
 Information on incomplete grades can be found at 
@@ -282,75 +340,6 @@ If you encounter a serious disruption to your work not caused by you and you wou
 
 If your  must withdraw from a course or from the University due to hardship beyond your control, see 
 [Withdrawal Process and Timeline | Student Services Center](https://studentservices.ncsu.edu/your-classes/withdrawal/process/) for information and instructions.
-
-
-
-
-### Non-Discrimination Policy
- <img src="https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg" align=right width=500>
-North Carolina State University (NC State) is a diverse community committed to being welcoming, inclusive and supportive for all people. 
-
-NC State provides equal opportunity and affirmative action efforts,
-and prohibits Discrimination and Harassment based upon the following,
-which is considered by NC State to be a “Protected Status”:
-- race
-- color
-- religion (including belief and non-belief)
-- sex, including but not limited to
-  - (i) pregnancy, childbirth, or related medical condition,
-  - (ii) parenting; and
-  - (iii) sexual harassment;
-- sexual orientation;
-- actual or perceived gender identity;
-- age;
-- national origin;
-- disability;
-- veteran status; or
--  genetic information.
-
-NC State's policies and
-regulations covering discrimination, harassment, and retaliation
-may be accessed at https://policies.ncsu.edu/policy/pol-04-25-05/.
-Any person who feels that he or she
-has been the subject of prohibited discrimination, harassment, or
-retaliation should follow the procedures at
-https://policies.ncsu.edu/regulation/reg-04-25-02/.
-
-+ Note that, as a lecturer, I am legally required to
-**report** all such acts to the appropriate campus authority,
-
-
-### Respecting our learning community
-The NC State Code of Student Conduct outlines expectations for behavior in the classroom (whether virtual or physical) and the
-consequences for students who violate these expectations. Any behavior that impacts other students’ ability to learn and succeed will be addressed, but expressing diverse viewpoints and interpretations of course content is welcome.
-Community guidelines for this course include:
-- Use a respectful tone in all forms of communication (email, messages, written, oral, visual)
-- Maintain professionalism (avoid slang, poor grammar, etc.) in your written communication.
-- Respect regional dialects and culturally embedded ways of oral communication.
-- Stay home or in your dorm room if you are exhibiting symptoms of a contagious illness (fever, chills, etc.).
-- Enter our virtual and/or physical classroom community respectfully by refraining from lewd or indecent speech or behavior, helping to maintain a safe physical environment, not using your cell phone for voice or text communication except when explicitly given leave to do so, and not attending class under the influence of any substance.
-- Treat each community member with respect by not recording others without their consent or engaging in any form of hazing, harassment, intimidation, or abuse.
-- Respect cultural differences that may influence communication styles and needs.]
-
-
-
-Any remark you make
-in some on-line comment tracking system like Github
-is a public document.
-So take heed of the following cautionary tale.
-One year, a student was joking around with
-his buddy in a Github issue report. Then he was
-rude enough and stupid enough to 
-add a remark about how the rest of the
-team was just so
-&#9632;&#9632;&#9632;&#9632;
-&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;.
-Needless to say,
-the rest of the team took great
-offense at this remark and invoked the University's
-non-discrimination policies. As a result, everyone
-lost much time that semester, as well as grades. 
-
 
 
 
