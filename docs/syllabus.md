@@ -52,11 +52,11 @@ and statistical methods are different.
 
 ### Topics
 
-- Differences between “AI” and “AI for SE”. 
-- Explainable AI. 
-- AI for software configuration. 
--  Classification, clustering, explanation.,  
-- Multi-objective optimization (for non-continuous models). 
+- Differences between “AI” and “AI for SE”.
+- Explainable AI.
+- AI for software configuration.
+-  Classification, clustering, explanation.,
+- Multi-objective optimization (for non-continuous models).
 - Semi-supervised learning.
 - Theorem proving
 - Software analytics: current methods, statistical methods, latest results.
@@ -83,7 +83,7 @@ Learning Outcomes
 
 Grades come from 
 - 10 homeworks
-- 1 mid-session exam 
+- 1 mid-session exam
 - 5 pop quizzes, simple questions, 2 marks each (called at any time)
 - 1 eight page report on a large project (due end of semester)
 
@@ -92,7 +92,7 @@ Exams are done individually. Everything else is done in  groups of 3 (groups of 
 - Homeworks are small tasks 
   - submitted each week (a URL, to Mooddle)
   - graded -1 (for no submission), 1 (for "please try again") and 2 for "good".
-  - may be remarked if resubmitted within two weeks or original dues date 
+  - may be remarked if resubmitted within two weeks or original dues date
 
 - Projects comprise a  large tasks  (working in public Github repos-- not NCSU GH):
 
@@ -140,8 +140,8 @@ For masters students, some evidence must be generated that you are actively enga
 - The project repo MUST have a branch called "MAIN". Groups will be assessed via their commit history (seen under "Insights") in MAIN.
     Projects were all group members are not active doing commits will lose marks
     (or the offending student will be expelled from that group).
-- Groups need to maintain an active discussion in the channel within the subject's Discord channel. 
-    Projects were all group members are not active in discussions  will either lose marks 
+- Groups need to maintain an active discussion in the channel within the subject's Discord channel.
+    Projects were all group members are not active in discussions  will either lose marks
     (or the offending student will be expelled from that group).
 
 
@@ -266,7 +266,7 @@ is [here](https://discord.gg/sHqMa9jK). After that time , please contact the lec
 Most of the class communication from staff to students will be via this Discord group.
 
 You should expect to receive a response within two business days (i.e. not over the weekend). 
-- If I email/message you directly, please strive to respond within two business days. 
+- If I email/message you directly, please strive to respond within two business days.
 - It is recommended that you check your NC State email at least once a day to stay on top of course communications.
 
  If you have a question about the course or its content, you can email me or post your question on our discord
@@ -275,8 +275,8 @@ You should expect to receive a response within two business days (i.e. not over 
 If you need to contact me directly, my preferred method of communication is
 the discord group. However, for private matters, feel free to contact me via email.  
 If emailing then:
-- Always include a descriptive, specific but concise subject. 
-- Include your course number your email, and provide adequate context for your question in order to ensure full understanding of your email. 
+- Always include a descriptive, specific but concise subject.
+- Include your course number your email, and provide adequate context for your question in order to ensure full understanding of your email.
 - Be sure to use your NC State email account, and sign in with your name and Student ID number.
 
 ### Expected Workload
@@ -328,8 +328,8 @@ and marks will be deducted if the person who is doing the reuse:
 
 #### Student Privacy
 
-- In-class sessions are recorded in such a way that might also record students in this course. 
-- These recordings MAY be used beyond the current semester or in any other setting outside of the course. 
+- In-class sessions are recorded in such a way that might also record students in this course.
+- These recordings MAY be used beyond the current semester or in any other setting outside of the course.
 - Contact your instructor if you have concerns.
 
 #### Class Privacy
@@ -348,8 +348,6 @@ If you encounter a serious disruption to your work not caused by you and you wou
 
 If your  must withdraw from a course or from the University due to hardship beyond your control, see 
 [Withdrawal Process and Timeline | Student Services Center](https://studentservices.ncsu.edu/your-classes/withdrawal/process/) for information and instructions.
-
-
 
 ### Syllabus Modification Statement
 
