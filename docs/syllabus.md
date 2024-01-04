@@ -188,6 +188,7 @@ North Carolina State University (NC State) is a diverse community committed to b
 NC State provides equal opportunity and affirmative action efforts,
 and prohibits Discrimination and Harassment based upon the following,
 which is considered by NC State to be a “Protected Status”:
+
 - race
 - color
 - religion (including belief and non-belief)
