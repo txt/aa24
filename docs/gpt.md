@@ -148,6 +148,30 @@ Here is the configuration of the RandomForestRegressor within the MultiOutputReg
 This configuration provides insights into the setup of the RandomForestRegressor, including the number of trees, the criteria for splitting the trees, and other parameters. However, it does not convey the actual decision-making process of the model, which is determined by the training data and the complex structure of the decision trees within the forest. ​
 
 --------------
+
+Classes and Attributes:
+
+- SYM with attributes txt, at, n, has, mode, most.
+- NUM with attributes txt, at, n, mu, m2, hi, lo, heaven.
+- COLS with attributes x, y, all, klass, names.
+- ROW with attribute cells.
+- DATA with attributes rows, cols.
+- NODE with attribute here.
+- RANGE with attributes at, txt, scored, x, y.
+- RULE with attributes parts, scored.
+- RULES with attributes sorted, goal, rowss, LIKE, HATE.
+
+Methods:
+
+- Each class has various methods like new, add, mid, div, dist, etc. These can be represented as operations in UML.
+
+Relationships:
+
+- COLS seems to create instances of SYM and NUM.
+- DATA uses ROW and COLS.
+- NODE and DATA seem to interact closely.
+- RANGE, RULE, and RULES have interdependencies.
+
 expract class diagram from mylo.lua. ire gard this as simplisitic and confusing
 
 ![image](https://github.com/txt/aa24/assets/29195/8a595cdd-5036-4094-ac96-67da5951b385)
