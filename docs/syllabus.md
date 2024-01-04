@@ -147,7 +147,15 @@ However, there are spot quizzes for which you will earn zero marks if you are no
 of the quiz.
 If, for a quiz, you miss for reasons of sudden  illness, then go to lecturer's office hours and plead your case.
 If, for a quiz, you must be absence for a reason sanction by the university, contact the lecturer before time and other arrangements will be made.
-Those sanctioned times are:
+Those sanctioned events are:
+
+- The student is away from campus representing an official university function, e.g., participating in a professional meeting, as part of a judging team, or athletic team.  These students would typically be accompanied by a University faculty or staff member.
+- Required court attendance as certified by the Clerk of Court.
+- Students will be allowed a minimum of two excused absences per academic year for religious observances as verified by the Division of Academic and Student Affairs (DASA) (go.ncsu.edu/absence). For more information about a variety of religious observances, visit the Diversity Calendar.
+- Required military duty as certified by the student’s commanding officer.
+- Unanticipated Absences.  Excuses for unanticipated absences must be reported to the instructor as soon as possible, but not more than one week after the return to class.  Examples of unanticipated absences are:
+  - Short-term illness or injury affecting the ability to attend or to be productive academically while in class, or that could jeopardize the health of the individual or the health of the classmates attending.  Students must notify instructors prior to the class absence, if possible, that they are temporarily unable to attend class or complete assignments on time.
+  - Death or serious illnesses in the family when documented appropriately.  An attempt to verify deaths or serious illness will be made by the Division of Academic and Student Affairs (go.ncsu.edu/absence).
 
 - Representing an official university function (e.g. athletics)
 - Required court attendance as certified by the Clerk of Court.
