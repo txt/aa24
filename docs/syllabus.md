@@ -37,31 +37,7 @@
 |Technical requirements | A laptop computer is required for students taking this course.  NC State’s Online and Distance Education provides technology requirements and recommendations for computer hardware, and NC State’s Office of Information Technology provides recommendations for your computer . But as a rule-of-thumb, your computer is adequate if you can edit and run code using the  Github codespaces environment.|
 
 
-
-
-## Preferred Method of Communication & Response Time
-
-It is each student's responsibility to join the class Discord  
-group "ase24". Till Friday week1, the link to join there 
-is [here](https://discord.gg/sHqMa9jK). After that time , please contact the lecturer.
-
-Most of the class communication from staff to students will be via this Discord group.
-
-You should expect to receive a response within two business days (i.e. not over the weekend). 
-- If I email/message you directly, please strive to respond within two business days. 
-- It is recommended that you check your NC State email at least once a day to stay on top of course communications.
-
- If you have a question about the course or its content, you can email me or post your question on our discord
- group. You can expect to receive a response within two business days (i.e. not over the weekend)
-
-If you need to contact me directly, my preferred method of communication is
-the discord group. However, for private matters, feel free to contact me via email.  
-If emailing then:
-- Always include a descriptive, specific but concise subject. 
-- Include your course number your email, and provide adequate context for your question in order to ensure full understanding of your email. 
-- Be sure to use your NC State email account, and sign in with your name and Student ID number.
-
-## Description
+### Description
 
 AI for SE is different to standard AI. The data sets are different
 (far more repetitive structures, far more unlabelled data, far more
@@ -74,7 +50,7 @@ and operations). The results are different (many domains are
 controllable via surprisingly small theories). Hence the experimental
 and statistical methods are different.
 
-Topics:
+### Topics
 
 - Differences between “AI” and “AI for SE”. 
 - Explainable AI. 
@@ -87,7 +63,7 @@ Topics:
 - Management of AI software projects.
 - AI,SE and ethics.
 
-Course Objectives:
+### Course Objectives
 
 - To enable students to develop as successful professionals for highly competitive positions, applying “AI to SE” and “SE to AI”  in academic departments, industry, and government.
 - To prepare students to be effective researchers in the field of  “AI for SE” and “SE for AI”
@@ -102,11 +78,7 @@ Learning Outcomes
 - Students will communicate their research clearly and professionally in both written and oral forms appropriate to “AI to SE” and “SE to AI”
 
 
-
-
-
-
-## Assessment
+### Assessment
 
 
 Grades come from 
@@ -123,20 +95,6 @@ Exams are done individually. Everything else is done in  groups of 3 (groups of 
   - may be remarked if resubmitted within two weeks or original dues date 
   
 - Projects comprise a  large tasks  (working in public Github repos-- not NCSU GH):
-
-## Expectations for learner participation and interaction
-
-
-Course activities will require you to interact with other students in the course. 
-For masters students, some evidence must be generated that you are actively engaged with your class peers. Specifically:
-
-- The project repo MUST have a branch called "MAIN". Groups will be assessed via their commit history (seen under "Insights") in MAIN.
-    Projects were all group members are not active doing commits will lose marks
-    (or the offending student will be expelled from that group).
-- Groups need to maintain an active discussion in the channel within the subject's Discord channel. 
-    Projects were all group members are not active in discussions  will either lose marks 
-    (or the offending student will be expelled from that group).
-
 
 ### Grades
 
@@ -164,6 +122,22 @@ Otherwise, students are marked 1 or 2 for "try again" and "ok". If you get a "1"
 For big project , students will lose 1 mark per day for late submissions (weekend = 1 day).
 
 
+## Policies
+
+
+### Expectations for learner participation and interaction
+
+
+Course activities will require you to interact with other students in the course. 
+For masters students, some evidence must be generated that you are actively engaged with your class peers. Specifically:
+
+- The project repo MUST have a branch called "MAIN". Groups will be assessed via their commit history (seen under "Insights") in MAIN.
+    Projects were all group members are not active doing commits will lose marks
+    (or the offending student will be expelled from that group).
+- Groups need to maintain an active discussion in the channel within the subject's Discord channel. 
+    Projects were all group members are not active in discussions  will either lose marks 
+    (or the offending student will be expelled from that group).
+
 
 ### Attendance
 
@@ -190,6 +164,31 @@ concepts, or comment on the structure of the
 course. Those sessions are mandatory and failure to
 attend will result in marks being deducted.
 
+
+
+
+### Preferred Method of Communication & Response Time
+
+It is each student's responsibility to join the class Discord  
+group "ase24". Till Friday week1, the link to join there 
+is [here](https://discord.gg/sHqMa9jK). After that time , please contact the lecturer.
+
+Most of the class communication from staff to students will be via this Discord group.
+
+You should expect to receive a response within two business days (i.e. not over the weekend). 
+- If I email/message you directly, please strive to respond within two business days. 
+- It is recommended that you check your NC State email at least once a day to stay on top of course communications.
+
+ If you have a question about the course or its content, you can email me or post your question on our discord
+ group. You can expect to receive a response within two business days (i.e. not over the weekend)
+
+If you need to contact me directly, my preferred method of communication is
+the discord group. However, for private matters, feel free to contact me via email.  
+If emailing then:
+- Always include a descriptive, specific but concise subject. 
+- Include your course number your email, and provide adequate context for your question in order to ensure full understanding of your email. 
+- Be sure to use your NC State email account, and sign in with your name and Student ID number.
+
 ### Expected Workload
 This is an _advanced graduate_ class at  R1 institution 
 (an R1 institution is classified as a doctoral university with very high research activity). 
@@ -201,7 +200,6 @@ week to this class (excluding the time spent in the
 lecture meeting). Laboratory instruction is not included
 in this subject.
 
-## Policies
 
 ### Academic Integrity
 
