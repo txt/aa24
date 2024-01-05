@@ -181,3 +181,22 @@ that's pretty bad. confused inheritance with association. no methods. can you fi
 ![image](https://github.com/txt/aa24/assets/29195/bbe93ebb-1787-4e06-9b2f-f10a1e8ec820)
 
 
+# how should i "balances multiple objectives"
+
+Balancing multiple objectives in a system, such as a multi-objective optimizer, involves a process where you need to consider and appropriately prioritize different goals that might sometimes be competing or contradictory. Here's a chain of thought approach to achieve this balance:
+
+1.  **Identify Objectives**: Clearly define all the objectives that the system aims to achieve. These could include efficiency, accuracy, cost-effectiveness, speed, user satisfaction, and so on. Understanding the nature and requirements of each objective is crucial.
+    
+2.  **Understand Interrelationships and Trade-offs**: Analyze how these objectives interact with each other. Some objectives might be complementary, while others could be in conflict. Understanding these dynamics is key to finding a balance. Recognize the trade-offs that might be necessary when prioritizing one objective over another.
+    
+3.  **Assign Weights to Objectives**: Based on their importance, assign weights to each objective. More critical objectives get higher weights. This step is crucial and often involves input from stakeholders or domain experts to align the weights with business goals or project requirements.
+    
+4.  **Develop or Modify Algorithms**: Design or modify algorithms in the system to take these weights into account. In a multi-objective optimizer, this could involve using techniques like Pareto efficiency, where solutions are found that offer a favorable balance without being dominated on any objective by another solution.
+    
+5.  **Incorporate Constraints**: Identify and incorporate any constraints that must be respected. Constraints can be related to resources, time, legal requirements, etc., and can significantly impact how objectives are balanced.
+    
+6.  **Iterative Testing and Analysis**: Implement the solution and test it iteratively. Analyze how well it balances the objectives in real-world scenarios or simulations. This step often reveals additional nuances and needed adjustments.
+    
+7.  **Stakeholder Feedback**: Obtain feedback from stakeholders or end-users. They can provide valuable insights into how well the balance between objectives is being achieved and what impacts it has in practical terms.
+    
+8.  **Adjust and Optimize**
