@@ -22,7 +22,7 @@
 </tr>
 <tr>
 <td width=500>
-
+<small>
 <p>
 This is a project-based class where students will use any scripting 
 language they like  to build and extend their own AI tools for software engineering. 
@@ -49,7 +49,7 @@ and statistical methods are different.
 </ul>
 
 <p>Topics:
-<li>
+<ul>
 <li>Management of AI software projects.
 <li>AI,SE and ethics.
 <li>AI methods as they relate to SE: explainable AI; classification, clustering, multi-objective optimization (for non-continuous models);
@@ -67,7 +67,7 @@ Github issue close time prediction, bad smell prediction, cloud
 
 <p>Textbook: none
 
-
+</small>
 </td>
 <td valign=top  xwidth="100px">
 
