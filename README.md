@@ -18,7 +18,7 @@
 <tr>
 <td></td>
 <td align=center><b>Lectures</b></td>
-<td align=center><b>Timetable</b> </td>
+<td align=center><b>Timetable<br>submit@noon</b> </td>
 </tr>
 <tr>
 <td width=500>
@@ -126,8 +126,8 @@ Mar26&nbsp;:&nbsp; Hw8<br>
 Apr02&nbsp;:&nbsp; Hw9<br>
 Apr09&nbsp;:&nbsp; - <br>
 Apr16&nbsp;:&nbsp; - <br>
-Apr22&nbsp;:&nbsp; monday, noon, final "exam" (project report)<br>
-May3&nbsp;:&nbsp;Grades posted<br>
+Apr22&nbsp;:&nbsp; monday, project<br>
+May3&nbsp;:&nbsp; grades posted<br>
 </td>
 </tr>
 </table>
