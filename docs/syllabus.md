@@ -7,7 +7,6 @@
   <a href="/README.md#top"><img width=600  
      src="/etc/img/ase23.png"></a></p>
 
-
 # Syllabus: Automated Software Engineering
 
 |What | Notes|

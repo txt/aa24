@@ -1,3 +1,5 @@
+-
+
 # Homeworks
 
 Recode my Lua code in Python. 
