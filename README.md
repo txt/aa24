@@ -6,8 +6,6 @@
   <a href="/README.md#top"><img width=600  
      src="/etc/img/ase24.png"></a></p>
 
-
-
 <table width="100%" border=0 align=center>
 <tr>
 <td></td>
@@ -119,8 +117,4 @@ May3&nbsp;:&nbsp;&nbsp;grades&nbsp;posted<br>
 </td>
 </tr>
 </table>
-
-
-
-
 

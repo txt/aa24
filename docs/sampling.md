@@ -1,5 +1,10 @@
-asa
-
+<a name=top><br>
+  <p align=center>&nbsp;<a href="/README.md#top">home</a> ::
+  <a href="/docs/syllabus.md#top">syllabus</a> ::
+  <a href="https://docs.google.com/spreadsheets/d/1YHZPRLfchksx541yaojJE_loOh2g4FaVKtrVcquoYIw/edit#gid=0">groups</a> ::
+  <a href="/LICENSE.md#top">&copy;&nbsp;2024</a>, <a href="http:/timm.fyi">Tim Menzies</a><br>
+  <a href="/README.md#top"><img width=600  
+     src="/etc/img/ase24.png"></a></p>
 
 # Summary: 9 Types of Sampling Methods
 
@@ -28,14 +33,12 @@ Timm's comment:
      threatening the general populace
 - The drunk searches under the streetlight, finds tracks of a bus, follows that to a bus stop, and is drive safely home by the bus driver.
 
-
 ## Types of Sampling
 Sampling methods fall into two categories:
 - **Probability sampling**: Allows calculating the probability of each person being selected, offering greater mathematical precision.
 - **Nonprobability sampling**: Lacks the ability to calculate individual selection probabilities, often resulting in less accuracy and representativeness.
 
 ## When you can't Sampling Everything
-
 
 - You are the captain of a fishing boat. Your boat has a crew of six. Each day, before you catch anything, you waste hours burning expensive fuel traveling between promising fishing spots. What software help you look at the ocean and find the fish faster?
 - You need a car for Monday but you aren't really sure what kind you like. After a day of going to car yards, and doing a few test drives, you buy a car. Can software help you narrow down how many cars you need to look at?
@@ -109,7 +112,6 @@ makes up stuff as it goes (no rigor).
 - Data miners are controlled by billions of hyper-parameter options that control (e.g.) the shape of a neural net or how many neighbors your use for classification4. These parameters let you trade off (e.g.) how many mistakes you tolerate versus how many results you return; or accuracy versus fairness5.
 MySQL's Makefile has billions of configurations options, each of which means your SQL queries take different times to run and use different energy
 
-
 - as a runtime checker (cluster the data, then report any new inputs that fall outside the range of the clusters of the test data used to test the system) [Liu18](/refs.md#Liu18)
 - as an optimization tool (don't explore the whole space; instead cluster and run your analysis on many small clusters)i [Majumder18](/refs.md/#Maj18) 
 - as an optimizer in its own right (see below) [Chen19](/refs.md#Chen19)
@@ -134,8 +136,7 @@ stall]
    - Net effect 93% + .8*7 = 98.4% private,
    - And, FYI, inference on the tiny green+blue region was as effective as inference over all
 
-
 <img width=700 src="https://github.com/timm/tested/blob/main/etc/img/peters1.png">
 
-
 <img width=700 src="https://github.com/timm/tested/blob/main/etc/img/peters2.png">
+

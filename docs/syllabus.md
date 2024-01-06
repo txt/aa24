@@ -1,11 +1,10 @@
- <a name=top><br>
+<a name=top><br>
   <p align=center>&nbsp;<a href="/README.md#top">home</a> ::
   <a href="/docs/syllabus.md#top">syllabus</a> ::
   <a href="https://docs.google.com/spreadsheets/d/1YHZPRLfchksx541yaojJE_loOh2g4FaVKtrVcquoYIw/edit#gid=0">groups</a> ::
-  <a href="https://discord.gg/FYwfQuNzPB">chat</a>  ::
-  <a href="/LICENSE.md#top">&copy;&nbsp;2023</a> <a href="http://menzies.us">timm</a><br>
+  <a href="/LICENSE.md#top">&copy;&nbsp;2024</a>, <a href="http:/timm.fyi">Tim Menzies</a><br>
   <a href="/README.md#top"><img width=600  
-     src="/etc/img/ase23.png"></a></p>
+     src="/etc/img/ase24.png"></a></p>
 
 # Syllabus: Automated Software Engineering
 
@@ -16,11 +15,9 @@
 |Where| room 01025  Engineering Building 2  |
 |Who |  Tim Menzies, timm@ieee.org   <br> Office hours: 1:30 to 3:30 Tuesdays, in my office    (no appointment necessary, first come, first serve)<br> Room: 3304:EB2 <br>    Phone: 304 376 2859 (\*) |
 
-
 (\*)  Please, please, do not use this number, except in the most dire of circumstances.  (e.g. car crash on way to exam).
 
 ## Details
-
 
 |What | Notes|
 |----|-------|
@@ -35,9 +32,7 @@
 |Attendance| not mandatory (but see remarks below on pop quiz)|
 |Technical requirements | A laptop computer is required for students taking this course.  NC State’s Online and Distance Education provides technology requirements and recommendations for computer hardware, and NC State’s Office of Information Technology provides recommendations for your computer . But as a rule-of-thumb, your computer is adequate if you can edit and run code using the  Github codespaces environment.|
 
-
 ### Description
-
 
  Why “AI” is different for SE. [^diff].
 Management of AI software projects.
@@ -74,9 +69,7 @@ Learning Outcomes
 - Students will analyze/interpret research data
 - Students will communicate their research clearly and professionally in both written and oral forms appropriate to “AI to SE” and “SE to AI”
 
-
 ### Assessment
-
 
 Grades come from 
 - 9 homeworks
@@ -95,7 +88,6 @@ Exams are done individually. Everything else is done in  groups of 3 (groups of 
 
 ### Grades
 
-
 |group | group/solo | mark| notes                                                      | 
 |------|--------|------------|-----------------------------------------------|
 |homeworks (ten)|group       | 9 \* 2    |      | 
@@ -110,7 +102,6 @@ With the final grades, the following grade scale will be used:
      C+ (77-79),   C (73-77),   C-(70-72)
      D+ (67-69),   D (63-67),   D-(60-62)
      F (below 60).
-
 
 ### Late Marks
 
@@ -127,9 +118,7 @@ For all other remark requests, see the lecturer during office hours.
 
 ## Policies
 
-
 ### Expectations for learner participation and interaction
-
 
 Course activities will require you to interact with other students in the course. 
 For masters students, some evidence must be generated that you are actively engaged with your class peers. Specifically:
@@ -140,7 +129,6 @@ For masters students, some evidence must be generated that you are actively enga
 - Groups need to maintain an active discussion in the channel within the subject's Discord channel.
     Projects were all group members are not active in discussions  will either lose marks
     (or the offending student will be expelled from that group).
-
 
 ### Attendance
 
@@ -167,9 +155,7 @@ concepts, or comment on the structure of the
 course. Those sessions are mandatory and failure to
 attend will result in marks being deducted.
 
-
 ### Disabilities
-
 
 Reasonable accommodations will be made for students with verifiable
 disabilities. In order to take advantage of available accommodations,
@@ -178,11 +164,6 @@ For more information on NC State’s policy on working with students
 with disabilities, please see the 
 [Policies, Rules and Regulations page maintained by the DRO](https://dro.dasa.ncsu.edu/about-us/policies-rules-regulations/)
 and [REG 02.20.01 Academic Accommodations for Students with Disabilities](https://policies.ncsu.edu/regulation/reg-02-20-01/).
-
-
-
-
-
 
 ### Non-Discrimination Policy
 
@@ -219,7 +200,6 @@ https://policies.ncsu.edu/regulation/reg-04-25-02/.
 + Note that, as a lecturer, I am legally required to
 **report** all such acts to the appropriate campus authority,
 
-
 ### Respecting our learning community
 The NC State Code of Student Conduct outlines expectations for behavior in the classroom (whether virtual or physical) and the
 consequences for students who violate these expectations. Any behavior that impacts other students’ ability to learn and succeed will be addressed, but expressing diverse viewpoints and interpretations of course content is welcome.
@@ -231,8 +211,6 @@ Community guidelines for this course include:
 - Enter our virtual and/or physical classroom community respectfully by refraining from lewd or indecent speech or behavior, helping to maintain a safe physical environment, not using your cell phone for voice or text communication except when explicitly given leave to do so, and not attending class under the influence of any substance.
 - Treat each community member with respect by not recording others without their consent or engaging in any form of hazing, harassment, intimidation, or abuse.
 - Respect cultural differences that may influence communication styles and needs.]
-
-
 
 Any remark you make
 in some on-line comment tracking system like Github
@@ -250,9 +228,6 @@ the rest of the team took great
 offense at this remark and invoked the University's
 non-discrimination policies. As a result, everyone
 lost much time that semester, as well as grades. 
-
-
-
 
 ### Preferred Method of Communication & Response Time
 
@@ -280,13 +255,11 @@ If emailing then:
 This is an _advanced graduate_ class at  R1 institution 
 (an R1 institution is classified as a doctoral university with very high research activity). 
 
-
  Students must be
 prepared to dedicate AT LEAST 5-8 working hours a
 week to this class (excluding the time spent in the
 lecture meeting). Laboratory instruction is not included
 in this subject.
-
 
 ### Academic Integrity
 
@@ -298,24 +271,19 @@ Violations of academic integrity will be handled in accordance with the
 
 Please refer to the [Academic Integrity web page](https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/) for a detailed explanation of the University’s policies on academic integrity and some of the common understandings related to those policies.
 
-
-
 Cheating will be punished to the full extent permitted. Cheating
 includes plagiarism of other people's work. All students will be working
 on public code repositories and **informed reuse** is encouraged where
 someone else's product is:
 
-
 + Imported and clearly acknowledged (as to where it came from);
 + The imported project is understood, and
 + The imported project is significantly extended.
-
 
 Students are encouraged to read each others code and report **uninformed reuse**
 to the lecturer. The issue will be explored and, if uncovered,
 cheating will be reported to the university
 and marks will be deducted if the person who is doing the reuse:
-
 
 + Does not acknowledge the source of the product;
 + Does not exhibit comprehension of the product when asked about it;
@@ -349,5 +317,4 @@ If your  must withdraw from a course or from the University due to hardship beyo
 ### Syllabus Modification Statement
 
 Our syllabus represents a flexible agreement. It outlines the topics we will cover and the order in which we will cover them. Dates for assignments represent the earliest possible time they would be due. The pace of the class depends on student mastery and interests. Thus minor changes in the syllabus can occur if we need to slow down or speed up the pace of instruction.
-
 

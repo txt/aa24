@@ -1,13 +1,16 @@
-i
+<a name=top><br>
+  <p align=center>&nbsp;<a href="/README.md#top">home</a> ::
+  <a href="/docs/syllabus.md#top">syllabus</a> ::
+  <a href="https://docs.google.com/spreadsheets/d/1YHZPRLfchksx541yaojJE_loOh2g4FaVKtrVcquoYIw/edit#gid=0">groups</a> ::
+  <a href="/LICENSE.md#top">&copy;&nbsp;2024</a>, <a href="http:/timm.fyi">Tim Menzies</a><br>
+  <a href="/README.md#top"><img width=600  
+     src="/etc/img/ase24.png"></a></p>
 
 talk on use of LLM: https://www.youtube.com/watch?v=FfGZBRWxVAM&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU&index=4
 
 > How many rows of data in the attached file?
  
 The attached file contains 398 rows of data. ​​
-
-
-
 
  
 > what is the mean miles per hour?
@@ -182,7 +185,6 @@ that's pretty bad. confused inheritance with association. no methods. can you fi
 
 ![image](https://github.com/txt/aa24/assets/29195/bbe93ebb-1787-4e06-9b2f-f10a1e8ec820)
 
-
 # how should i "balances multiple objectives"
 
 Balancing multiple objectives in a system, such as a multi-objective optimizer, involves a process where you need to consider and appropriately prioritize different goals that might sometimes be competing or contradictory. Here's a chain of thought approach to achieve this balance:
@@ -202,3 +204,4 @@ Balancing multiple objectives in a system, such as a multi-objective optimizer, 
 7.  **Stakeholder Feedback**: Obtain feedback from stakeholders or end-users. They can provide valuable insights into how well the balance between objectives is being achieved and what impacts it has in practical terms.
     
 8.  **Adjust and Optimize**
+

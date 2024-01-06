@@ -1,4 +1,10 @@
--
+<a name=top><br>
+  <p align=center>&nbsp;<a href="/README.md#top">home</a> ::
+  <a href="/docs/syllabus.md#top">syllabus</a> ::
+  <a href="https://docs.google.com/spreadsheets/d/1YHZPRLfchksx541yaojJE_loOh2g4FaVKtrVcquoYIw/edit#gid=0">groups</a> ::
+  <a href="/LICENSE.md#top">&copy;&nbsp;2024</a>, <a href="http:/timm.fyi">Tim Menzies</a><br>
+  <a href="/README.md#top"><img width=600  
+     src="/etc/img/ase24.png"></a></p>
 
 # Homeworks
 
@@ -31,7 +37,6 @@ If no submission each week, then -1.  If not enough submitted each week then -1.
 ## Branches
 Work any braching system you like but  students will lose marks if we do not see, from each student,   regular submissions to a branch named "main".
 
-
 ## Tasks
 
 For weeks 2,3,4,5 work from gate.lua. After that, move to mylo.lua
@@ -63,3 +68,4 @@ For weeks 2,3,4,5 work from gate.lua. After that, move to mylo.lua
 ### Week5
 
 - do eg.gate
+
