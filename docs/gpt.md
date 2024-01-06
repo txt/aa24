@@ -146,3 +146,57 @@ Here is the configuration of the RandomForestRegressor within the MultiOutputReg
 - Warm Start: False (When set to True, reuse the solution of the previous call to fit and add more estimators to the ensemble)
 
 This configuration provides insights into the setup of the RandomForestRegressor, including the number of trees, the criteria for splitting the trees, and other parameters. However, it does not convey the actual decision-making process of the model, which is determined by the training data and the complex structure of the decision trees within the forest. ​
+
+--------------
+
+Classes and Attributes:
+
+- SYM with attributes txt, at, n, has, mode, most.
+- NUM with attributes txt, at, n, mu, m2, hi, lo, heaven.
+- COLS with attributes x, y, all, klass, names.
+- ROW with attribute cells.
+- DATA with attributes rows, cols.
+- NODE with attribute here.
+- RANGE with attributes at, txt, scored, x, y.
+- RULE with attributes parts, scored.
+- RULES with attributes sorted, goal, rowss, LIKE, HATE.
+
+Methods:
+
+- Each class has various methods like new, add, mid, div, dist, etc. These can be represented as operations in UML.
+
+Relationships:
+
+- COLS seems to create instances of SYM and NUM.
+- DATA uses ROW and COLS.
+- NODE and DATA seem to interact closely.
+- RANGE, RULE, and RULES have interdependencies.
+
+expract class diagram from mylo.lua. ire gard this as simplisitic and confusing
+
+![image](https://github.com/txt/aa24/assets/29195/8a595cdd-5036-4094-ac96-67da5951b385)
+
+that's pretty bad. confused inheritance with association. no methods. can you fix that?
+
+![image](https://github.com/txt/aa24/assets/29195/bbe93ebb-1787-4e06-9b2f-f10a1e8ec820)
+
+
+# how should i "balances multiple objectives"
+
+Balancing multiple objectives in a system, such as a multi-objective optimizer, involves a process where you need to consider and appropriately prioritize different goals that might sometimes be competing or contradictory. Here's a chain of thought approach to achieve this balance:
+
+1.  **Identify Objectives**: Clearly define all the objectives that the system aims to achieve. These could include efficiency, accuracy, cost-effectiveness, speed, user satisfaction, and so on. Understanding the nature and requirements of each objective is crucial.
+    
+2.  **Understand Interrelationships and Trade-offs**: Analyze how these objectives interact with each other. Some objectives might be complementary, while others could be in conflict. Understanding these dynamics is key to finding a balance. Recognize the trade-offs that might be necessary when prioritizing one objective over another.
+    
+3.  **Assign Weights to Objectives**: Based on their importance, assign weights to each objective. More critical objectives get higher weights. This step is crucial and often involves input from stakeholders or domain experts to align the weights with business goals or project requirements.
+    
+4.  **Develop or Modify Algorithms**: Design or modify algorithms in the system to take these weights into account. In a multi-objective optimizer, this could involve using techniques like Pareto efficiency, where solutions are found that offer a favorable balance without being dominated on any objective by another solution.
+    
+5.  **Incorporate Constraints**: Identify and incorporate any constraints that must be respected. Constraints can be related to resources, time, legal requirements, etc., and can significantly impact how objectives are balanced.
+    
+6.  **Iterative Testing and Analysis**: Implement the solution and test it iteratively. Analyze how well it balances the objectives in real-world scenarios or simulations. This step often reveals additional nuances and needed adjustments.
+    
+7.  **Stakeholder Feedback**: Obtain feedback from stakeholders or end-users. They can provide valuable insights into how well the balance between objectives is being achieved and what impacts it has in practical terms.
+    
+8.  **Adjust and Optimize**
