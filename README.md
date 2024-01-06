@@ -86,7 +86,7 @@ Jan30&nbsp;:&nbsp;<br>
 Feb01&nbsp;:&nbsp;<br>
 Feb06&nbsp;:&nbsp;<br>
 Feb08&nbsp;:&nbsp;<br>
-Feb13&nbsp;:&nbsp; wellness day<br>
+Feb13&nbsp;:&nbsp;&nbsp;wellness day<br>
 Feb15&nbsp;:&nbsp;<br>
 Feb20&nbsp;:&nbsp;<br>
 Feb22&nbsp;:&nbsp;<br>
@@ -94,8 +94,8 @@ Feb27&nbsp;:&nbsp;<br>
 Feb29&nbsp;:&nbsp;<br>
 Mar05&nbsp;:&nbsp;<br>
 Mar07&nbsp;:&nbsp;<br>
-Mar12&nbsp;:&nbsp; break<br>
-Mar14&nbsp;:&nbsp; break<br>
+Mar12&nbsp;:&nbsp;&nbsp;break<br>
+Mar14&nbsp;:&nbsp;&nbsp;break<br>
 Mar19&nbsp;:&nbsp;<br>
 Mar21&nbsp;:&nbsp;<br>
 Mar26&nbsp;:&nbsp;<br>
@@ -106,8 +106,8 @@ Apr09&nbsp;:&nbsp;<br>
 Apr11&nbsp;:&nbsp;<br>
 Apr16&nbsp;:&nbsp;<br>
 Apr18&nbsp;:&nbsp;<br>
-Apr23&nbsp;:&nbsp; no class<br>
-May3&nbsp;:&nbsp;Grades posted<br>
+Apr23&nbsp;:&nbsp;no&nbsp;class<br>
+May3&nbsp;:&nbsp;Grades&nbsp;posted<br>
 <dd>
 </dl>
 
@@ -116,7 +116,7 @@ Jan16&nbsp;:&nbsp; Hw1<br>
 Jan23&nbsp;:&nbsp; Hw2<br>
 Jan30&nbsp;:&nbsp; Hw3<br>
 Feb06&nbsp;:&nbsp; Hw4<br>
-Feb13&nbsp;:&nbsp; wellness day<br>
+Feb13&nbsp;:&nbsp;&nbsp;wellness&nbsp;day<br>
 Feb20&nbsp;:&nbsp; Hw5<br>
 Feb27&nbsp;:&nbsp; Hw6<br>
 Mar05&nbsp;:&nbsp; Hw7<br>
@@ -126,8 +126,8 @@ Mar26&nbsp;:&nbsp; Hw8<br>
 Apr02&nbsp;:&nbsp; Hw9<br>
 Apr09&nbsp;:&nbsp; - <br>
 Apr16&nbsp;:&nbsp; - <br>
-Apr22&nbsp;:&nbsp; monday, project<br>
-May3&nbsp;:&nbsp; grades posted<br>
+Apr22&nbsp;:&nbsp;&nbsp;monday,&nbsp;project<br>
+May3&nbsp;:&nbsp;&nbsp;grades&nbsp;posted<br>
 </td>
 </tr>
 </table>
