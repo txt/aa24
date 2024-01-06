@@ -2,8 +2,7 @@
   <p align=center>&nbsp;<a href="/README.md#top">home</a> ::
   <a href="/docs/syllabus.md#top">syllabus</a> ::
   <a href="https://docs.google.com/spreadsheets/d/1YHZPRLfchksx541yaojJE_loOh2g4FaVKtrVcquoYIw/edit#gid=0">groups</a> ::
-  <a href="https://discord.gg/FYwfQuNzPB">chat</a>  ::
-  <a href="/LICENSE.md#top">&copy;&nbsp;2024</a> <a href="http:/timm.fyi">timm</a><br>
+  <a href="/LICENSE.md#top">&copy;&nbsp;2024</a>, <a href="http:/timm.fyi">Tim Menzies</a><br>
   <a href="/README.md#top"><img width=600  
      src="/etc/img/ase24.png"></a></p>
 
@@ -21,7 +20,7 @@
 <td align=center><b>Timetable<br>submit@noon</b> </td>
 </tr>
 <tr>
-<td width=500>
+<td>
 <small>
 <p>
 This is a project-based class where students will use any scripting 
@@ -62,10 +61,6 @@ AI application areas in SE: current methods, statistical methods, latest results
 Github issue close time prediction, bad smell prediction, cloud
     compute management, bad smell detection, static code warning detection,   etc.
 </ul>
-
-<p>Grading: 20% homeworks, 30% mid-term; 10% for pop quizes; 40% group project.
-
-<p>Textbook: none
 
 </small>
 </td>

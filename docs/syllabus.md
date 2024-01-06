@@ -80,9 +80,9 @@ Learning Outcomes
 
 
 Grades come from 
-- 10 homeworks
+- 9 homeworks
 - 1 mid-session exam
-- 5 pop quizzes, simple questions, 2 marks each (called at any time)
+- 4 pop quizzes, simple questions, 3 marks each (called at any time)
 - 1 eight page report on a large project (due end of semester)
 
 Exams are done individually. Everything else is done in  groups of 3 (groups of 1 for 700 level students)
@@ -99,9 +99,9 @@ Exams are done individually. Everything else is done in  groups of 3 (groups of 
 
 |group | group/solo | mark| notes                                                      | 
 |------|--------|------------|-----------------------------------------------|
-|homeworks (ten)|group       | 10 \* 2    |      | 
+|homeworks (ten)|group       | 9 \* 2    |      | 
 |mid-term       |solo        | 30        | mid-term                                | 
-| quiz          |solo        | 5 \* 2        |                                   |
+| quiz          |solo        | 4 \* 3        |                                   |
 |project        |group        | 40        | project report                          |
 
 With the final grades, the following grade scale will be used: 
