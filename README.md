@@ -70,12 +70,7 @@ Github issue close time prediction, bad smell prediction, cloud
 </small>
 </td>
 <td valign=top  xwidth="100px">
-
 <!-- -------------------------------- -->
-<dl>
-<dt>
-Lectures:
-<dd>
 Jan09&nbsp;:&nbsp;<a href="https://github.com/timm/tested/blob/main/docs/onFishing.md">fishing</a><br>
 Jan11&nbsp;:&nbsp;<br>
 Jan16&nbsp;:&nbsp;<br>
@@ -108,9 +103,7 @@ Apr16&nbsp;:&nbsp;<br>
 Apr18&nbsp;:&nbsp;<br>
 Apr23&nbsp;:&nbsp;no&nbsp;class<br>
 May3&nbsp;:&nbsp;Grades&nbsp;posted<br>
-<dd>
-</dl>
-
+</td>
 <td valign=top>
 Jan16&nbsp;:&nbsp; Hw1<br>
 Jan23&nbsp;:&nbsp; Hw2<br>
