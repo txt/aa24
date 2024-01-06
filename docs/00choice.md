@@ -8,15 +8,24 @@
 
 # Choice
 
-(In this lecture it is argued that "choice" is an important concern in SE.)
+In this lecture:  it is argued that "choice", not "coding" is a primary concern in SE-- which motivates   the "choice-oriented" nature of the homewords and projects in shis subject.
 
-This course is about all things SE and AI. There is a seperate 
-CSC grad class on generative AI so here we mention LLMs, but focus
-mostly on everything else.
+## Motivation example: design of a phone
 
-And according to Long et al. [^long23]
-there is a lot of "everything else". Here's there study from 20 years of
-empirical data and 50 years of literature. They break up SE development
+Here is a high-level design of a phone (written in Czarnecki's "feature model" notation [^Czarnecki02]). What are some of the different kinds of phones condonned here? Given two such designs, when might you choose one,
+rather than the other?
+
+<img width="897" alt="image" src="https://github.com/txt/aa24/assets/29195/2c284378-fbe4-43c7-b419-cb29d48afa73">
+
+[^Czarnecki02]: Czarnecki, Krzysztof, Kasper Østerbye, and Markus Völter. "Generative programming." In European Conference on Object-Oriented Programming, pp. 15-29. Berlin, Heidelberg: Springer Berlin Heidelberg, 2002. [(for notation, see chapter 5)](https://d1wqtxts1xzle7.cloudfront.net/35789135/Generative_Programming_--_Principles_and_Techniques_of_Software_Engineering_Based_on_Automated_Co-libre.pdf?1417415005=&response-content-disposition=inline%3B+filename%3DGenerative_programming.pdf&Expires=1704577411&Signature=K3nuCN~BAyYMS6gJbRxS9TW3qxy7XK-3~9lJ~3hw7RyAEJPeKUJYVkrr-oYHpz571xNzOioGbFjOjHBxy2fmyQIqBEYhJWhfRDPw0F4jeCPg08N7xoWNRs3R8ordo1kTJ6YDsmEPAfV92jXR78iIwQpC2jduw~Ftqk0OHSHZKUmzd7i2cKxSDdDqONudHhI8fTo3lSLNjyrO0b-D2qCKuvwBK~ZVetZUNSZ9XHGVFeRNyuo0Es32R7TXd13Flkk2pVgpwaYpQL2H9ZqIQsRGyZn9QXLO5o-K4m7PpWAnOtB5plnFAeAjcc5B0rQt-V7suFZGAFInV8RhK07Py49uSA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
+
+Note how long to discuss just the choices in this tiny model. Real software is more more complex with many more choices.  The LINUX kernel is the technological backbone of our global information society (it is used in the servers that power the internet, in data centers, in Android phones, just to name a few). That kernel has a grow number of thousands of features [^passos], each of which can be selected, or ignored in a particular system.
+
+<img width="533" alt="image" src="https://github.com/txt/aa24/assets/29195/0a8a63aa-a9fe-4fff-8007-1d0b216a1c0e">
+
+Since there are so many of them, much of software engineering is not about coding. Rather it about the exporation and assessment of choice. 
+Long et al. [^long23] 20 years of
+empirical data and 50 years of the SE literature. They break up SE development
 into six phases where, in each, software engineers (a) plan what to do;
 (b) do some coding; (c) check what you got. 
 
@@ -29,7 +38,7 @@ into six phases where, in each, software engineers (a) plan what to do;
 |5. Qualification Testing         |          |         |        |
 |6. Development Test & Evaluation |          |         |        |
 
-Long et al. argue that, on balance, engineers spend a third of the time
+Different studies fill in this table different ways. But Long et al. argue that, on balance, engineers spend a third of the time
 in planning, coding, and testing. And here are their numbers:
 
 <img src="/etc/img/phase.png" width=600>
@@ -39,22 +48,16 @@ in planning, coding, and testing. And here are their numbers:
 and the Relationship between Phase Effort and Schedule Success," 
 in IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2023.3339383.
 
-Now consider where all the LLM tools (co-pilot) help SE development. Its mostly
-coding. And accroding to the above, at least two-thirds of SE is not about coding.
-
-What kinds of automated support cover the above tasks? Well, one thing that
+One thing that
 falls across all the above phases and activities  is _choice_.
 
 - requirements means helping stakeholders trade-off between choices;
 - design means exploring and decising implementation choices;
 - testing (all kinds) means choosing to test for this and not for that
   (since we cannot test for everthing).
-
-Choice is a **big issue** since there are so many choices and we usually do them so badly:
-
-- The LINUX kernel is the technological backbone of our global information society (it is used in the servers that power the internet, in data centers, in Android phones, just to name a few). That kernel has a grow number of thousands of features [^passos], each of which can be selected, or ignored in a particular system.
-
-<img width="533" alt="image" src="https://github.com/txt/aa24/assets/29195/0a8a63aa-a9fe-4fff-8007-1d0b216a1c0e">
+   
+So 
+choice is a **big issue** since there are so many choices and we usually do them so badly:
 
 - Textbooks describing agile processes mentions  over 128 options for  managing agile projects. A model  of  these options has  over a sextillion choices (2<sup>128</sup>=10<sup>38</sup>).   Some of these options are inherently discriminatory against  smaller organizations or organizations that include newcomers to the profession of programming.
 - Theorem provers are AI tools for solving logical equations. State-of-the-art theorem provers use a wide range of optional tricks to solve different kinds of problems. For example, the cvc5 smt-lib solver comes with 400 configuration choices (of which 268 are labeled “experts only”, see https://cvc5.github.io/docs/cvc5-1.0.8/options.html). Just think about that. Theorem provers are used to check safety critical systems-- and the conclusions they generate are a quirk of what config settings we use.
