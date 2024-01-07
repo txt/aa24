@@ -35,10 +35,12 @@ Note how long to discuss just the choices in this tiny model. Real software is m
 <img width="533" alt="image" src="https://github.com/txt/aa24/assets/29195/0a8a63aa-a9fe-4fff-8007-1d0b216a1c0e">
 
 Since there are so many of them, much of software engineering is not about coding. Rather it about the exporation and assessment of choice. 
-Long et al. [^long23] 20 years of
-empirical data and 50 years of the SE literature. They break up SE development
-into six phases where, in each, software engineers (a) plan what to do;
-(b) do some coding; (c) check what you got. 
+- Long et al. [^long23] ask the question "how much of SE is coding and how much is something else?".
+- To answer that question, they look at 20 years of their own
+empirical data and 50 years of the SE literature.
+- They break up SE development
+into six phases (listed below)  and ask, in each, do software engineers (a) plan what to do;
+(b) do some coding; or (c) check what you got. 
 
 |phase | activity=<br>planning | activity=<br>coding | activity=<br>testing|
 |---------------------------------|----------|---------|--------|
@@ -66,6 +68,7 @@ falls across all the above phases and activities  is _choice_.
 - design means exploring and decising implementation choices;
 - testing (all kinds) means choosing to test for this and not for that
   (since we cannot test for everthing).
+- evalaution means choosing that A,B,C is more important than D,E,F,....
 
 ### So Many Choices, Done Badly
 
@@ -90,7 +93,7 @@ And we really do not handle those choices very well.
 [^zhou19]: Yuanyuan Zhou, Keynote address, IEEE Automated Software Engineering conference, San Diego, California, USA, 2019. https://2019.ase-conferences.org/info/keynotes#yuanyuan-yy-zhou-the-human-dimension-of-cloud-computing
 [^han16]: Xue Han and Tingting Yu. 2016. An Empirical Study on Performance Bugs for Highly Configurable Software Systems. ESEM 2016, 23:1–23:10. https://doi.org/10.1145/2961111.2962602
 
-- The internal choices inside a learner can have a dramatic effect on fairness and predictive performance.  
+Poor choices can have   a dramatic effect on (e.g.) fairness and predictive performance.  
   Here are 10,000 configuration choices for data miners about
   -  left: who gets a bank account, 
   -  Middle: where to send grant money or
@@ -101,6 +104,15 @@ And we really do not handle those choices very well.
 <img width="500" alt="image" src="https://github.com/txt/aa24/assets/29195/520aee53-51b9-49c9-a109-90cfc13c1812">
 
 [^cruz21]: F.Cruz, P. Saleiro, C. Belém, C. Soares and P. Bizarro, "Promoting Fairness through Hyperparameter Optimization," IEEE ICDM, 2021, pp. 1036-1041, doi: 10.1109/ICDM51629.2021.00119.
+
+(Aside: the choices inside a learner are called the hyperparameters. 
+The hyperparameters of (e.g.) Random Forests, learners include (a) how many $𝑇$ trees to
+build (e.g., $𝑇 \in \{10, 20, 40, 80, 160\}$); (b) how many features $𝐹$ to use in each tree
+(e.g., $𝐹 \in\{2, 4, 10, 20, sqrt, log2, all\}$); (c) how to poll the whole forest (e.g., majority or
+weighted majority); (d) what impurity measures (e.g., gini or entropy or log.loss); (e) what
+is the minimum examples needed to branch a sub-tree (e.g., $\mathit{min} \in \{2, 5, 10, 20, 50, 100\}$;
+(f) should branches be binary or n-arty. In all, this gives us $5 ∗ 7 ∗ 2 ∗ 3 ∗ 6 ∗ 2 > 2,500$
+different ways, just to configure a learner in the above figure.
 
 ## And now the good news
 
