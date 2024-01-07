@@ -54,7 +54,9 @@ absolute differences normalized by the size of the standard deviation.
 - In a 2009 paper with 3,000+ citations,  Sawilowsky [^sawil]   <img width="400" align=right alt="image" src="https://github.com/txt/aa24/assets/29195/6245b588-2317-401d-9847-dbdae094841c"> asserts that
   -  “small” and “medium” effects can be measured using  d = 0.2; and d = 0.5; (respectively).
   - Splitting the difference,  we look for things that are within d=.35; of "best"
-  - For the "z-curve" (a normal curve of standard deviation = 1), $x$ ranges $-3 \le x \le 3$ so .35 is $.35/6{\appox}6%$
+  - For the "z-curve" (a normal curve of standard deviation = 1),
+     - $x$ ranges $-3 \le x \le 3$ 
+     - .35 of th $x$ range is $.35/6 {\approx} 6%$
   - Hamlet [^hamlet] says that to be be $C$% certain of finding a certain $x_i$ at probability $p$, we need at least 
     $n(C,p)=\frac{\log{1-C}}{\log{1-p}}$ testes.
   - $n(C=.95,p=0.06)\approx 49$ tests.
