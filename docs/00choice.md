@@ -164,7 +164,7 @@ But here's the biggest challenge: too many choices. Suppose you are trying to gu
 
 ![image](https://github.com/txt/aa24/assets/29195/595b1fc1-2cb9-4e17-910b-e36829ddf20e)
 
-Here's a system called Euekeqa making those guesses. Eurequa makes guesses, prunes the worsts ones, then experimetns with the better ones. As shown here, there are very few best and so mnay
+Here's a system called Eureqa [^schmidt] making those guesses. Eurequa makes guesses, prunes the worsts ones, then experimetns with the better ones. As shown here, there are very few best and so mnay
 worst. 
 
 ![image](https://github.com/txt/aa24/assets/29195/f85600ab-0d88-4972-a3a3-814301695f5b)
@@ -176,3 +176,5 @@ Problems:
 - **Cogntive fatique** If Eureqa wants to check that its solutions are human-acceptabe, does a human ahve to check all these dots whenever they are generated?
 
 By the time this subject is over, you'll ahve working answers to both these problems. You will be Kings and Queens of choice.
+
+[^schmidt]: Schmidt, Michael D. and Hod Lipson. “Distilling Free-Form Natural Laws from Experimental Data.” Science 324 (2009): 81 - 85. https://faculty.washington.edu/morgansn/pmwiki/uploads/Site/schmidt-science2009.pdf
