@@ -21,7 +21,7 @@ Key concepts:
 - **dominance** if $A$ worse than $B$ across $g$ goals, then you are $A$ is said to be dominated by $B$.
 - **Pareto frontier** items not dominated by anything else
   
-This tactic is used in genetic algortihms:
+This tactic is used in genetic algortihms [^holland]:
 - generation $N+1$ items are  produced by mixing together two good decisions fro generation $N$
 - also, add a mutation (less than 5%) to randomly adjust the popualtion (so you don't get stuck in cul de sacs)
 
@@ -56,7 +56,7 @@ absolute differences normalized by the size of the standard deviation.
    asserts that
   -  “small” and “medium” effects can be measured using  d = 0.2; and d = 0.5; (respectively).
   - Splitting the difference,  we look for things that are within d=.35; of "best"
-  - For the "z-curve" (a normal curve of standard deviation = 1), $x$ ranges $-3 \le x \le 3$ so .35 is .35/6\appox}6%
+  - For the "z-curve" (a normal curve of standard deviation = 1), $x$ ranges $-3 \le x \le 3$ so .35 is .35/6{\appox}6%
   - Hamlet [^hamlet] says that to be be $C$% certain of finding a certain $x_i$ at probability $p$, we need at least 
     $n(C,p)=\frac{\log{1-C}}{\log{1-p}}$ testes.
   - $n(C=.95,p=0.06)\approx 49$ tests.
