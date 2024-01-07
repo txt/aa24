@@ -8,9 +8,20 @@
 
 # Choice
 
-In this lecture:  it is argued that "choice", not "coding" is a primary concern in SE-- which motivates   the "choice-oriented" nature of the homewords and projects in shis subject.
+<img src="https://github.com/txt/aa24/assets/29195/7daf9b06-684e-46cc-ad7d-749aa9e51881" align=right width=500>
 
-## Motivation example: design of a phone
+In a world:
+- where generative AI automates number low-level SE tasks
+- where Starlnk and  and ChinaSat and SatNet and Project Kuiper and ViaSat abd HughesNet and OneWeb and Eutelsat and Telesat etc connect every programmer on earth
+  - even those willing to work for $\rac{1}{2-}$th of USA saleries
+
+YOu do not want to be a programmer
+- You want to be the planning person deciding what programmers do
+- Or you want to be the tester taking the code from the programmer, then assess it.
+
+So  this lecture argues that "choice", not "coding" is a primary concern in SE-- which motivates   the "choice-oriented" nature of the homewords and projects in this subject.
+
+## Motivating Example:  Design of a phone
 
 Here is a high-level design of a phone (written in Czarnecki's "feature model" notation [^Czarnecki02]). What are some of the different kinds of phones condonned here? Given two such designs, when might you choose one,
 rather than the other?
@@ -55,9 +66,10 @@ falls across all the above phases and activities  is _choice_.
 - design means exploring and decising implementation choices;
 - testing (all kinds) means choosing to test for this and not for that
   (since we cannot test for everthing).
-   
-So 
-choice is a **big issue** since there are so many choices and we usually do them so badly:
+
+### So Many Choices, Done Badly
+
+Choice is a **big issue** since there are so many choices and we usually do them so badly:
 
 - Textbooks describing agile processes mentions  over 128 options for  managing agile projects. A model  of  these options has  over a sextillion choices (2<sup>128</sup>=10<sup>38</sup>).   Some of these options are inherently discriminatory against  smaller organizations or organizations that include newcomers to the profession of programming.
 - Theorem provers are AI tools for solving logical equations. State-of-the-art theorem provers use a wide range of optional tricks to solve different kinds of problems. For example, the cvc5 smt-lib solver comes with 400 configuration choices (of which 268 are labeled “experts only”, see https://cvc5.github.io/docs/cvc5-1.0.8/options.html). Just think about that. Theorem provers are used to check safety critical systems-- and the conclusions they generate are a quirk of what config settings we use.
@@ -110,7 +122,7 @@ Variability-aware performance prediction: A statistical learning approach. ASE 2
 [^golovin]: Golovin, D., Solnik, B., Moitra, S., Kochanski, G., Karro, J., & Sculley, D. (2017, August). Google vizier: A service for black-box optimization. KDD’17 (pp. 1487-1495).
 [^chaudhuri]: Surajit Chaudhuri and Vivek Narasayya. 2007. Self-tuning database systems: a decade of progress. In Proceedings of the 33rd international conference on Very large data bases (VLDB '07). VLDB Endowment, 3–14.
 
-## So Many Challenges Associated with Choice
+##  Challenges   with Choice
 
 There is a need to integrate methods for automating choice into legislative frameworks. 
 - To date, regulation frameworks and certification standards ignore the fact that software is configurable.
@@ -131,90 +143,5 @@ Another open challenge is the integration of human and artificial intelligence w
 [^veerappa]: V. Veerappa and E. Letier, "Understanding clusters of optimal solutions in multi-objective decision problems," 2011 IEEE 19th International Requirements Engineering Conference, Trento, Italy, 2011, pp. 89-98, doi: 10.1109/RE.2011.6051654..
 
 - This tells us that there is not one solution, but several, and humans are needed to decide which solution they prefer. Many researchers work towards supporting this kind of human-in-the-loop decision making . 
- 
-
-## Automated Support for Better Choices 
-
-### Releax
-
-Don't go for best solution, just one that is near best.
-
-- Rosenthal et al.  [^rosen]  discuss   methods for asserting that
-one result is with some small effect of another (i.e. it is “close to”).
-- He asserts that
-non-parametric tests have less statistical power than parametric ones
-  - so he prefers
-methods that 
-use (1) the Pearson correlation coefficient;
-(2) $d$, the
-absolute differences normalized by the size of the standard deviation.
-  - He comments that “none is intrinsically better than the other”.
-  - So lets use $d$.
-- <img width="400" align=right alt="image" src="https://github.com/txt/aa24/assets/29195/6245b588-2317-401d-9847-dbdae094841c">
-  In a 2009 paper with 3,000+ citations,  Sawilowsky [^sawil]  
-   asserts that
-  -  “small” and “medium” effects can be measured using  d = 0.2; and d = 0.5; (respectively).
-  - Splitting the difference,  we look for things that are within d=.35; of "best"
-  - For the "z-curve" (a normal curve of standard deviation = 1), $x$ ranges $-3 \le x \le 3$ so .35 is .35/6\appox}6%
-  - Hamlet [^hamlet] says that to be be $C$% certain of finding a certain $x_i$ at probability $p$, we need at least 
-    $n(C,p)=\frac{\log{1-C}}{\log{1-p}}$ testes.
-  - $n(C=.95,p=0.06)\approx 49$ tests.
 
 
-[^hamlet]:  Hamlet, R. G. (1987). Probable correctness theory. Information processing letters, 25(1), 17-22. Hamlet show that $n$ tests will find an event of proability $p$  with certainty $C(n,p)=1-(1-p)^n$ which rearrages to $n(C,p)=\frac{\log{1-C}}{\log(1-p}}$.
-
-
-
-[^rosen]: Rosenthal, R., Cooper, H., Hedges, L.: Parametric measures of effect size. The handbook
-of research synthesis 621(2), 231–244 (1994)
-[^sawil]: Sawilowsky, S.S.: New effect size rules of thumb. Journal of Modern Applied Statistical
-Methods 8(2), 26 (2009)
-
-
-### Use more X than Y
-
-Consider learning a function $f$ from many examples $x,y$:
-
-$$y_1,y_2,.. = f(x_1,x_2,x_3,x_4,x_5,....)$$
-
-(BTW, some terminology: $y$= goals, dependent variables; $x$=independent variables, controllables, observables.)
-
-In many domains, much easier to collect $x$ than $y$
-
-- e.g. got a car yard,
- - qucikly glance at many cars, list their $x$ e.g. colors, sizes, makes, etc
- - but which car do you $y$ like driving?
-- e.g. pick a universirty
-     - go on line and find details on $x$ locations, subjects, etc
-     - but $y$ it takes years to attend and work out which one you like.
-- e.g. can run millions of tests to check for (e.g.) core dumps
-  - but in practice, only have time to make a much smaller number of runs
-
-More generally, any process where humans are part of the evaluation means you can only ask a few dozen questions before
-- they get tired and make mistakes
-- or they have to run away to attend all their other work
-  
-
-### Use Pareto pruning
-- generate (e.g. interpolate between two near neighbors; crossover two parents)
-- select (domination, severl different kinds)
-- think (e.g. mutate surivoros)
-
-### Use volumes, points
-Rules, not instances
-
-### use neighborhood (don't ask if there is known nearby answer)
-- cluster in $x$ space before evaluating
-- if you mutate to somewhere better, take your neihgbors in $y$  space with out (MOEA/D) 
-
-### Use Ranking
-- better yet, if we can somehow heuristically order the things we are testing, then a binary chop can quickkly find this "as-good-as-best" urn
-- returning to the above $\log_2(n(C=.95,p=0.06))\approx 6
-
-### use background knowldge
--  role of LLMs? 
-
-### use surrogates
-
-incremental learn surrogates as you go
--  seqeantial model optimization:  focus on where the surrogate disagrees
