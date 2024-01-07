@@ -156,7 +156,8 @@ absolute differences normalized by the size of the standard deviation.
   -  “small” and “medium” effects can be measured using  d = 0.2; and d = 0.5; (respectively).
   - Splitting the difference,  we look for things that are within d=.35; of "best"
   - For the "z-curve" (a normal curve of standard deviation = 1), $x$ ranges $-3 \le x \le 3$ so .35 is .35/6\appox}6%
-  - Hamlet [^hamlet] says that to be be $C$% certain of finding a certain $x_i$ at probability $p$, we need at least $n(C,p)=\frac{\log{1-C}}{\log(1-p}}$ testes.
+  - Hamlet [^hamlet] says that to be be $C$% certain of finding a certain $x_i$ at probability $p$, we need at least 
+    $n(C,p)=\frac{\log{1-C}}{\log{1-p}}$ testes.
   - $n(C=.95,p=0.06)\approx 49$ tests.
 
 
@@ -203,7 +204,8 @@ More generally, any process where humans are part of the evaluation means you ca
 Rules, not instances
 
 ### use neighborhood (don't ask if there is known nearby answer)
-- cluster before evaluating
+- cluster in $x$ space before evaluating
+- if you mutate to somewhere better, take your neihgbors in $y$  space with out (MOEA/D) 
 
 ### Use Ranking
 - better yet, if we can somehow heuristically order the things we are testing, then a binary chop can quickkly find this "as-good-as-best" urn
