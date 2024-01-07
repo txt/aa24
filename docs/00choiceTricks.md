@@ -35,8 +35,77 @@ This tactic is used in genetic algortihms [^holland]:
 "In any series of elements to be controlled, a selected small fraction, in terms of numbers of elements, always accounts for a large fraction in terms of effect." ~ Vilfredo Pareto
 
 - THe keys effect
-- 
-### Relea
+
+- In those explorations, often it was seen that
+
+_A small number of **key** variables control the rest_
+ 
+Just to state the obvious, there is a clear
+connection between  keys and how many choices are required to control a systems.  Specifically: for a system
+with keys, we only need to look
+at a few keys to 
+  understanding and/or critique and/or control  that system. 
+
+Outside of SE, I have seen keys in hospital nutrition analysis [^part] and avionic control systems [^gay]. Within SE, I have seen keys in:
+
+ [^part]: Susan N Partington, Tim J Menzies, Trina A Colburn, Brian E Saelens, and Karen
+Glanz. 2015. Reduced-item food audits based on the nutrition environment
+measures surveys. American Journal of Preventive Medicine 49, 4 (2015), e23–e33
+
+[^gay10]: Gregory Gay, Tim Menzies, Misty Davies, and Karen Gundy-Burlet. 2010. Auto-
+matically finding the control variables for complex system behavior. Automated
+Software Engineering 17 (2010), 439–468.
+
+- Defect prediction datasets [^men16] where two to three attributes were
+enough to predict for defects
+- Effort estimation models [^chen05] where four to eight attributes
+where enough to predict for defects;
+- Requirements models for NASA deep space missions [^jalali] where
+two-thirds of the decision attributes could be ignored while still finding effective 
+optimizations; 
+- 11 Github issue close time data sets [^rees17 
+where only 3 attributes (median) were needed for   effective prediction.
+
+[^men16]: Tim Menzies, Jeremy Greenwald, and Art Frank. 2006. Data mining static code
+attributes to learn defect predictors. IEEE transactions on software engineering 33,
+1 (2006), 2–13.
+
+[^chen05]: Zhihao Chen, Tim Menzies, Daniel Port, and D Boehm. 2005. Finding the right
+data for software cost modeling. IEEE software 22, 6 (2005), 38–46
+
+[^jalali]: Omid Jalali, Tim Menzies, and Martin Feather. 2008. Optimizing requirements
+decisions with keys. In Proceedings of the 4th international workshop on Predictor
+models in software engineering. 79–86
+
+[^rees17]: Ritch Rees-Jones, Matthew Martin, and Tim Menzies. 2017. Better predictors for
+issue lifetime. arXiv preprint arXiv:1702.07735 (2017)
+
+
+One way to see how many keys are in a system is to ask how many {\em prototypes} (minimum number of examples)  are required to explore that system. 
+- At PROMISE"08, the keys were found in 50 examples (selected at random) since the models built from this small sample performed no worse than the models learned from thousands of additional examples [^me08a].
+- In 2023 we made a similar observation.  In a study that explored 20 years of data from 250 Github projects with 6000 commits per project (average).
+ In that study, the defect models learned from only the first 150 commits were predicted, as well as the models learned from much larger samples [^shrikanth]
+
+[^me08a]: Tim Menzies, Burak Turhan, Ayse Bener, Gregory Gay, Bojan Cukic, and Yue
+Jiang. 2008. Implications of ceiling effects in defect predictors. In Proceedings of
+the 4th international workshop on Predictor models in software engineering. 47–54
+
+[^shrikanth]: Shrikanth N.C. and Tim Menzies. 2023. Assessing the Early Bird Heuristic (for
+Predicting Project Quality). ACM Trans. Softw. Eng. Methodol. 32, 5, Article 116
+(jul 2023), 39 pages. https://doi.org/10.1145/3583565
+
+Of course, not all data sets can be explored by a few dozen keys. 
+Recently,  we have successfully modeled security violations in 28,750 Mozilla functions with 271 exemplars and 6000 Github commits using just 300 exemplars [^yu19] 
+(specifically, after   incremental active
+learning, the SVM had   under 300 support vectors). Although 300 is not an especially small
+number, it is small enough so that, given (say) two analysts and a month, it would be possible
+to review them all.
+
+[^yu19]: Zhe Yu, Christopher Theisen, Laurie Williams, and Tim Menzies. 2019. Improving
+vulnerability inspection efficiency using active learning. IEEE Transactions on
+Software Engineering 47, 11 (2019), 2401–2420.
+
+### Relax
 
 Don't go for best solution, just one that is near best.
 
