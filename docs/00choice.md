@@ -143,11 +143,14 @@ There is a need to integrate methods for automating choice into legislative fram
 -  On the other hand, we cannot certify all configurations, as there are easily billions.
 -  More generally, this **certification problem** is an example of the **generalization** problem.
 
+
+
 Another open challenge is the integration of human and artificial intelligence while making choices.  
 - There are different kinds of stakeholders so our tools must be tailored to their different needs.
-- When choices conflict, subjective stakeholder opinion becomes important since those opinions let us make trade-offs across the decision space.
+- When choices conflict, subjective stakeholder opinion becomes important since those opinions let us make trade-offs across the decision space. e.g. of all the houses we could build,
+- which do you prefer:
 
-<img width="1306" alt="image" src="https://github.com/txt/aa24/assets/29195/e7090764-3ecb-4ae9-875e-fd6cee761526">
+<img width="500" align=right alt="image" src="https://github.com/txt/aa24/assets/29195/e7090764-3ecb-4ae9-875e-fd6cee761526">
 
 - Once an algorithm proposes some choices, it may still be up to stakeholders to decide which choices are inappropriate. For example, researchers exploring the requirements   for London ambulances, found that  the feasible solutions formed a couple of different clusters [^veerappa].
 
@@ -155,6 +158,21 @@ Another open challenge is the integration of human and artificial intelligence w
 
 [^veerappa]: V. Veerappa and E. Letier, "Understanding clusters of optimal solutions in multi-objective decision problems," 2011 IEEE 19th International Requirements Engineering Conference, Trento, Italy, 2011, pp. 89-98, doi: 10.1109/RE.2011.6051654..
 
-- This tells us that there is not one solution, but several, and humans are needed to decide which solution they prefer. Many researchers work towards supporting this kind of human-in-the-loop decision making . 
+This tells us that there is not one solution, but several, and humans are needed to decide which solution they prefer. Many researchers work towards supporting this kind of human-in-the-loop decision making . 
 
+But here's the biggest challenge: too many choices. Suppose you are trying to guess the equations descriping a double pendulum: 
 
+![image](https://github.com/txt/aa24/assets/29195/595b1fc1-2cb9-4e17-910b-e36829ddf20e)
+
+Here's a system called Euekeqa making those guesses. Eurequa makes guesses, prunes the worsts ones, then experimetns with the better ones. As shown here, there are very few best and so mnay
+worst. 
+
+![image](https://github.com/txt/aa24/assets/29195/f85600ab-0d88-4972-a3a3-814301695f5b)
+
+Problems:
+
+-  **Verification** If a human wanted to check that Eureka dahn't missied anyrhing, do they have to check all these solutions?
+
+- **Cogntive fatique** If Eureqa wants to check that its solutions are human-acceptabe, does a human ahve to check all these dots whenever they are generated?
+
+By the time this subject is over, you'll ahve working answers to both these problems. You will be Kings and Queens of choice.
