@@ -8,13 +8,14 @@
 
 # Choice
 
-<img src="https://github.com/txt/aa24/assets/29195/7daf9b06-684e-46cc-ad7d-749aa9e51881" align=right width=500>
+<img src="https://github.com/txt/aa24/assets/29195/7daf9b06-684e-46cc-ad7d-749aa9e51881" align=right width=400>
 
 In a world:
 - where generative AI automates numerous low-level SE tasks
 - where Starlnk and  and ChinaSat and SatNet and Project Kuiper and ViaSat abd HughesNet and OneWeb and Eutelsat and Telesat etc connect every programmer on earth
-  - even those willing to work for $\rac{1}{2-}$th of USA saleries
-
+  - even those willing to work for 5% of American saleries
+- then the salaries for programmers are about to crash, big time.
+  
 In that world,  do not want to be a programmer:
 - You want to be the planning person deciding what programmers do
 - Or you want to be the tester taking the code from the programmer, then assess it.
