@@ -56,16 +56,13 @@ absolute differences normalized by the size of the standard deviation.
   - Splitting the difference,  we look for things that are within d=.35; of "best"
   - For the "z-curve" (a normal curve of standard deviation = 1),
      - $x$ ranges $-3 \le x \le 3$ 
-     - .35 of th $x$ range is $.35/6 {\approx} 6%$
+     - .35 of th $x$ range is $.35/6 {\approx} 0.06%$
   - Hamlet [^hamlet] says that to be be $C$% certain of finding a certain $x_i$ at probability $p$, we need at least 
     $n(C,p)=\frac{\log{1-C}}{\log{1-p}}$ testes.
   - $n(C=.95,p=0.06)\approx 49$ tests.
 
 
 [^hamlet]:  Hamlet, R. G. (1987). Probable correctness theory. Information processing letters, 25(1), 17-22. Hamlet show that $n$ tests will find an event of proability $p$  with certainty $C(n,p)=1-(1-p)^n$ which rearrages to $n(C,p)=\frac{\log{1-C}}{\log(1-p}}$.
-
-
-
 [^rosen]: Rosenthal, R., Cooper, H., Hedges, L.: Parametric measures of effect size. The handbook
 of research synthesis 621(2), 231–244 (1994)
 [^sawil]: Sawilowsky, S.S.: New effect size rules of thumb. Journal of Modern Applied Statistical
