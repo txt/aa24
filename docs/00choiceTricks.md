@@ -63,7 +63,7 @@ where enough to predict for defects;
 - Requirements models for NASA deep space missions [^jalali] where
 two-thirds of the decision attributes could be ignored while still finding effective 
 optimizations; 
-- 11 Github issue close time data sets [^rees17 
+- 11 Github issue close time data sets [^rees17]
 where only 3 attributes (median) were needed for   effective prediction.
 
 [^men16]: Tim Menzies, Jeremy Greenwald, and Art Frank. 2006. Data mining static code
