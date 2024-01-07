@@ -21,7 +21,7 @@ In that world,  do not want to be a programmer:
 
 So  this lecture argues that "choice", not "coding" is a primary concern in SE-- which motivates   the "choice-oriented" nature of the homewords and projects in this subject.
 
-## Motivating Example:  Design of a phone
+## Motivating Example:  Design of a phone 
 
 Here is a high-level design of a phone (written in Czarnecki's "feature model" notation [^Czarnecki02]). What are some of the different kinds of phones condonned here? Given two such designs, when might you choose one,
 rather than the other?
