@@ -64,7 +64,7 @@ Github issue close time prediction, bad smell prediction, cloud
 </td>
 <td valign=top  xwidth="100px">
 <!-- -------------------------------- -->
-Jan09&nbsp;:&nbsp;<a href="/docs/00choice">Choice</a><br>
+Jan09&nbsp;:&nbsp;<a href="/docs/00choice.md">Choice</a><br>
 Jan11&nbsp;:&nbsp;<br>
 Jan16&nbsp;:&nbsp;<br>
 Jan18&nbsp;:&nbsp;<br>
