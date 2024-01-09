@@ -41,6 +41,5 @@ Work any braching system you like but  students will lose marks if we do not see
 
 For weeks 2,3,4 work from [gate.lua](https://github.com/timm/lo/blob/6jan24/src/gate.lua). After that, move to [mylo.lua](https://github.com/timm/lo/blob/6jan24/src/mylo.lua).
 
-
 - do eg.gate
 

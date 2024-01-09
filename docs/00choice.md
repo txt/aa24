@@ -143,8 +143,6 @@ There is a need to integrate methods for automating choice into legislative fram
 -  On the other hand, we cannot certify all configurations, as there are easily billions.
 -  More generally, this **certification problem** is an example of the **generalization** problem.
 
-
-
 Another open challenge is the integration of human and artificial intelligence while making choices.  
 - There are different kinds of stakeholders so our tools must be tailored to their different needs.
 - When choices conflict, subjective stakeholder opinion becomes important since those opinions let us make trade-offs across the decision space. e.g. of all the houses we could build,
@@ -178,3 +176,4 @@ Problems:
 By the time this subject is over, you'll ahve working answers to both these problems. You will be Kings and Queens of choice.
 
 [^schmidt]: Schmidt, Michael D. and Hod Lipson. “Distilling Free-Form Natural Laws from Experimental Data.” Science 324 (2009): 81 - 85. https://faculty.washington.edu/morgansn/pmwiki/uploads/Site/schmidt-science2009.pdf
+

@@ -1,4 +1,10 @@
-=
+<a name=top><br>
+  <p align=center>&nbsp;<a href="/README.md#top">home</a> ::
+  <a href="/docs/syllabus.md#top">syllabus</a> ::
+  <a href="https://docs.google.com/spreadsheets/d/1YHZPRLfchksx541yaojJE_loOh2g4FaVKtrVcquoYIw/edit#gid=0">groups</a> ::
+  <a href="/LICENSE.md#top">&copy;&nbsp;2024</a>, <a href="http:/timm.fyi">Tim Menzies</a><br>
+  <a href="/README.md#top"><img width=600  
+     src="/etc/img/ase24.png"></a></p>
 
 # Tricks to Simplify Choice
 
@@ -28,7 +34,6 @@ This tactic is used in genetic algortihms [^holland]:
 [^holland]:  John H. Holland, " Genetic Algorithms", Scientific American, Vol. 267, No. 1 (JULY 1992), pp. 66-73 (8 pages). https://www.jstor.org/stable/24939139
 
 ## Automated Support for Better Choices 
-
 
 ### Keys
 
@@ -80,7 +85,6 @@ models in software engineering. 79–86
 [^rees17]: Ritch Rees-Jones, Matthew Martin, and Tim Menzies. 2017. Better predictors for
 issue lifetime. arXiv preprint arXiv:1702.07735 (2017)
 
-
 One way to see how many keys are in a system is to ask how many {\em prototypes} (minimum number of examples)  are required to explore that system. 
 - At PROMISE"08, the keys were found in 50 examples (selected at random) since the models built from this small sample performed no worse than the models learned from thousands of additional examples [^me08a].
 - In 2023 we made a similar observation.  In a study that explored 20 years of data from 250 Github projects with 6000 commits per project (average).
@@ -130,13 +134,11 @@ absolute differences normalized by the size of the standard deviation.
     $n(C,p)=\frac{\log{1-C}}{\log{1-p}}$ testes.
   - $n(C=.95,p=0.06)\approx 49$ tests.
 
-
 [^hamlet]:  Hamlet, R. G. (1987). Probable correctness theory. Information processing letters, 25(1), 17-22. Hamlet show that $n$ tests will find an event of proability $p$  with certainty $C(n,p)=1-(1-p)^n$ which rearrages to $n(C,p)=\frac{\log{1-C}}{\log(1-p}}$.
 [^rosen]: Rosenthal, R., Cooper, H., Hedges, L.: Parametric measures of effect size. The handbook
 of research synthesis 621(2), 231–244 (1994)
 [^sawil]: Sawilowsky, S.S.: New effect size rules of thumb. Journal of Modern Applied Statistical
 Methods 8(2), 26 (2009)
-
 
 ### Use more X than Y
 
@@ -185,3 +187,4 @@ Rules, not instances
 
 incremental learn surrogates as you go
 -  seqeantial model optimization:  focus on where the surrogate disagrees
+
