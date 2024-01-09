@@ -98,7 +98,7 @@ Apr23&nbsp;:&nbsp;no&nbsp;class<br>
 May3&nbsp;:&nbsp;Grades&nbsp;posted<br>
 </td>
 <td valign=top>
-Jan16&nbsp;:&nbsp; <a href="/docs/hw2.md">Hw2</a><br>
+Jan16&nbsp;:&nbsp; <a href="/docs/hw02.md">Hw2</a><br>
 Jan23&nbsp;:&nbsp; Hw3<br>
 Jan30&nbsp;:&nbsp; Hw4<br>
 Feb06&nbsp;:&nbsp; Hw5<br>
