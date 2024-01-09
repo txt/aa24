@@ -91,9 +91,9 @@ Exams are done individually. Everything else is done in  groups of 3 (groups of 
 |group | group/solo | mark| notes                                                      | 
 |------|--------|------------|-----------------------------------------------|
 |homeworks (ten)|group       | 9 \* 2    |      | 
-|mid-term       |solo        | 30        | mid-term                                | 
-| quiz          |solo        | 4 \* 3        |                                   |
-|project        |group        | 40        | project report                          |
+|mid-term       |solo        | 30        | mid-term               | 
+| quiz          |solo        | 4 \* 3    |                                   |
+|project        |group       | 40        | project report                          |
 
 With the final grades, the following grade scale will be used: 
 

@@ -64,7 +64,7 @@ Github issue close time prediction, bad smell prediction, cloud
 </td>
 <td valign=top  xwidth="100px">
 <!-- -------------------------------- -->
-Jan09&nbsp;:&nbsp;<a href="/docs/00choice.md">Choice</a><br>
+Jan09&nbsp;:&nbsp;<a href="https://github.com/timm/lo/blob/main/docs/gate.pdf">AI+SE=Ez</a><br>
 Jan11&nbsp;:&nbsp;<br>
 Jan16&nbsp;:&nbsp;<br>
 Jan18&nbsp;:&nbsp;<br>
@@ -98,18 +98,18 @@ Apr23&nbsp;:&nbsp;no&nbsp;class<br>
 May3&nbsp;:&nbsp;Grades&nbsp;posted<br>
 </td>
 <td valign=top>
-Jan16&nbsp;:&nbsp; Hw1<br>
-Jan23&nbsp;:&nbsp; Hw2<br>
-Jan30&nbsp;:&nbsp; Hw3<br>
-Feb06&nbsp;:&nbsp; Hw4<br>
+Jan16&nbsp;:&nbsp; <a href="/docs/hw2.md">Hw2</a><br>
+Jan23&nbsp;:&nbsp; Hw3<br>
+Jan30&nbsp;:&nbsp; Hw4<br>
+Feb06&nbsp;:&nbsp; Hw5<br>
 Feb13&nbsp;:&nbsp;&nbsp;wellness&nbsp;day<br>
-Feb20&nbsp;:&nbsp; Hw5<br>
-Feb27&nbsp;:&nbsp; Hw6<br>
-Mar05&nbsp;:&nbsp; Hw7<br>
+Feb20&nbsp;:&nbsp; Hw6<br>
+Feb27&nbsp;:&nbsp; Hw7<br>
+Mar05&nbsp;:&nbsp; Hw8<br>
 Mar12&nbsp;:&nbsp; break<br>
 Mar19&nbsp;:&nbsp; midterm<br>
-Mar26&nbsp;:&nbsp; Hw8<br>
-Apr02&nbsp;:&nbsp; Hw9<br>
+Mar26&nbsp;:&nbsp; Hw9<br>
+Apr02&nbsp;:&nbsp; Hw10<br>
 Apr09&nbsp;:&nbsp; - <br>
 Apr16&nbsp;:&nbsp; - <br>
 Apr22&nbsp;:&nbsp;&nbsp;monday,&nbsp;project<br>

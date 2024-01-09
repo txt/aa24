@@ -8,6 +8,12 @@
 
 # projects
 
+so many asusmptions in the maths. what
+happens if they are vioalated? can you
+build an isntane generator that cretes
+problems that are easily solved/ hard to solve
+via the methods of this class?
+
 ## basic
 
 banchmark smo againt random, rrp
