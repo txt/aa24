@@ -13,7 +13,7 @@
 |What | CSC 591-021 (4435) SP Topic CSC (Lecture)<br> CSC 791-021 (5343) Advncd Topics CSC (Lecture) |
 | When  | TuTh 11:45AM - 1:00PM    |
 |Where| room 01025  Engineering Building 2  |
-|Who |  Tim Menzies, timm@ieee.org   <br> Office hours: 1:30 to 3:30 Tuesdays, in my office    (no appointment necessary, first come, first serve)<br> Room: 3304:EB2 <br>    Phone: 304 376 2859 (\*) |
+|Who |  Tim Menzies, timm@ieee.org   <br> Office hours: 2pm to 4pm Tuesdays, in my office    (no appointment necessary, first come, first serve)<br> Room: 3304:EB2 <br>    Phone: 304 376 2859 (\*) |
 
 (\*)  Please, please, do not use this number, except in the most dire of circumstances.  (e.g. car crash on way to exam).
 
