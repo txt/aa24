@@ -26,6 +26,16 @@ table9 of https://arxiv.org/pdf/2311.17483.pdf: how well do any of those work wi
 
 ## process
 
+- prior knowledge
+   - LLMs
+   - assume that we've already run a choice session before
+     - so divide training data in half
+     - do what we nornally do on one half
+       - see how quickly we can do it again 
+- multiple xperts
+  - dont ask one oracle, ask n
+  - warning: experts often disagree. how to handle disputes between experts
+    - some rig where the level of disagreement is a dial and can crank "disagree" up from 0 to always (with many stops in between)
 - management team: milestones management, user liason,
   task priorization
 - tooling team: doc, scripts, short cuts, pre-, post- commit hooks
