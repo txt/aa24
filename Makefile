@@ -11,3 +11,6 @@ HEAD='BEGIN {RS=""; FS="\n"} NR==1 { print($$0 "\n"); exit }'
 	@gawk --source $(HEAD) ../README.md >  _tmp
 	@gawk --source $(BODY) $@           >> _tmp
 	@mv _tmp $@
+
+~/tmp/%.pdf : %.md
+	pandoc   -T $^ -N -s --pdf-engine=pdflatex -V 'geometry:margin=1in' -V 'fontfamily:dejavu' --highlight-style tango -o $@ $^

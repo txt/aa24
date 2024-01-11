@@ -65,6 +65,8 @@ Github issue close time prediction, bad smell prediction, cloud
 <td valign=top  xwidth="100px">
 <!-- -------------------------------- -->
 Jan09&nbsp;:&nbsp;<a href="https://github.com/timm/lo/blob/main/docs/gate.pdf">AI+SE=Ez</a><br>
+Jan11&nbsp;:&nbsp;<a href="https://github.com/timm/lo/blob/main/docs/00choice.pdf">Choice</a>;<a 
+href="https://github.com/timm/lo/blob/main/docs/details1.pdf">Details1</a><br>
 Jan11&nbsp;:&nbsp;<br>
 Jan16&nbsp;:&nbsp;<br>
 Jan18&nbsp;:&nbsp;<br>
