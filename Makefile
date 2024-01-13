@@ -13,4 +13,7 @@ HEAD='BEGIN {RS=""; FS="\n"} NR==1 { print($$0 "\n"); exit }'
 	@mv _tmp $@
 
 ~/tmp/%.pdf : %.md
-	pandoc   -T $^ -N -s --pdf-engine=pdflatex -V 'geometry:margin=1in' -V 'fontfamily:dejavu' --highlight-style tango -o $@ $^
+	pandoc   -T $^ -N -s --pdf-engine=pdflatex \
+            -V 'geometry:margin=1in' -V 'fontfamily:dejavu' \
+           --highlight-style tango \
+           -V fontsize=14pt -o $@ $^
