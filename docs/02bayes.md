@@ -6,7 +6,7 @@ geometry: margin=1in
 geometry: landscape
 documentclass: article
 fontfamily: dejavu
-font-size: 12pt
+font-size: 14pt
 header-includes: |
     \usepackage{graphicx}
     \usepackage{titlesec}\newcommand{\sectionbreak}{\clearpage}
@@ -39,7 +39,7 @@ columns and rows of data.
             {Clndrs Volume Hpx  Lbs-  Acc+   Model   origin  Mpg+}
             ------- ------ ---  ----  -----  ------  ------  ------
 t1= {cells= {4      97     52   2130  24.6   82      2       40}}
-t2= {cells= {4      97     54   2254  23.5   72      2       20}}:v
+t2= {cells= {4      97     54   2254  23.5   72      2       20}}
 t3= {cells= {4      97     78   2188  15.8   80      2       30}}
 t4= {cells= {4      151    90   2950  17.3   82      1       30}}
 t5= {cells= {6      200    ?    2875  17     74      1       20}}
@@ -101,16 +101,15 @@ function SYM.div(i,x) --> n; return the entropy, calculated via Shannon entropy
   return -e end
 ```
 
-![](entropy.png){ width=400px }
+X(entropy.png){ width=400px }
 
 By the way, to understand SYM.div (entropy), think of it as
 - the effort required by binary chop to find clumps of a signal hiding in a stream of noise
 
 
 e.g. in a vector of size 4,
-
-  - nazis have a "1" near one end
-  - and England are all the other bits
+- nazis have a "1" near one end
+- and England are all the other bits
 - This means that 1/4% of the time we need to do binary chops to find nazies (i.e. $p_{\mathit{nazis}}=.25$)
 - and 75% if the time we need to binary chops to find Englad (i.e. $p_{\mathit{england}}$=.75)
 - Each chop will cost us $log2(p_i)$ so the total effort is $e=-\sum_i(p_i\times log_2(p_i))$ 
@@ -171,23 +170,24 @@ This function was extended, extensively by Gauss. Now its a curve with an area u
   As standard deviation shrinks, the curve spikes upwards.
 
 
-<p align=center><img align=center src="/etc/img/norm.png" align=right width=600></p>
+XXX[](=center src="/etc/img/norm.png" align=right width=600></p>
 
 
 To sample from a normal curve
 from a Gaussian with mean `mu` and diversity `sd`
 
 
-      mu + sd * sqrt(-2*log(random)) * cos(2*pi*random)
+$$  mu + sd * sqrt(-2*log(random)) * cos(2*pi*random) $$
 
 
 _Beware:_
 Not all things are normal Gaussians. 
-<img src="/etc/img/weibull.png" align=right width=300 > If you want to get fancy, you can use Weibull functions
+![](https://github.com/timm/tested/raw/9a4e952aac75352ddc87ae17bd0881d6a5c93b62/etc/img/norm.png)
+ If you want to get fancy, you can use Weibull functions
 to make a variety of shapes (just by adjusting $\lambda,k$):
 
 
-<p align=center><img src="/etc/img/weibulleq.png" wdith=300 ></p>
+X(https://github.com/timm/tested/blob/9a4e952aac75352ddc87ae17bd0881d6a5c93b62/etc/img/weibulleq.png) 
 
 
 Or you could forget all about parametric assumptions.
@@ -195,7 +195,7 @@ Many things get improved by going beyond the Gaussian guess [^dou95]:
 Not everything is best represented by a smooth curve with one peek that is symmetrical around that peek:
 
 
-<img width=400 src="https://github.com/txt/fss17/raw/master/img/notnorm8.png">
+X(https://github.com/txt/fss17/raw/master/img/notnorm8.png)
 
 
 To go fully non-parametric, use reservoir sampling (below). Then to sample, grab three numbers $a,b,c$ and use $x=a+f\times(b-c)$ for some small $f$ (say $f=0.1$).
