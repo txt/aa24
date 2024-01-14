@@ -14,7 +14,7 @@ In a world:
 
 - where generative AI automates numerous low-level SE tasks
 - where Starlnk and  and ChinaSat and SatNet and Project Kuiper and ViaSat abd HughesNet and OneWeb and Eutelsat and Telesat etc connect every programmer on earth
-  - even those willing to work for 5% of American saleries
+  - even those willing to work for 5% of American salaries
 - then the salaries for programmers are about to crash, big time.
   
 In that world,  do not want to be a programmer:
@@ -45,14 +45,14 @@ centers, in Android phones, just to name a few). That kernel has a
 grow number of thousands of features [^passos], each of which can
 be selected, or ignored in a particular system.
 
-<img width="533" alt="image" src="https://github.com/txt/aa24/assets/29195/0a8a63aa-a9fe-4fff-8007-1d0b216a1c0e">
+![](https://github.com/txt/aa24/assets/29195/0a8a63aa-a9fe-4fff-8007-1d0b216a1c0e)
 
 \newpage
 
 # SE is not about coding (usually)
 
 Since there are so many of them, much of software engineering is
-not about coding. Rather it about the exporation and assessment of
+not about coding. Rather it about the exploration and assessment of
 choice.
 
 - Long et al. [^long23] ask the question "how much of SE is coding and how much is something else?".
@@ -85,16 +85,16 @@ One thing that
 falls across all the above phases and activities  is _choice_.
 
 - requirements means helping stakeholders trade-off between choices;
-- design means exploring and decising implementation choices;
+- design means exploring and assessing implementation choices;
 - testing (all kinds) means choosing to test for this and not for that
-  (since we cannot test for everthing).
-- evalaution means choosing that A,B,C is more important than D,E,F,....
+  (since we cannot test for everything).
+- evaluation means choosing that A,B,C is more important than D,E,F,....
 
-## So Many Choicesy
+## So Many Choices
 
 Choice is a **big issue** since there are so many choices and we usually do them so badly:
 
-- Textbooks describing agile processes mentions  over 128 options for  managing agile projects. A model  of  these options has  over a sextillion choices (2<sup>128</sup>=10<sup>38</sup>).   Some of these options are inherently discriminatory against  smaller organizations or organizations that include newcomers to the profession of programming.
+- Textbooks describing agile processes mentions  over 128 options for  managing agile projects. A model  of  these options has  over a sextillion choices ($2^{128}=10^{38}$)).   Some of these options are inherently discriminatory against  smaller organizations or organizations that include newcomers to the profession of programming.
 - Theorem provers are AI tools for solving logical equations. State-of-the-art theorem provers use a wide range of optional tricks to solve different kinds of problems. For example, the cvc5 smt-lib solver comes with 400 configuration choices (of which 268 are labeled "experts only", see https://cvc5.github.io/docs/cvc5-1.0.8/options.html). Just think about that. Theorem provers are used to check safety critical systems-- and the conclusions they generate are a quirk of what config settings we use.
 
 [^passos]: L. Passos, et al.,"A Study of Feature Scattering in the Linux Kernel" in IEEE Transactions on Software Engineering, vol. 47, no. 01, pp. 146-164, 2021. doi: 10.1109/TSE.2018.2884911
@@ -130,8 +130,8 @@ Here are 10,000 configuration choices for data miners about
 
 [^cruz21]: F.Cruz, P. Saleiro, C. Belem, C. Soares and P. Bizarro, "Promoting Fairness through Hyperparameter Optimization," IEEE ICDM, 2021, pp. 1036-1041, doi: 10.1109/ICDM51629.2021.00119.
 
-(Aside: the choices inside a learner are called the hyperparameters. 
-The hyperparameters of (e.g.) Random Forests, learners include (a) how many $T$ trees to
+(Aside: the choices inside a learner are called the hyper-parameters. 
+The hyper-parameters of (e.g.) Random Forests, learners include (a) how many $T$ trees to
 build (e.g., $T \in \{10, 20, 40, 80, 160\}$); (b) how many features $F$ to use in each tree
 (e.g., $F \in\{2, 4, 10, 20, sqrt, log2, all\}$); (c) how to poll the whole forest (e.g., majority or
 weighted majority); (d) what impurity measures (e.g., gini or entropy or log.loss); (e) what
@@ -185,7 +185,6 @@ Another open challenge is the integration of human and artificial intelligence w
 - Once an algorithm proposes some choices, it may still be up to stakeholders to decide which choices are inappropriate. 
 For example, researchers exploring the requirements   for London ambulances, found that  the feasible solutions formed a couple of different clusters [^veerappa].
 
-
 [^veerappa]: V. Veerappa and E. Letier, "Understanding clusters of optimal solutions in multi-objective decision problems," 2011 IEEE 19th International Requirements Engineering Conference, Trento, Italy, 2011, pp. 89-98, doi: 10.1109/RE.2011.6051654..
 
 This tells us that there is not one solution, but several, and humans are needed to decide which solution they prefer. Many researchers work towards supporting this kind of human-in-the-loop decision making . 
@@ -194,7 +193,8 @@ This tells us that there is not one solution, but several, and humans are needed
 
 # Too Many Choices?
 
-But here's the biggest challenge: too many choices. Suppose you are trying to guess the equations descriping a double pendulum: 
+But here's the biggest challenge: too many choices. Suppose you are trying to guess 
+the equations describing a double pendulum: 
 
 ![](https://github.com/txt/aa24/assets/29195/595b1fc1-2cb9-4e17-910b-e36829ddf20e){ width=500px}
 
@@ -205,10 +205,11 @@ worst.
 
 Problems:
 
--  **Verification** If a human wanted to check that Eureka dahn't missied anyrhing, do they have to check all these solutions?
-- **Cogntive fatique** If Eureqa wants to check that its solutions are human-acceptabe, does a human ahve to check all these dots whenever they are generated?
+-  **Verification** If a human wanted to check that Eureka had not  missed anything, do they have to check all these solutions?
+- **Cognitive fatigue** If Eureqa wants to check that its solutions are human-acceptable, does a 
+human have to check all these dots whenever they are generated?
 
-By the time this subject is over, you'll ahve working answers to both these problems. You will be Kings and Queens of choice.
+By the time this subject is over, you'll have working answers to both these problems. You will be Kings and Queens of choice.
 
 [^schmidt]: Schmidt, Michael D. and Hod Lipson. "Distilling Free-Form Natural Laws from Experimental Data." Science 324 (2009): 81 - 85. https://faculty.washington.edu/morgansn/pmwiki/uploads/Site/schmidt-science2009.pdf
 
