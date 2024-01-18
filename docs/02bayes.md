@@ -52,8 +52,8 @@ Things to watch for are
 |order,&nbsp;sort&nbsp;<, > | N | Y | Y | Y |
 |+&nbsp;or&nbsp;- | N | N |Y | Y|
 |* &nbsp;or&nbsp;/ | N | N |N | Y|
-|centrality(mid) | mode<br>(most common symbol)| mode | mean  $(\sum_i x_i)/n$<br>median (50th percentile) | mean,median|
-|diversity<br>(div)  | entropy<br> (effort to recreate signal)<br> $e=-\sum_i(p_i\times log_2(p_i))$    | entropy | standard deviation<br> (distances from the  mean) <br> $\sigma = \sqrt{\frac{\sum_i(x_i-\mu)^2}{n-1}}$<br>IQR: inter-quartile range<br>(75th-25th) percentile | standard deviation|
+|centrality(mid) | mode<br>(most common symbol)| mode | |mean  $(\sum_i x_i)/n$<br>median (50th percentile) | 
+|diversity<br>(div)  | entropy<br> (effort to recreate signal)<br> $e=-\sum_i(p_i\times log_2(p_i))$    | entropy | |standard deviation<br> (distances from the  mean) <br> $\sigma = \sqrt{\frac{\sum_i(x_i-\mu)^2}{n-1}}$<br>IQR: inter-quartile range<br>(75th-25th) percentile | 
 
 \normalsize
 
@@ -140,6 +140,10 @@ This function was extended, extensively by Gauss. Now its a curve with an area u
   As standard deviation shrinks, the curve spikes upwards.
 
 ![](https://github.com/timm/tested/raw/9a4e952aac75352ddc87ae17bd0881d6a5c93b62/etc/img/norm.png)
+
+[^deMo1718]: Hald, Anders (1990), "De Moivre and the Doctrine of Chances, 1718, 1738, and 1756", History of Probability and Statistics and Their Applications before 1750, Wiley Series in Probability and Statistics, Wiley Interscience, p. 397.
+
+[^Lap1812]: Laplace, Pierre-Simon (1812). Théorie analytique des probabilités [Analytical theory of probabilities]. Paris, Ve. Courcier.
 
 To sample from a normal curve
 from a Gaussian with mean `mu` and diversity `sd`
@@ -266,7 +270,7 @@ More generally, the above is just an application of Bayes' Theorem.
 
 Probability of event H given evidence E:
 
-$$P(H|E) = \frac{P(H) \times \sum_x P(E_x|H)}{P(E)} $$
+$$P(H|E) = \frac{P(H) \times \prod_x P(E_x|H)}{P(E)} $$
 
 A _priori probability_ of $H$ is $P(H)$.
 
@@ -304,7 +308,7 @@ Return the classification with highest probability
 
 # Pragmatics
 
-## Probability of the evidence Pr[E]
+## Probability of the evidence P[E]
 
 + Constant across all possible classifications;
 + So, when comparing N classifications, it cancels out
@@ -323,7 +327,7 @@ What if an attribute value doesn't occur with every class value (e.g. "Humidity 
 
 + Probability will be zero!
 + Pr[Humidity = High | yes] = 0
-+ A posteriori probability will also be zero! Pr[ yes | E] = 0 (No matter how likely the other values are!)
++ A posteriori probability will also be zero! P[ yes | E] = 0 (No matter how likely the other values are!)
 
 So use an estimators for low frequency attribute ranges
 
