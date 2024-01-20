@@ -20,6 +20,7 @@ sssdas
   - taken seriously by some [^Bakg]
 - spiral model: iterate to explore and (hopefully) retire risk, before committing to a fixed plan
 
+<img width="658" alt="image" src="https://github.com/txt/aa24/assets/29195/d8037ca9-0195-45ec-a5ed-dcc5d8c306f8">
 
 
 [^Bakg]: Bakhirkin, M.V., Lukin, V.N. (2022). Agilefall—Modern Realities of IT Project Management. In: Favorskaya, M.N., Nikitin, I.S., Severina, N.S. (eds) Advances in Theory and Practice of Computational Mechanics. Smart Innovation, Systems and Technologies, vol 274. Springer, Singapore. https://doi.org/10.1007/978-981-16-8926-0_26
