@@ -24,10 +24,10 @@ From [^fayyad96].
     - So why not keep the outliers? Cluster the data into many groups, and build different models
       for each group. 
 2. Data Integration:
-  - Data often comes from many sources, each with its own format and structure. 
-  - Must be mergeds this data into a unified set, ensuring consistency and reducing redundancy.
-  - Quandry: here you make decisions about what data to exclude... without knowledge of 
-    what is going on in the data.
+   - Data often comes from many sources, each with its own format and structure. 
+   - Must be mergeds this data into a unified set, ensuring consistency and reducing redundancy.
+   - Quandry: here you make decisions about what data to exclude... without knowledge of 
+     what is going on in the data.
 3. Data Selection: 
    - Not all data is relevant for every analysis. 
    - Here, you’ll select the subset of data that pertains to your specific objective.
@@ -65,11 +65,11 @@ From [^fayyad96].
    - Using various algorithms and techniques, patterns, trends, and relationships are extracted from the data.
    - Tuning of control parameters
 6. Pattern Evaluation:
-  - Not all patterns are useful or interesting. This step helps filter out the noise, ensuring only valuable insights are considered.
-  - Feedback from business users (often means going back and doing it all again)
+   - Not all patterns are useful or interesting. This step helps filter out the noise, ensuring only valuable insights are considered.
+   - Feedback from business users (often means going back and doing it all again)
 7. Knowledge Presentation:
-  - The black art of presenting complex things in a simple matter
-  - Very audience specific
+   - The black art of presenting complex things in a simple matter
+   - Very audience specific
     - e.g. At NASA, talking to maanagers who do 10 times 30 minute meetings per day,
       I always worked on the "one slide" rule (they could only "swap" in one slide of info).
 
