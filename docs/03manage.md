@@ -6,7 +6,7 @@ sssdas
 
 <img width="500" align=right alt="image" src="https://github.com/txt/aa24/assets/29195/197aea1a-8930-487a-993a-192da5787f70">
 
-LexisNexis asked us to use AI to help manage their cloud services:
+LexisNexis asked us to use AI to help manage their cloud services [^chen]:
 
 - Mis-managed cloud services results in server downtime and an associated loss of revenue, 
   - particularly for organizations with penalty clauses in their service contracts. 
@@ -18,6 +18,9 @@ LexisNexis asked us to use AI to help manage their cloud services:
   - Spike prediction is cmplicatied by rapidly changing nature of cloud environments. For example, 
   - In the year or two, LexisNexis has retired its locally managed CPU farms in favor of CPU farms managed by multiple major cloud vendors. 
   - Given the rapid pace of change in this area, more changes are expected soon.
+
+[^chen]: Jianfeng Chen, Joymallya Chakraborty, Philip Clark, Kevin Haverlock, Snehit Cherian, and Tim Menzies. 2019. Predicting Breakdowns in Cloud Services (with SPIKE). 
+FS'19 (industrial track).  August 26–30, 2019, Tallinn, Estonia. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3338906.3340450
 
 Initially, we imagined that we would be building a recommender system that would
 
@@ -42,15 +45,20 @@ of calling/texting to get everyone we need into a conference call”.
 So welcome to the management of AI-releated projects
 - Initial plans... change
 
-## How to Plan for Change?
+## How to Manage Projects When the Requirements Keep Changing?
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*k66hoz5Y_9DId_a3UrgIpA.jpeg"
      width=500 align=right>
 
-- waterfall: plan-based [^Royce70]
+-  waterfall: plan-based [^Royce70]
   - a linear walk through analysis, design, code, test with 
     feedback from `step[i]` updating `step[i+1]`.  <br clear=all>
 
+- spiral model: slowly, iterate to explore and (hopefully) retire risk, before committing to a fixed plan [^Boehm88].
+
+<img width="658" alt="image" src="https://github.com/txt/aa24/assets/29195/d8037ca9-0195-45ec-a5ed-dcc5d8c306f8">
+
+<br clear=all>
 
 <img width=500 align=right   alt="image" src="https://github.com/txt/aa24/assets/29195/0b8727c4-912b-4026-aaaf-91ba699beef3">
 
@@ -64,9 +72,6 @@ So welcome to the management of AI-releated projects
   - usually a pejorative term.
     - we pretend to be agile but actually, we never adapt to change.
   - taken seriously by some [^Bakg]
-- spiral model: iterate to explore and (hopefully) retire risk, before committing to a fixed plan [^Boehm88].
-
-<img width="658" alt="image" src="https://github.com/txt/aa24/assets/29195/d8037ca9-0195-45ec-a5ed-dcc5d8c306f8">
 
 [^hoda]: Hoda, Rashina, Norsaremah Salleh, and John Grundy. "The rise and evolution of agile software development." IEEE software 35.5 (2018): 58-63.
 [^agile]: Beck, K., Beedle, M., Van Bennekum, A., Cockburn, A., Cunningham, W., Fowler, M., Grenning, J., Highsmith, J., Hunt, A., Jeffries, R. and Kern, J., 2001. Manifesto for agile software development. https://agilemanifesto.org/
@@ -74,7 +79,9 @@ So welcome to the management of AI-releated projects
 [^Bakg]: Bakhirkin, M.V., Lukin, V.N. (2022). Agilefall—Modern Realities of IT Project Management. In: Favorskaya, M.N., Nikitin, I.S., Severina, N.S. (eds) Advances in Theory and Practice of Computational Mechanics. Smart Innovation, Systems and Technologies, vol 274. Springer, Singapore. https://doi.org/10.1007/978-981-16-8926-0_26
 [^Boehm88]: Boehm, B (August 1986). "A Spiral Model of Software Development and Enhancement". ACM SIGSOFT Software Engineering Notes. 11 (4): 14–24. doi:10.1145/12944.12948. S2CID 207165409.  https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf
 
-## Some  Variants:
+## My  Variants:
+
+I've often had to offer project plans to companies that like fixed price structures. So I offer them the following:
 
 - Timm1: hop, skip, jmup
   - hop : fixed time (e.g. three months), no fixed deliverables (just a progress report), a few people
@@ -89,8 +96,12 @@ So welcome to the management of AI-releated projects
   - month2:  I'm beginning to see what is going on, code up analysis tools
   - month3:  I know what I'm doing, I'm trying different things
   - month4:  Finally, we can say useful things to the local experts and they can  undersand what I am doing. Much interaction and interpreation of results.  Report writing.
-  
-- Karpathy: Software 2.0 [^kel]
+ 
+## Other Variants
+
+ 
+- 2017: Karpathy: Software 2.0 [^kel]
+  - One perpetually prototyping team supporting another standard SE team
   - Team1: standard se. development. GUIs. Database optimization. etc etc etc 
   - Team2: define choice space for Team1. Explore choices with an optimizer
     - "Gradient descent can write better code than you. I'm sorry".
@@ -107,4 +118,8 @@ So welcome to the management of AI-releated projects
 
 
 [^kel]: Andrej Karpathy, Software 2.0, https://karpathy.medium.com/software-2-0-a64152b37c35, [pdf](soft2.pdf), Nov 11, 2017
+
+
+- 2019: Microsoft's analytics team:
+
 
