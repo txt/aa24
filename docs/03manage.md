@@ -104,7 +104,7 @@ From [^fayyad96].
        via SMOTE: <img align=right width=500 src="smote.png" width=600>
        - find k nearest neighbors of same klass
        - interpolate a new example at a random distance between you and one of those k
-       - SMOTE has some magic control parameters, which should be tuned [^agrawal24]
+       - SMOTE has some magic control parameters, which should be tuned [^agrawal18]
      - For a study of numerous other methods, see [^ling25]. <br clear=all>
 5. Data Mining:
    - Using various algorithms and techniques, patterns, trends, and relationships are extracted from the data.
