@@ -14,11 +14,14 @@ Once upon a time, Lexis Nexis wanted
   - a linear walk through analysis, design, code, test with 
     feedback from `step[i]` updating `step[i+1]`. 
 
+
+<img width=500 align=right   alt="image" src="https://github.com/txt/aa24/assets/29195/0b8727c4-912b-4026-aaaf-91ba699beef3">
+
 - agile: maintain a backlog of stuff not yet done [^agile] [^hoda]
   - loop
     - sort backlog by value/time
     - sprint to finish the top N items
-    - repeat
+    - repeat <br clear=all>
 - agilefall : working at a continuum between plan-driven (a.k.a. waterfall) 
   project management and agile project management
   - usually a pejorative term.
