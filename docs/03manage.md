@@ -9,7 +9,7 @@
 
 # Management AI projects
 
-"Most of data _mining_ is really data _pre-processing."
+"Most of data _mining_ is really data _pre-processing_."
 
 
 ## Case Study
