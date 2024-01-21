@@ -119,7 +119,20 @@ I've often had to offer project plans to companies that like fixed price structu
 
 [^kel]: Andrej Karpathy, Software 2.0, https://karpathy.medium.com/software-2-0-a64152b37c35, [pdf](soft2.pdf), Nov 11, 2017
 
+- 2019: Microsoft's analytics team [^Amershi19]:
 
-- 2019: Microsoft's analytics team:
+[^Amershi19]: S. Amershi et al., "Software Engineering for Machine Learning: A Case Study," 2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP), Montreal, QC, Canada, 2019, pp. 291-300, doi: 10.1109/ICSE-SEIP.2019.00042.
 
+
+  <img width="898" alt="image" src="https://github.com/txt/aa24/assets/29195/44c95f45-bdff-4011-9e95-f20960b23048">
+
+- 2017, time spent on variaous tasks in a data science team [^kim17]
+
+  <img width="565" alt="image" src="https://github.com/txt/aa24/assets/29195/604e9079-6479-46e6-93f4-9c6701733232">
+
+  <img width="823" alt="image" src="https://github.com/txt/aa24/assets/29195/898c03ef-054c-48c7-97d9-8f28421a42b6">
+
+
+
+[^kim17]: Kim, M., Zimmermann, T., DeLine, R., & Begel, A. (2017). Data scientists in software teams: State of the art and challenges. IEEE Transactions on Software Engineering, 44(11), 1024-1038.
 
