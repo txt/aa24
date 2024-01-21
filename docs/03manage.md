@@ -11,6 +11,51 @@
 
 "Most of data _mining_ is really data _pre-prcessing_."
 
+
+## Case Study
+
+<img width="500" align=right alt="image" src="https://github.com/txt/aa24/assets/29195/197aea1a-8930-487a-993a-192da5787f70">
+
+LexisNexis asked us to use AI to help manage their cloud services [^chen]:
+
+- Mis-managed cloud services results in server downtime and an associated loss of revenue, 
+  - particularly for organizations with penalty clauses in their service contracts. 
+  - Even down times of just a few hours is detrimental to the professional reputation of an cloud-service provider. 
+  - Poor reputation for reliability =  harder time attracting and retaining clients.
+  - Service spikes can freeze up a cloud server. 
+- Spikes like those shown below can lead to frustratingly slow systems performance (e.g. very slow displays of new web pages). 
+  - Predicting service spikes is hard since they can occur rarely and may occur as sudden extreme outliers. 
+  - Spike prediction is cmplicatied by rapidly changing nature of cloud environments. For example, 
+  - In the year or two, LexisNexis has retired its locally managed CPU farms in favor of CPU farms managed by multiple major cloud vendors. 
+  - Given the rapid pace of change in this area, more changes are expected soon.
+
+[^chen]: Jianfeng Chen, Joymallya Chakraborty, Philip Clark, Kevin Haverlock, Snehit Cherian, and Tim Menzies. 2019. Predicting Breakdowns in Cloud Services (with SPIKE). 
+FS'19 (industrial track).  August 26–30, 2019, Tallinn, Estonia. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3338906.3340450
+
+Initially, we imagined that we would be building a recommender system that would
+
+- suggest the number and type of cloud server instances that should be added or deleted
+- in order to maintain service availability (at minimum cost). 
+- In theory, such a recommender system could be learned from the historical logs of prior nominal and off-nominal behavior.
+- But, once we realized how fast the cloud services were changing, i
+  - we also realized that much of the historical log was no longer relevant to current practice. 
+
+So we changed track and asked
+“what are the major pain points of running the LexisNexis cloud
+service?”. 
+- This new question prompted our subject matter experts to
+recounted various war stories about what happens when a service
+spike occurs. 
+- “It can take five to ten minutes to realize we have a
+problem”, we were told, “after which it can take another few minutes
+of calling/texting to get everyone we need into a conference call”.
+- New goals:
+  - Build comprehensible and effective predictors for service spikes, 30 minutes into the future
+
+So welcome to the management of AI-releated projects
+- Initial plans... change
+- So how do we manage this project exploring for good ways to use AI to tame cloud computing?
+
 ## The Classic View
 
 From [^fayyad96].
@@ -82,49 +127,6 @@ From [^fayyad96].
 [^tu20]: Huy Tu, Zhe Yu, and Tim Menzies. Better data labelling with EMBLEM (and how that impacts defect prediction). IEEE Transactions on Software Engineering, 2020. https://arxiv.org/pdf/1905.01719.pdf
 
 
-
-## Case Study
-
-<img width="500" align=right alt="image" src="https://github.com/txt/aa24/assets/29195/197aea1a-8930-487a-993a-192da5787f70">
-
-LexisNexis asked us to use AI to help manage their cloud services [^chen]:
-
-- Mis-managed cloud services results in server downtime and an associated loss of revenue, 
-  - particularly for organizations with penalty clauses in their service contracts. 
-  - Even down times of just a few hours is detrimental to the professional reputation of an cloud-service provider. 
-  - Poor reputation for reliability =  harder time attracting and retaining clients.
-  - Service spikes can freeze up a cloud server. 
-- Spikes like those shown below can lead to frustratingly slow systems performance (e.g. very slow displays of new web pages). 
-  - Predicting service spikes is hard since they can occur rarely and may occur as sudden extreme outliers. 
-  - Spike prediction is cmplicatied by rapidly changing nature of cloud environments. For example, 
-  - In the year or two, LexisNexis has retired its locally managed CPU farms in favor of CPU farms managed by multiple major cloud vendors. 
-  - Given the rapid pace of change in this area, more changes are expected soon.
-
-[^chen]: Jianfeng Chen, Joymallya Chakraborty, Philip Clark, Kevin Haverlock, Snehit Cherian, and Tim Menzies. 2019. Predicting Breakdowns in Cloud Services (with SPIKE). 
-FS'19 (industrial track).  August 26–30, 2019, Tallinn, Estonia. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3338906.3340450
-
-Initially, we imagined that we would be building a recommender system that would
-
-- suggest the number and type of cloud server instances that should be added or deleted
-- in order to maintain service availability (at minimum cost). 
-- In theory, such a recommender system could be learned from the historical logs of prior nominal and off-nominal behavior.
-- But, once we realized how fast the cloud services were changing, i
-  - we also realized that much of the historical log was no longer relevant to current practice. 
-
-So we changed track and asked
-“what are the major pain points of running the LexisNexis cloud
-service?”. 
-- This new question prompted our subject matter experts to
-recounted various war stories about what happens when a service
-spike occurs. 
-- “It can take five to ten minutes to realize we have a
-problem”, we were told, “after which it can take another few minutes
-of calling/texting to get everyone we need into a conference call”.
-- New goals:
-  - Build comprehensible and effective predictors for service spikes, 30 minutes into the future
-
-So welcome to the management of AI-releated projects
-- Initial plans... change
 
 ## How to Manage Projects When the Requirements Keep Changing?
 
