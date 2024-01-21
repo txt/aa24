@@ -9,6 +9,80 @@
 
 # Management AI projects
 
+"Most of data _minging_ is data pre-prcessing."
+
+## The Classic View
+
+From [^fayyad96].
+<img src="kdd.png">
+
+[^fayyad96]: Fayyad, U., Piatetsky-shapiro, G., Smyth, P.: From Data Mining to Knowledge Discovery inDatabases. AI Magazine pp. 37–54 (1996)
+
+1. Data Cleaning:
+  - Real-world data is messy. This step involves removing any inconsistencies, errors, or outliers that might skew the results.
+    - BTW, another view on outliers... they are a speciality group you need to explore
+    - So why not keep the outliers? Cluster the data into many groups, and build different models
+      for each group. 
+2. Data Integration:
+  - Data often comes from many sources, each with its own format and structure. 
+  - Must be mergeds this data into a unified set, ensuring consistency and reducing redundancy.
+  - Quandry: here you make decisions about what data to exclude... without knowledge of 
+    what is going on in the data.
+3. Data Selection: 
+   - Not all data is relevant for every analysis. 
+   - Here, you’ll select the subset of data that pertains to your specific objective.
+   - Data selection can be very powerful 
+     - The early bird effect [^shrik23]
+     - Data collected from the first 3 months of a project does as good as anything else?
+       - Why?
+       - Most mistakes are make early in the life cycle
+       - Early data most informative on what can go wrong.
+4. Data Transformation:
+   - Data might need to be summarized, aggregated, or otherwise transformed to make it suitable for mining.
+   - Discetization: condense signals spread plus to minus infinity into a small number of bins (e.g. low, medium, high)
+   - Feature selection: some columns matter more than others. Delete noisy ones? Surprisingly 
+     effective (see [Fig2,3](fss.pdf) from [^chen05]).
+     - Freaky idea: best thing to do with most data is throw it away
+   - Instance selection: if there are repeated signals in the data, why deal with all examples?
+     Why not (e.g.) just reason about one example per cluster? [^alvarez]
+   - Labelling (adding "y" values to each example; e.g. car=good, food=tasty, code=buggy)
+     - Generating adequate labeled training data can be very expensive via human labor.
+     - For example:
+       - Two years, four people (part time) to collect and validate
+         [ 93 rows times 29 columns](https://gist.githubusercontent.com/timm/d47b8699d9953eef14d516d6e54e742e/raw/ee8ba8992d7fa6c15a74d627d149a93b8eca44be/nasa93dem.csv)
+     - For example, 
+       - Tu et al. [^tue20] has studied approximately 714 software projects, including 476,000 commit files. 
+       - After an extensive analysis, they proposed a cost model for labeling that data. 
+       - Assuming two people checking per commit, that data would need three years of effort to label the data.
+   - Imbalanced data: when the target class is rare, hard for the learner to find it.
+     - Many solutions; e.g. discard random majority samples, make more minority samples 
+       via SMOTE: <img align=right width=500 src="smote.png" width=600>
+       - find k nearest neighbors of same klass
+       - interpolate a new example at a random distance between you and one of those k
+       - SMOTE has some magic control parameters, which should be tuned [^agrawal24]
+     - For a study of numerous other methods, see [^ling25]. <br clear=all>
+5. Data Mining:
+   - Using various algorithms and techniques, patterns, trends, and relationships are extracted from the data.
+   - Tuning of control parameters
+6. Pattern Evaluation:
+  - Not all patterns are useful or interesting. This step helps filter out the noise, ensuring only valuable insights are considered.
+  - Feedback from business users (often means going back and doing it all again)
+7. Knowledge Presentation:
+  - The black art of presenting complex things in a simple matter
+  - Very audience specific
+    - e.g. At NASA, talking to maanagers who do 10 times 30 minute meetings per day,
+      I always worked on the "one slide" rule (they could only "swap" in one slide of info).
+
+
+[^shrik23]: Shrikanth N. C. and Tim Menzies. 2023. Assessing the Early Bird Heuristic (for Predicting Project Quality). ACM Trans. Softw. Eng. Methodol. 32, 5, Article 116 (September 2023), 39 pages. https://doi.org/10.1145/3583565
+[^agrawal18]: Amritanshu Agrawal and Tim Menzies. 2018. Is "better data" better than "better data miners"? on the benefits of tuning SMOTE for defect prediction. In Proceedings of the 40th International Conference on Software Engineering (ICSE '18). Association for Computing Machinery, New York, NY, USA, 1050–1061. https://doi.org/10.1145/3180155.3180197 https://arxiv.org/pdf/1705.03697.pdf
+[^ling25]: Ling, Xiao, Tim Menzies, Christopher Hazard, Jack Shu, and Jacob Beel. "Trading Off Scalability, Privacy, and Performance in Data Synthesis." arXiv preprint arXiv:2312.05436 (2023). https://arxiv.org/pdf/2312.05436.pdf
+[^chen05]: Zhihao Chen, Barry Boehm, Tim Menzies, and Daniel Port. 2005. Finding the Right Data for Software Cost Modeling. IEEE Softw. 22, 6 (November 2005), 38–46. https://doi.org/10.1109/MS.2005.151
+[^alvarez]: L. Alvarez and T. Menzies, "Don’t Lie to Me: Avoiding Malicious Explanations With STEALTH," in IEEE Software, vol. 40, no. 3, pp. 43-53, May-June 2023, doi: 10.1109/MS.2023.3244713. https://arxiv.org/pdf/2301.10407.pdf
+[^tu20]: Huy Tu, Zhe Yu, and Tim Menzies. Better data labelling with EMBLEM (and how that impacts defect prediction). IEEE Transactions on Software Engineering, 2020. https://arxiv.org/pdf/1905.01719.pdf
+
+
+
 ## Case Study
 
 <img width="500" align=right alt="image" src="https://github.com/txt/aa24/assets/29195/197aea1a-8930-487a-993a-192da5787f70">
