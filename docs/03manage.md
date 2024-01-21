@@ -140,3 +140,41 @@ I've often had to offer project plans to companies that like fixed price structu
 
 
   <img width="898" alt="image" src="https://github.com/txt/aa24/assets/29195/44c95f45-bdff-4011-9e95-f20960b23048">
+
+## Anyway, Back to LexisNexis
+
+In the end, we optimized for   comprehensibility rather than just predictive performance. 
+
+- Our experts required some report of the lessons learners that they can read, understand and audit.
+- Hence, we used data mining methods that produce human readable models (e.g. not Naive Bayes classifiers, not neural networks, not instance-based learners, not random forests).
+
+<img width="1039" alt="image" src="https://github.com/txt/aa24/assets/29195/65ef1cb9-9fae-47c8-87e7-26aaf2c66351">
+
+<img width="1026" alt="image" src="https://github.com/txt/aa24/assets/29195/7b254602-fe84-45f7-8fed-8e8ad451670d">
+
+<img width="1025" alt="image" src="https://github.com/txt/aa24/assets/29195/4365904f-c22d-4900-b2ad-fb4e3f6507d8">
+
+
+In all, these results  took three
+months to generate:
+
+- 1 month of a LexisNexis data engineer generating our training
+data by writing complex joins across large datasets.
+- 1 month of inductive engineering, applying different data
+mining methods to the data. As mentioned above, this proved
+to be a tedious task that required developed and discarding a
+dozen very bad predictors before finding one that achieved
+useful results
+- 1 month of a senior LexisNexis engineer serving as a liaison
+between our team and the rest of LexisNexis. The importance
+of the liaison cannot be overstated. That person (a) maintained senior management’s awareness and enthusiasm for
+this project; (b) organized access to numerous subject matter
+experts.
+
+When staffing similar efforts in the future, I'd  recommend a similar
+“three-sided” team comprising inductive engineers, data engineers,
+and business knowledge experts.
+
+
+
+
