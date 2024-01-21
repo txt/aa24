@@ -12,7 +12,7 @@ Once upon a time, Lexis Nexis wanted
 
 - waterfall: plan-based [^Royce70]
   - a linear walk through analysis, design, code, test with 
-    feedback from `step[i]` updating `step[i+1]`. 
+    feedback from `step[i]` updating `step[i+1]`.  <br clear=all>
 
 
 <img width=500 align=right   alt="image" src="https://github.com/txt/aa24/assets/29195/0b8727c4-912b-4026-aaaf-91ba699beef3">
@@ -61,9 +61,12 @@ Once upon a time, Lexis Nexis wanted
     - but as we know, there are more options.
   - "To make the analogy explicit, 
     - in Software 1.0, human-engineered source code (e.g. some .cpp files) is compiled into a binary that does useful work. 
-     - In Software 2.0 most often the source code comprises
+    - In Software 2.0 most often the source code comprises
        - the dataset that defines the desirable behavior 
-       - the learner  architecture that gives the rough skeleton of the code, but with many details (weights, rules) to be filled in.
+       - rhe process of training learner compiles the dataset into a model, from which we can set the options.  
+    - SE moves from a coding process to a decision process:
+
+<img width="1161" alt="image" src="https://github.com/txt/aa24/assets/29195/8997b3f4-d142-4d73-907e-ecf0e3f4c4ed">
 
 
 [^kel]: Andrej Karpathy, Software 2.0, https://karpathy.medium.com/software-2-0-a64152b37c35, [pdf](soft2.pdf), Nov 11, 2017
