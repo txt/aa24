@@ -2,6 +2,11 @@ sssdas
 
 # Management AI projects
 
+## Case Study
+
+Once upon a time, Lexis Nexis wanted 
+
+
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*k66hoz5Y_9DId_a3UrgIpA.jpeg"
      width=500 align=right>
 
