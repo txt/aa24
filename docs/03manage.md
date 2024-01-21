@@ -9,7 +9,7 @@
 
 # Management AI projects
 
-"Most of data _minging_ is data pre-prcessing."
+"Most of data _mining_ is really data _pre-prcessing_."
 
 ## The Classic View
 
