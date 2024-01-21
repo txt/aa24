@@ -4,9 +4,11 @@ sssdas
 
 ## Case Study
 
+<img width="500" align=right alt="image" src="https://github.com/txt/aa24/assets/29195/197aea1a-8930-487a-993a-192da5787f70">
+
 LexisNexis asked us to use AI to help manage their cloud services:
 
-- Mis-managed cloud ervices results in server downtime and an associated loss of revenue, 
+- Mis-managed cloud services results in server downtime and an associated loss of revenue, 
   - particularly for organizations with penalty clauses in their service contracts. 
   - Even down times of just a few hours is detrimental to the professional reputation of an cloud-service provider. 
   - Poor reputation for reliability =  harder time attracting and retaining clients.
@@ -40,6 +42,8 @@ of calling/texting to get everyone we need into a conference call”.
 So welcome to the management of AI-releated projects
 - Initial plans... change
 
+## How to Plan for Change?
+
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*k66hoz5Y_9DId_a3UrgIpA.jpeg"
      width=500 align=right>
 
@@ -70,7 +74,7 @@ So welcome to the management of AI-releated projects
 [^Bakg]: Bakhirkin, M.V., Lukin, V.N. (2022). Agilefall—Modern Realities of IT Project Management. In: Favorskaya, M.N., Nikitin, I.S., Severina, N.S. (eds) Advances in Theory and Practice of Computational Mechanics. Smart Innovation, Systems and Technologies, vol 274. Springer, Singapore. https://doi.org/10.1007/978-981-16-8926-0_26
 [^Boehm88]: Boehm, B (August 1986). "A Spiral Model of Software Development and Enhancement". ACM SIGSOFT Software Engineering Notes. 11 (4): 14–24. doi:10.1145/12944.12948. S2CID 207165409.  https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf
 
-# Some  Variants:
+## Some  Variants:
 
 - Timm1: hop, skip, jmup
   - hop : fixed time (e.g. three months), no fixed deliverables (just a progress report), a few people
