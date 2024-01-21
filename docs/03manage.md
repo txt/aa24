@@ -19,10 +19,10 @@ From [^fayyad96].
 [^fayyad96]: Fayyad, U., Piatetsky-shapiro, G., Smyth, P.: From Data Mining to Knowledge Discovery inDatabases. AI Magazine pp. 37–54 (1996)
 
 1. Data Cleaning:
-  - Real-world data is messy. This step involves removing any inconsistencies, errors, or outliers that might skew the results.
+    - Real-world data is messy. This step involves removing any inconsistencies, errors, or outliers that might skew the results.
     - BTW, another view on outliers... they are a speciality group you need to explore
-    - So why not keep the outliers? Cluster the data into many groups, and build different models
-      for each group. 
+      - So why not keep the outliers? Cluster the data into many groups, and build different models
+        for each group. 
 2. Data Integration:
    - Data often comes from many sources, each with its own format and structure. 
    - Must be mergeds this data into a unified set, ensuring consistency and reducing redundancy.
@@ -223,6 +223,8 @@ I've often had to offer project plans to companies that like fixed price structu
   <img width="898" alt="image" src="https://github.com/txt/aa24/assets/29195/44c95f45-bdff-4011-9e95-f20960b23048">
 
 ## Anyway, Back to LexisNexis
+
+(Cloud computing, predicting for spikes.
 
 In the end, we optimized for   comprehensibility rather than just predictive performance. 
 
