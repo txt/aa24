@@ -96,7 +96,7 @@ From [^fayyad96].
        - Two years, four people (part time) to collect and validate
          [ 93 rows times 29 columns](https://gist.githubusercontent.com/timm/d47b8699d9953eef14d516d6e54e742e/raw/ee8ba8992d7fa6c15a74d627d149a93b8eca44be/nasa93dem.csv)
      - For example, 
-       - Tu et al. [^tue20] has studied approximately 714 software projects, including 476,000 commit files. 
+       - Tu et al. [^tu20] has studied approximately 714 software projects, including 476,000 commit files. 
        - After an extensive analysis, they proposed a cost model for labeling that data. 
        - Assuming two people checking per commit, that data would need three years of effort to label the data.
    - Imbalanced data: when the target class is rare, hard for the learner to find it.
