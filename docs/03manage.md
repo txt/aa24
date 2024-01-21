@@ -4,8 +4,41 @@ sssdas
 
 ## Case Study
 
-Once upon a time, Lexis Nexis wanted 
+LexisNexis asked us to use AI to help manage their cloud services:
 
+- Mis-managed cloud ervices results in server downtime and an associated loss of revenue, 
+  - particularly for organizations with penalty clauses in their service contracts. 
+  - Even down times of just a few hours is detrimental to the professional reputation of an cloud-service provider. 
+  - Poor reputation for reliability =  harder time attracting and retaining clients.
+  - Service spikes can freeze up a cloud server. 
+- Spikes like those shown below can lead to frustratingly slow systems performance (e.g. very slow displays of new web pages). 
+  - Predicting service spikes is hard since they can occur rarely and may occur as sudden extreme outliers. 
+  - Spike prediction is cmplicatied by rapidly changing nature of cloud environments. For example, 
+  - In the year or two, LexisNexis has retired its locally managed CPU farms in favor of CPU farms managed by multiple major cloud vendors. 
+  - Given the rapid pace of change in this area, more changes are expected soon.
+
+Initially, we imagined that we would be building a recommender system that would
+
+- suggest the number and type of cloud server instances that should be added or deleted
+- in order to maintain service availability (at minimum cost). 
+- In theory, such a recommender system could be learned from the historical logs of prior nominal and off-nominal behavior.
+- But, once we realized how fast the cloud services were changing, i
+  - we also realized that much of the historical log was no longer relevant to current practice. 
+
+So we changed track and asked
+“what are the major pain points of running the LexisNexis cloud
+service?”. 
+- This new question prompted our subject matter experts to
+recounted various war stories about what happens when a service
+spike occurs. 
+- “It can take five to ten minutes to realize we have a
+problem”, we were told, “after which it can take another few minutes
+of calling/texting to get everyone we need into a conference call”.
+- New goals:
+  - Build comprehensible and effective predictors for service spikes, 30 minutes into the future
+
+So welcome to the management of AI-releated projects
+- Initial plans... change
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*k66hoz5Y_9DId_a3UrgIpA.jpeg"
      width=500 align=right>
