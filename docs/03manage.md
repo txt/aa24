@@ -99,7 +99,8 @@ I've often had to offer project plans to companies that like fixed price structu
  
 ## Other Variants
 
- 
+### Software 2.0
+
 - 2017: Karpathy: Software 2.0 [^kel]
   - One perpetually prototyping team supporting another standard SE team
   - Team1: standard se. development. GUIs. Database optimization. etc etc etc 
@@ -118,6 +119,8 @@ I've often had to offer project plans to companies that like fixed price structu
 
 
 [^kel]: Andrej Karpathy, Software 2.0, https://karpathy.medium.com/software-2-0-a64152b37c35, [pdf](soft2.pdf), Nov 11, 2017
+
+### Process Data from Microsoft
 
 - 2019: Microsoft's analytics team [^Amershi19]:
 
