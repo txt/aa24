@@ -74,7 +74,7 @@ From [^fayyad96].
       I always worked on the "one slide" rule (they could only "swap" in one slide of info).
 
 
-[^shrik23]: Shrikanth N. C. and Tim Menzies. 2023. Assessing the Early Bird Heuristic (for Predicting Project Quality). ACM Trans. Softw. Eng. Methodol. 32, 5, Article 116 (September 2023), 39 pages. https://doi.org/10.1145/3583565
+[^shrik23]: Shrikanth N. C. and Tim Menzies. 2023. Assessing the Early Bird Heuristic (for Predicting Project Quality). ACM Trans. Softw. Eng. Methodol. 32, 5, Article 116 (September 2023), 39 pages. https://doi.org/10.1145/3583565 https://arxiv.org/pdf/2105.11082.pdf
 [^agrawal18]: Amritanshu Agrawal and Tim Menzies. 2018. Is "better data" better than "better data miners"? on the benefits of tuning SMOTE for defect prediction. In Proceedings of the 40th International Conference on Software Engineering (ICSE '18). Association for Computing Machinery, New York, NY, USA, 1050–1061. https://doi.org/10.1145/3180155.3180197 https://arxiv.org/pdf/1705.03697.pdf
 [^ling25]: Ling, Xiao, Tim Menzies, Christopher Hazard, Jack Shu, and Jacob Beel. "Trading Off Scalability, Privacy, and Performance in Data Synthesis." arXiv preprint arXiv:2312.05436 (2023). https://arxiv.org/pdf/2312.05436.pdf
 [^chen05]: Zhihao Chen, Barry Boehm, Tim Menzies, and Daniel Port. 2005. Finding the Right Data for Software Cost Modeling. IEEE Softw. 22, 6 (November 2005), 38–46. https://doi.org/10.1109/MS.2005.151
