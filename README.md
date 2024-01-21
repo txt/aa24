@@ -67,8 +67,7 @@ Github issue close time prediction, bad smell prediction, cloud
 Jan09&nbsp;:&nbsp;<a href="https://github.com/timm/lo/blob/main/docs/gate.pdf">AI+SE=Ez</a><br>
 Jan11&nbsp;:&nbsp;<a href="/docs/00choice.pdf">Choice</a><br>
 Jan16&nbsp;:&nbsp;<a href="/docs/02bayes.pdf">Bayes+Nums</a><br>
-Jan18&nbsp;:&nbsp;<br>
-Jan23&nbsp;:&nbsp;<br>
+Jan23&nbsp;:&nbsp;   <a href="docs/03manage.md">Management</a><br>
 Jan25&nbsp;:&nbsp;<br>
 Jan30&nbsp;:&nbsp;<br>
 Feb01&nbsp;:&nbsp;<br>
