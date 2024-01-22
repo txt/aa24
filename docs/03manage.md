@@ -56,6 +56,34 @@ So welcome to the management of AI-releated projects
 - Initial plans... change
 - So how do we manage this project exploring for good ways to use AI to tame cloud computing?
 
+## The SE View
+
+- Long et al. [^long23] ask the question "how much of SE is coding and how much is something else?".
+- To answer that question, they look at 20 years of their own
+empirical data and 50 years of the SE literature.
+- They break up SE development
+into six phases (listed below)  and ask, in each, do software engineers (a) plan what to do; (b) do some coding; or (c) check what you got.
+  1. Requirements Analysis
+  2. Architecture & Design
+  3. Coding
+  4. System Integration
+  5. Qualification Testing
+  6. Development Test & Evaluation
+  
+ Long et al. argue that, on balance, engineers spend a third of the time
+in planning, coding, and testing. And here are their numbers:
+
+![](../etc/img/phase.png){ width=500px }
+
+[^long23]: D. Long, S. Drylie, J. Ritschel and C. Koschnick, 2023,
+"An Assessment of Rules of Thumb for Software Phase Management, 
+and the Relationship between Phase Effort and Schedule Success," 
+in IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2023.3339383.
+
+
+
+
+
 ## The Classic View
 
 From [^fayyad96].
@@ -150,6 +178,12 @@ From [^fayyad96].
     - sort backlog by value/time
     - sprint to finish the top N items
     - repeat <br clear=all>
+  - can't always do agile
+    - co-ordinating   betwwen large teams means setting expectations for when team1 will get material from team2
+    - for very large projects (government, DoD), funds have to be negoatiated and pre-allocated (hardly condusive to agile mid-course replanning)
+    - for hardware/software co-design
+      - hardware is harder and slower to build and change. 
+        - so software projects have to be designed to deliver the software, when the hardware needs it 
 - agilefall : working at a continuum between plan-driven (a.k.a. waterfall) 
   project management and agile project management
   - usually a pejorative term.
@@ -162,7 +196,7 @@ From [^fayyad96].
 [^Bakg]: Bakhirkin, M.V., Lukin, V.N. (2022). Agilefall—Modern Realities of IT Project Management. In: Favorskaya, M.N., Nikitin, I.S., Severina, N.S. (eds) Advances in Theory and Practice of Computational Mechanics. Smart Innovation, Systems and Technologies, vol 274. Springer, Singapore. https://doi.org/10.1007/978-981-16-8926-0_26
 [^Boehm88]: Boehm, B (August 1986). "A Spiral Model of Software Development and Enhancement". ACM SIGSOFT Software Engineering Notes. 11 (4): 14–24. doi:10.1145/12944.12948. S2CID 207165409.  https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf
 
-## My  Variants:
+## Variants (take with  a grain of salf):
 
 I've often had to offer project plans to companies that like fixed price structures. So I offer them the following:
 
@@ -179,10 +213,31 @@ I've often had to offer project plans to companies that like fixed price structu
   - month2:  I'm beginning to see what is going on, code up analysis tools
   - month3:  I know what I'm doing, I'm trying different things
   - month4:  Finally, we can say useful things to the local experts and they can  undersand what I am doing. Much interaction and interpreation of results.  Report writing.
- 
-## Other Variants
 
-### Software 2.0
+- Timm3: the elbow test
+  - Before we had good data miners, we sough to explore and operationalize human knowledge
+  - My and my Prolog interpreter would go interview experts, recording everything they said
+  - We'd build a specification language that mimiced their expert prouncements, and an interpretar to make these sentences execute.
+  - We'd have the right language when the experts would elbow us out of the way, in their haste to get to the screen and change
+    what they thought was wrong.
+  - Initially, we'd write the speciication interpreter and sample sentences in that langauge
+    - Goals was to train the local domain experts to write (and maintain) their own rules.
+  - Project manager heuristics:
+    - The "five rules per day" rule
+    - The "competancy after 100 rules" rule
+  - e.g. Pige. 480 rules for management of piggeries [^pige].
+
+[^pig]: Menzies, T., Black, J., Fleming, J., & Dean, M. (1992, April). An expert system for raising pigs. In The first Conference on Practical Applications of Prolog’. Available from http://aturing.umcs.maine.edu/~meadow/courses/cos301/raising-pigs.pdf
+
+- Don't test
+  - Create a lab of 100 teams
+  - Each use (say) LLMs to build some widget
+  - Race the widgets into the marketplace 
+  - Most will die but a tiny fraction will blossom and deliver you an income stream
+  - No needs to waste time talking to users, or fussy with specifications,  or testing 
+  - Kist throw it over the wall and see what sticks.
+
+- Software 2.0
 
 - 2017: Karpathy: Software 2.0 [^kel]
   - One perpetually prototyping team supporting another standard SE team
