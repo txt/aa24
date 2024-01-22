@@ -238,8 +238,7 @@ I've often had to offer project plans to companies that like fixed price structu
   - Kist throw it over the wall and see what sticks.
 
 - Software 2.0
-
-- 2017: Karpathy: Software 2.0 [^kel]
+  - 2017: Karpathy: Software 2.0 [^kel]
   - One perpetually prototyping team supporting another standard SE team
   - Team1: standard se. development. GUIs. Database optimization. etc etc etc 
   - Team2: define choice space for Team1. Explore choices with an optimizer
