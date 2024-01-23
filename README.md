@@ -99,7 +99,7 @@ May3&nbsp;:&nbsp;Grades&nbsp;posted<br>
 <td valign=top>
 Jan16&nbsp;:&nbsp; <a href="/docs/hw02.md">Hw2</a><br>
 Jan23&nbsp;:&nbsp; <a href="/docs/hw03.md">Hw3</a><br>
-Jan30&nbsp;:&nbsp; Hw4<br>
+Jan30&nbsp;:&nbsp; <a href="/docs/hw04.md">Hw4</a><br>
 Feb06&nbsp;:&nbsp; Hw5<br>
 Feb13&nbsp;:&nbsp;&nbsp;wellness&nbsp;day<br>
 Feb20&nbsp;:&nbsp; Hw6<br>
