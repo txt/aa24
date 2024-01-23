@@ -9,8 +9,18 @@
 
 # Management AI projects
 
-"Most of data _mining_ is really data _pre-processing_."
 
+
+"Bus drivers need a bus"
+- bus drivers can't do their job without a bus, roads, petrol stations, mechanics, etc etc
+- i.e. intelligence needs infrastructure [^sculley].
+- AI software is still software, needs software engineerings
+
+[^sculley]: D. Sculley, Gary Holt, Daniel Golovin, Eugene Davydov, Todd Phillips,
+Dietmar Ebner, Vinay Chaudhary, Michael Young, Jean-Franc¸ois Crespo, Dan Dennison,
+"Hidden Technical Debt in Machine Learning Systems",  Advances in Neural Information Processing Systems 28 (NIPS 2015) https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf
+
+![](debt.png)
 
 ## Case Study
 
@@ -80,11 +90,9 @@ in planning, coding, and testing. And here are their numbers:
 and the Relationship between Phase Effort and Schedule Success," 
 in IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2023.3339383.
 
-
-
-
-
 ## The Classic View
+
+"Most of data _mining_ is really data _pre-processing_."
 
 From [^fayyad96].
 <img src="kdd.png">
