@@ -9,7 +9,15 @@
 
 # Management AI projects
 
+"Wholes and holes"
+- Requirements from the whole picture
+  - machine learning to fill in the holes
+  - e.g. see Software 2.0 (below)
+- Still need to talk to people to understand context
+  - "Without requirements or design, programming is the art of adding bugs to an empty text file."  .   
+     -- Louis Srygley
 
+![](https://user-images.githubusercontent.com/29195/192363418-67264122-7cd3-478c-bbae-d752faf6c9bc.png)
 
 "Bus drivers need a bus"
 - bus drivers can't do their job without a bus, roads, petrol stations, mechanics, etc etc
