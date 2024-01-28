@@ -15,14 +15,14 @@ The motto of RRP is "look before your leap".
 
 RRP is a landscape analysis technique:
 - for _y=f(x)_ ,
-  - if_x_ is cheap to explore but _y_ is expensive
-  - look for patters in the independent_X_ variables
+  - if _x_ is cheap to explore but _y_ is expensive
+  - look for patters in the independent _X_ variables
     - before exploring the _Y_ s
   - e.g in the following picture, if _y_ is some vertical goal function, then the other
     two dimensions are the _x_ choices
 
-For multi-goal-reasoning, it is useful to consider things as two spaces, the _X_s and the _Y_s
-(so _f_ is the magic that bridges _X_ s to  _Y_ s)
+For multi-goal-reasoning, it is useful to consider things as two spaces, the _X_ s and the _Y_ s
+(so _f_ is the magic that bridges _X_  s to  _Y_ s)
 
 ![](xy.png)
 
