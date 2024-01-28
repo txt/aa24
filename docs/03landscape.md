@@ -54,11 +54,11 @@ will realize you are walking a landscape to maximize shade, minimize travel time
 to coffee shop and dry-cleaners, etc. etc, etc.
 
 
-FYI, while it is not commonly stated, in my view, 
+FYI, while it is not commonly stated, in my view,
 Landscape analytics generalizes a range of
 algorithms from different fields:
-- When used on the _𝑋_ shape, landscape analytics might be called “clustering”.
 
+- When used on the _𝑋_ shape, landscape analytics might be called “clustering”.
 - And once we find what parts of _X_ parts to what parts of _Y_ then we can do prediction
   (regression and classification to predict numbers and symbols)
 - And the delta between different parts of the landscape (with dufferent _Y_ scores)
@@ -66,7 +66,7 @@ algorithms from different fields:
 - When used on the _𝑋, 𝑌_ shape, if we only sample a few times at each part of
   the landscape, then limited sampling might be called “semi-supervised learning”;
 - Similarly, in a joint analysis of the _𝑋, 𝑌_ shape, if we bias our “leaps” towards regions that (in
-the past) had good _𝑌_ scores, 
+the past) had good _𝑌_ scores,
   - landscape analytics might be called “reinforcement learning”.
 - And if we use landscape analytics to jointly explore the _Y_ goals such as performance
    shapes, then this could be called
