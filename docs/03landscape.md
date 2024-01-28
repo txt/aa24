@@ -14,19 +14,19 @@ The motto on SMO might be, learn a little, find regions of doubt, try there.
 The motto of RRP is "look before your leap".
 
 RRP is a landscape analysis technique:
-- for $y=f(x)$,
-  - if $x$ is cheap to explore but $y$ is expensive
-  - look for patters in the independent $X$ variables
-    - before exploring the $Y$ s
-  - e.g in the following picture, if $y$ is some vertical goal function, then the other
-    two dimensions are the $x$ choices
+- for_y=f(x)_,
+  - if_x_ is cheap to explore but_y_ is expensive
+  - look for patters in the independent_X_ variables
+    - before exploring the_Y_ s
+  - e.g in the following picture, if_y_ is some vertical goal function, then the other
+    two dimensions are the_x_ choices
 
-For multi-goal-reasoning, it is useful to consider things as two spaces, the $X$s and the $Y$s
-(so $f$ is the magic that bridges $X$ s to   $Y$ s)
+For multi-goal-reasoning, it is useful to consider things as two spaces, the_X_s and the_Y_s
+(so_f_ is the magic that bridges _X_ s to  _Y_ s)
 
 ![](xy.png)
 
-In $Y$ space, many algorithms work in _generations_, find the best fo far (pruning the rest) then designing the next generation solution from the Pareto frontier seen so far,
+In_Y_ space, many algorithms work in _generations_, find the best fo far (pruning the rest) then designing the next generation solution from the Pareto frontier seen so far,
 - **Definition:** The Pareto frontier is a set of solutions that represents the best trade-off   between all  the      objective functions
 
 ![](generations.png)
@@ -57,18 +57,18 @@ to coffee shop and dry-cleaners, etc. etc, etc.
 FYI, while it is not commonly stated, in my view, 
 Landscape analytics generalizes a range of
 algorithms from different fields:
-- When used on the $𝑋$ shape, landscape analytics might be called “clustering”.
+- When used on the_𝑋_ shape, landscape analytics might be called “clustering”.
 
-- And once we find what parts of $X$ parts to what parts of $Y$ then we can do prediction
+- And once we find what parts of_X_ parts to what parts of_Y_ then we can do prediction
   (regression and classification to predict numbers and symbols)
-- And the delta between different parts of the landscape (with dufferent $Y$ scores)
+- And the delta between different parts of the landscape (with dufferent_Y_ scores)
   might be called "planning" or "optimizaton"
-- When used on the $𝑋, 𝑌$ shape, if we only sample a few times at each part of
+- When used on the_𝑋, 𝑌_ shape, if we only sample a few times at each part of
   the landscape, then limited sampling might be called “semi-supervised learning”;
-- Similarly, in a joint analysis of the $𝑋, 𝑌$ shape, if we bias our “leaps” towards regions that (in
-the past) had good $𝑌$ scores, 
+- Similarly, in a joint analysis of the_𝑋, 𝑌_ shape, if we bias our “leaps” towards regions that (in
+the past) had good_𝑌_ scores, 
   - landscape analytics might be called “reinforcement learning”.
-- And if we use landscape analytics to jointly explore the $Y$ goals such as performance
+- And if we use landscape analytics to jointly explore the_Y_ goals such as performance
    shapes, then this could be called
    “hyperparameter optimization”
 
@@ -87,5 +87,5 @@ pre-explored (to find that best point).
 
 Landscap analysis:
 -  data mining/ optimization =  as a search across landscapes. 
--  Given many examples of $(𝑋1, 𝑌1), (𝑋2, 𝑌2), ..$ etc then a learner $𝐿$ seeks some model $f$ that knows where parts
-of the $𝑋$ landscape connect to particular parts of the 𝑌 landscape.
+-  Given many examples of_(𝑋1, 𝑌1), (𝑋2, 𝑌2), .._ etc then a learner_𝐿_ seeks some model_f_ that knows where parts
+of the_𝑋_ landscape connect to particular parts of the 𝑌 landscape.
