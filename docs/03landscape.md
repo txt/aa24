@@ -87,5 +87,5 @@ pre-explored (to find that best point).
 
 Landscap analysis:
 -  data mining/ optimization =  as a search across landscapes. 
--  Given many examples of_(𝑋1, 𝑌1), (𝑋2, 𝑌2), .._ etc then a learner_𝐿_ seeks some model_f_ that knows where parts
-of the_𝑋_ landscape connect to particular parts of the 𝑌 landscape.
+-  Given many examples of _(𝑋1, 𝑌1), (𝑋2, 𝑌2), .._ etc then a learner _𝐿_ seeks some model_ f_ that knows where parts
+of the _𝑋_ landscape connect to particular parts of the 𝑌 landscape.
