@@ -37,14 +37,20 @@ To know the landscape is to know how to optimize, how to avoid getting stuck on 
 
 Studying such landscapes made Brand distrust claims for "optimality" since what you call "optimum" may actually be just a stepping zone to a better place.
 
+<img src="generations.png" width=600>
+
+ 
+<img src="rabbits.jpeg" align=right width=600>
+
 Brand's favorite landscape comes from a 1932 genetics paper[^wright] that discusses how different breeding strategies respond well (or badly) to environmental pressures. In the following, the horizontal and vertical axis represent combinations of genetic choices
-(e.g.   "length of hair"   "body weight", "how fast can u run?") and the contours  might "probability of winning a fight". 
+(e.g.   "length of hair"   "body weight", "how fast can u run?") and the contours  might "probability of winning a fight".
+
 - Each frame represents different evolutionary scenarios and their impact on the population in question.
 - Frame C differs from the other five frames in that it represented a changing environment, which would create a dynamic landscape, so the population is shown tracking a moving landscape by the arrow.
 
 [^wright]:  The Roles of Mutation, Inbreeding, crossbreeding and Selection in Evolution. Wright, S. Proceedings of the XI International Congress of Genetics, 8:209-222, 1932.
 
-![](rabbits.jpeg)
+
 
 Once you get this diagram, you'll never un-see it. 
 
