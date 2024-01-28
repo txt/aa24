@@ -29,16 +29,13 @@ For multi-goal-reasoning, it is useful to consider things as two spaces, the _X_
 In _Y_ space, many algorithms work in _generations_, find the best fo far (pruning the rest) then designing the next generation solution from the Pareto frontier seen so far,
 - **Definition:** The Pareto frontier is a set of solutions that represents the best trade-off   between all  the      objective functions
 
-![](generations.png)
+<img src="generations.png" width=600>
 
 To know the landscape is to know how to optimize, how to avoid getting stuck on being over-adapted (hence overspecialized) on some local peak, when as Stewart Brand so aptly puts it...
 
 - "Whole mountain ranges of opportunity could be glimpsed in the distance, but getting to them involved venturing 'downhill' into regions of lower fitness".
 
 Studying such landscapes made Brand distrust claims for "optimality" since what you call "optimum" may actually be just a stepping zone to a better place.
-
-<img src="generations.png" width=600>
-
  
 <img src="rabbits.jpeg" align=right width=600>
 
