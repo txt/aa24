@@ -16,15 +16,15 @@ The motto of RRP is "look before your leap".
 RRP is a landscape analysis technique:
 - for $y=f(x)$,
   - if $x$ is cheap to explore but $y$ is expensive
-  - look for patters in the independernt $X$ variables
-    - before exploring the $Y$s
+  - look for patters in the independent $X$ variables
+    - before exploring the $Y$ s
   - e.g in the following picture, if $y$ is some vertical goal function, then the other
     two dimensions are the $x$ choices
 
 For multi-goal-reasoning, it is useful to consider things as two spaces, the $X$s and the $Y$s
-(so $f$ is the magic that bridges $X$s to   $Y$s)
+(so $f$ is the magic that bridges $X$ s to   $Y$ s)
 
-![](cy.png)
+![](xy.png)
 
 In $Y$ space, many algorithms work in _generations_, find the best fo far (pruning the rest) then designing the next generation solution from the Pareto frontier seen so far,
 - **Definition:** The Pareto frontier is a set of solutions that represents the best trade-off   between all  the      objective functions
@@ -37,12 +37,14 @@ To know the landscape is to know how to optimize, how to avoid getting stuck on 
 
 Studying such landscapes made Brand distrust claims for "optimality" since what you call "optimum" may actually be just a stepping zone to a better place.
 
-Brand's favorite landscape comes from a 1932 genetics paper that discusses how different breeding strategies respond well (or badly) to environmental pressures. In the following, the horizontal and vertical axis represent combinations of genetic choices
+Brand's favorite landscape comes from a 1932 genetics paper[^wright] that discusses how different breeding strategies respond well (or badly) to environmental pressures. In the following, the horizontal and vertical axis represent combinations of genetic choices
 (e.g.   "length of hair"   "body weight", "how fast can u run?") and the contours  might "probability of winning a fight". 
 - Each frame represents different evolutionary scenarios and their impact on the population in question.
 - Frame C differs from the other five frames in that it represented a changing environment, which would create a dynamic landscape, so the population is shown tracking a moving landscape by the arrow.
 
-![](rabbits.png)
+[^wright]:  The Roles of Mutation, Inbreeding, crossbreeding and Selection in Evolution. Wright, S. Proceedings of the XI International Congress of Genetics, 8:209-222, 1932.
+
+![](rabbits.jpeg)
 
 Once you get this diagram, you'll never un-see it. 
 
@@ -86,4 +88,4 @@ pre-explored (to find that best point).
 Landscap analysis:
 -  data mining/ optimization =  as a search across landscapes. 
 -  Given many examples of $(𝑋1, 𝑌1), (𝑋2, 𝑌2), ..$ etc then a learner $𝐿$ seeks some model $f$ that knows where parts
-of the 𝑋 landscape connect to particular parts of the 𝑌 landscape.
+of the $𝑋$ landscape connect to particular parts of the 𝑌 landscape.
