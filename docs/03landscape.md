@@ -89,7 +89,7 @@ of these methods tend to enumerate the whole landscape, before exploring it.
 
 Given some distance measure: 
 
-$$ d(a,b)=\sqrt(\sum_i(a_i-b_i)^2) $$
+$$ d(a,b)=\sqrt{\sum_i(a_i-b_i)^2} $$
 
 Then lets peek at the landscape:
 - Using just the independent $x$ values,
