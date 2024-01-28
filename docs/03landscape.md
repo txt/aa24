@@ -24,7 +24,7 @@ RRP is a landscape analysis technique:
 For multi-goal-reasoning, it is useful to consider things as two spaces, the _X_ s and the _Y_ s
 (so _f_ is the magic that bridges _X_  s to  _Y_ s)
 
-![](xy.png)
+<img src="xy.png" width=600>
 
 In _Y_ space, many algorithms work in _generations_, find the best fo far (pruning the rest) then designing the next generation solution from the Pareto frontier seen so far,
 - **Definition:** The Pareto frontier is a set of solutions that represents the best trade-off   between all  the      objective functions
