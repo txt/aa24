@@ -29,7 +29,7 @@ For multi-goal-reasoning, it is useful to consider things as two spaces, the _X_
 In _Y_ space, many algorithms work in _generations_, find the best fo far (pruning the rest) then designing the next generation solution from the Pareto frontier seen so far,
 - **Definition:** The Pareto frontier is a set of solutions that represents the best trade-off   between all  the      objective functions
 
-<img src="generations.png" width=600>
+<img src="https://github.com/timm/tested/raw/main/etc/img/evolve.png" width=600>
 
 To know the landscape is to know how to optimize, how to avoid getting stuck on being over-adapted (hence overspecialized) on some local peak, when as Stewart Brand so aptly puts it...
 
@@ -76,16 +76,32 @@ the past) had good _𝑌_ scores,
    “hyperparameter optimization”
 
 
-In a recent survey of landscape analytics methods, Malan [36] notes that the term “landscape” is
-a generalization of Sewell’s 1932 concept of “fitness landscape” [65] which was first defined for
-evolutionary biology. Malan reports no less than 33 “families” of landscape analytics methods. Most
-of these methods tend to enumerate the whole landscape, before exploring it. This approach is seen
-in many parts of the Table 3 summary of the Malan survey; e.g.:
-(1) Methods that assume that evaluation is fast or cheap usually exploit that property to make
-many samples across the landscape.
-(2) Methods that assume knowledge of optima also assume that the search space has been
-pre-explored (to find that best point).
+[^malan]:  Katherine M. Malan. 2021. A Survey of Advances in Landscape Analysis for Optimisation. Algorithms 14, 2 (2021), 40.
+https://doi.org/10.3390/a14020040
 
+In a recent survey of landscape analytics methods, Malan [^malan]  reports no less than 33 “families” of landscape analytics methods. 
+- Most
+of these methods tend to enumerate the whole landscape, before exploring it. 
+- I.e. much eval of the _Y_ values 
+- So I do as much landscape analysis in _X_ spacee, then only ask for _Y_ isa few spots
+
+## Example
+
+Given some distance measure (e.g. $d(a,b)=\sqrt(\sum_i(a_i-b_i)^2)$):
+
+- Using just the independent $x$ values,
+- find two distance points (sort them by distance to heaven)
+- Draw a line between them
+- Everyone else point to their closest point on that line
+- Cut line in the middle
+- Recurse on each half
+
+1. Find two distant points  _A,B_
+2. Evaluate their  _Y_, sort them by distance to heaven such that for   _A,B_, _A_
+   is better than _B_
+3. Draw a line from _A_ to _B_ of length _c_.
+4. All other points have a distance _a,b_ to _A,B_. therefore by cosine rule, they project
+   to a point x= 
 
 
 Landscap analysis:
