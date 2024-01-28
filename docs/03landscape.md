@@ -85,10 +85,13 @@ of these methods tend to enumerate the whole landscape, before exploring it.
 - I.e. much eval of the _Y_ values 
 - So I do as much landscape analysis in _X_ spacee, then only ask for _Y_ isa few spots
 
-## Example
+## Lets go Look at the Landscape
 
-Given some distance measure (e.g. $d(a,b)=\sqrt(\sum_i(a_i-b_i)^2)$):
+Given some distance measure: 
 
+$$ d(a,b)=\sqrt(\sum_i(a_i-b_i)^2) $$
+
+Then lets peek at the landscape:
 - Using just the independent $x$ values,
 - find two distance points (sort them by distance to heaven)
 - Draw a line between them
