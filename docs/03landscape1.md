@@ -16,7 +16,7 @@ The motto of RRP is "look before your leap".
 RRP is a landscape analysis technique:
 - for _y=f(x)_ ,
   - if _x_ is cheap to explore but _y_ is expensive
-  - look for patters in the independent _X_ variables
+  - look for patterns in the independent _X_ variables
     - before exploring the _Y_ s
   - e.g in the following picture, if _y_ is some vertical goal function, then the other
     two dimensions are the _x_ choices
@@ -90,6 +90,8 @@ of these methods tend to enumerate the whole landscape, before exploring it.
 Given some distance measure: 
 
 $$ d(a,b)=\sqrt{\sum_i(a_i-b_i)^2} $$
+
+<img src="proof.png" align=right width=400>
 
 Then lets peek at the landscape:
 
