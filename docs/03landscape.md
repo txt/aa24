@@ -236,7 +236,7 @@ function DATA:half(rows,sortp,before,evals)
   for n,row in pairs(l.keysort(rows,project)) do
     table.insert(n <=(#rows)//2 and as or bs, row) end
   return as, bs, a, b, C, d(a, bs[1]), evals end
-
+```
 
 [^Faloutsos]: Christos Faloutsos and King-Ip Lin. 1995. FastMap: a fast algorithm for indexing, data-mining and visualization of traditional and multimedia datasets. SIGMOD Rec. 24, 2 (May 1995), 163–174. https://doi.org/10.1145/568271.223812
 
