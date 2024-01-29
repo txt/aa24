@@ -95,10 +95,10 @@ Then lets peek at the landscape:
 
 - Using just the independent $x$ values,
 - Find two distance points (sort them by distance to heaven)
-- Draw a line between them
-- Everyone else point to their closest point on that line
+  - Draw a line between them
+  - Everyone else point to their closest point on that line
 - Cut line in the middle
-- Recurse on each half
+  - Recurse on each half
 - Stop at $\sqrt{N}$
 
 Apply to auto93.csv. Note that by just   recursively exploring $X$, we seem
@@ -141,30 +141,33 @@ to be doing a good job of sorting out $Y$.
 ```
 (In the above, we only score the _Y_ values _after_ clustering.)
 
-Let's fix up a few things: 
+### Enhancedments to the Above 
 
-- Use fewer _Y_ measurements:
-  - When recursing, reuse on far point from parent
-    - So the above tree only needed 16 evals
-    - (No reuse would have needed 30)    
-  - Find distant points without looking at everything
-    - the Fastmap heuristic for finding far points [^Faloutsos]  ( $O(2N)$ not $O(N^2)$ )
-    - pick _any_ point at random
-    - find a point far from _any_
-    - find a point far from that first _point_ 
-  - When exploring for far points, don't use all the data (just use, say, 256 points picked at random)
-    - Aside: for prudence, do not take the most distant points (that can be confused by outliers)
-      - Instead, only go 95%
-- Use fewer _X_ measurements:- Use fewer _Y_ measurements:
-  - When recursing, reuse on far point from parent
-    - So the above tree only needed 16 evals
-    - (If no reuse would we have needed 30)
-  - When recursing, ignore the branch furthest from heaven:
-    - So in 5 evals, we can find the top-most cluster seen above:        
-      {3.96, 90.87, 0, 80.71, 3, 2045.71, 16.6, 35.42} 
-    - And now we are competitive with SMO.
+#### Use fewer _X_ measurements:
 
-## Distance Measures
+- When recursing, reuse on far point from parent
+  - So the above tree only needed 16 evals
+  - (No reuse would have needed 30)    
+- Find distant points without looking at everything
+  - the Fastmap heuristic for finding far points [^Faloutsos]  ( $O(2N)$ not $O(N^2)$ )
+  - pick _any_ point at random
+  - find a point far from _any_
+  - find a point far from that first _point_ 
+- When exploring for far points, don't use all the data (just use, say, 256 points picked at random)
+  - Aside: for prudence, do not take the most distant points (that can be confused by outliers)
+    - Instead, only go 95%
+
+#### Use fewer _Y_ measurements
+
+- When recursing, reuse on far point from parent
+  - So the above tree only needed 16 evals
+  - (If no reuse would we have needed 30)
+- When recursing, ignore the branch furthest from heaven:
+  - So in 5 evals, we can find the top-most cluster seen above:        
+    {3.96, 90.87, 0, 80.71, 3, 2045.71, 16.6, 35.42} 
+  - And now we are competitive with SMO.
+
+#### Better Distance
 
 - The above distance calculation assume all numerics. But what about mixtures of nums and syms?
   - Aha's distance measure [^aha] (note: slow. Ungood for large dimensional spaces. We'll fix that below.)
@@ -187,6 +190,8 @@ $$ d(a,b) = \left(\sum_i\left(\Delta(a_i,b_i)^{p}\right)\right)^{1/p}$$
       - y = normalize(y)
       - x = 0 if y > 0.5 else 1
       - &Delta; =  (x-y)
+
+## Code
 
 ```lua
 function SYM:dist(x,y)
