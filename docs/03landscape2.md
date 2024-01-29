@@ -136,24 +136,35 @@ Incremetal tactic two:
 
 [^sculley]: Web-scale k-means clustering, D Sculley, Proceedings of the 19th international conference on World wide web, 1177-1178. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=b452a856a3e3d4d37b1de837996aa6813bedfdcf
 
-### Distance gets weird for high dimensions
+### Distance gets weird 
 
+
+[Distance is wierd](https://haralick.org/ML/useful_things_about_machine_learning.pdf):
 
 - for an large dimensional orange, most of the mass is in the skin
 - volume of the space increases so fast that the available data become sparse.
 - amount of data needed to support the result grows exponentially with dimensions
  
-[Distance is wierd](https://haralick.org/ML/useful_things_about_machine_learning.pdf):
 
+High-dimensional data can be approximated in lower dimension
+- **Continuity Assumption:**  Points which are closer to each other are more likely to have the same output label.
+- **Cluster Assumption:**  Data can be divided into discrete clusters and points in the same cluster are more likely to share an output label.
+- **Manifold Assumption:**   high dimensional data can be randomly projected into a lower dimensional  space while controlling the distortion in the pairwise distances. 
+  - <a href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_johnson_lindenstrauss_bound.html">Examples</a>.
+- So we only have to   fit relatively simple, low-dimensional, highly structured subspaces.
+- Within a manifolds,  we can  interpolate between two inputs, that is to say, morph one into another via a continuous path along which all points fall on the manifold. 
 
-- "Generalizing correctly becomes
-exponentially harder as the dimensionality (number of features) of the examples grows, because a fixed-size training
-set covers a dwindling fraction of the input space. Even with
-a moderate dimension of 100 and a huge training set of a trillion examples, the latter covers only a fraction of about
-10<sup>−18<sup> of the input space"
-- "Our intuitions, which come from a three-dimensional world, often do not apply in high-dimensional
-ones. In high dimensions, most of the mass may not be near the mean, but in an
-increasingly distant “shell” around it; and most of the volume of a high-dimensional orange is in the skin, not the pulp."
+Why reduce dimensions?
 
+- lower dimensions = less search = easier explanation
+- higher dimensionality = more complexity = harder to find releveant examples = less reproduability = less validation = less trust
+-  To see this, consider the volume of an $n$-dimensional sphere. <img src="https://github.com/timm/min/blob/main/docs/sphere.png" align=right width=300>
+   -  $V_2( r )={\pi}r^2$ 
+   -  $V_3( r )=\frac{4}{3}{\pi}r^3$ 
+   - $V_{n>3}( r )= \frac{{2\pi}r^2}{n} V_{n-2}( r )$. 
+   -  Now consider the unit sphere i.e. $r=1$   for $n>2\pi$. 
+       - Observe how after $n=6$, the volume starts shrinking and hits zero at $n=20$
+- So hard to find nearby (relevant) examples
+  - Trick: find a transform to map higher to lower.
 
 
