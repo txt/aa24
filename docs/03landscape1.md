@@ -106,6 +106,8 @@ Then lets peek at the landscape:
 Apply to auto93.csv. Note that by just   recursively exploring $X$, we seem
 to be doing a good job of sorting out $Y$.
 
+<br clear=all>
+
 ```
 |.. 
 |.. |.. 
