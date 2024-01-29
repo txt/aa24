@@ -116,6 +116,7 @@ Incremetal tactic two:
 
 - Mini-batch k-emans [^sculley].
 
+```
 1: Given: k, mini-batch size b, iterations t, data set X
 2: Initialize each c ∈ C with an x picked randomly from X
 3: v ← 0
@@ -131,6 +132,7 @@ Incremetal tactic two:
 13:         c ← (1 − η)c + ηx // Take gradient step
 14:     end for
 15: end for
+```
 
 [^sculley]: Web-scale k-means clustering, D Sculley, Proceedings of the 19th international conference on World wide web, 1177-1178. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=b452a856a3e3d4d37b1de837996aa6813bedfdcf
 
