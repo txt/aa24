@@ -244,6 +244,39 @@ function DATA:half(rows,sortp,before,evals)
   return as, bs, a, b, C, d(a, bs[1]), evals end
 ```
 
+So recursive random projections just means calling `half`, the calling it again on each half.
+
+```lua
+function DATA:tree(sortp, _tree,      evals,evals1)
+  evals = 0
+  function _tree(data,above,     lefts,rights,node)
+    node = NODE.new(data)
+    if   #data.rows > 2*(#self.rows)^.5
+    then lefts, rights, node.left, node.right, node.C, node.cut, evals1 =
+                self:half(data.rows, sortp, above)
+          evals = evals + evals1
+          node.lefts  = _tree(self:clone(lefts),  node.left)
+          node.rights = _tree(self:clone(rights), node.right) end
+    return node end
+  return _tree(self),evals end
+```
+
+And instead of clustering over all the days, we could just run down the best half.
+
+```lua
+function DATA:branch(  stop,           rest, _branch,evals)
+  evals, rest = 1, {}
+  stop = stop or (2*(#self.rows)^.5)
+  function _branch(data, above, left, lefts, rights)
+      if #data.rows > stop
+      then lefts, rights, left = self:half(data.rows, true, above)
+           evals=evals+1
+           for _, row1 in pairs(rights) do rest[1+#rest]= row1 end
+           return _branch(data:clone(lefts), left)
+      else return self:clone(data.rows), self:clone(rest),evals end end
+  return _branch(self)  end
+```
+
 [^Faloutsos]: Christos Faloutsos and King-Ip Lin. 1995. FastMap: a fast algorithm for indexing, data-mining and visualization of traditional and multimedia datasets. SIGMOD Rec. 24, 2 (May 1995), 163–174. https://doi.org/10.1145/568271.223812
 
 [^aha]: Section 2.4 or Aha, D.W., Kibler, D. & Albert, M.K. Instance-based learning algorithms. Mach Learn 6, 37–66 (1991). https://doi.org/10.1007/BF00153759
