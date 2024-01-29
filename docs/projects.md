@@ -54,6 +54,8 @@ table9 of https://arxiv.org/pdf/2311.17483.pdf: how well do any of those work wi
 
 lcocal vs gloab, reset at each stage
 
+check if (b+r)/(b-r) does better
+
 ## Tasks
 - apply rrp to some new domain (in se)
 - x is y and when i code it that way, i get results (for x or y) that
