@@ -68,8 +68,7 @@ Jan09&nbsp;:&nbsp;<a href="https://github.com/timm/lo/blob/main/docs/gate.pdf">A
 Jan11&nbsp;:&nbsp;<a href="/docs/00choice.pdf">Choice</a><br>
 Jan16&nbsp;:&nbsp;<a href="/docs/02bayes.pdf">Bayes+Nums</a><br>
 Jan23&nbsp;:&nbsp;   <a href="docs/03manage.md">Management</a><br>
-Jan25&nbsp;:&nbsp;<br>
-Jan30&nbsp;:&nbsp;<br>
+Jan30&nbsp;:&nbsp;   <a href="docs/03cluster.md">Cluster #1</a><br>
 Feb01&nbsp;:&nbsp;<br>
 Feb06&nbsp;:&nbsp;<br>
 Feb08&nbsp;:&nbsp;<br>
@@ -100,7 +99,7 @@ May3&nbsp;:&nbsp;Grades&nbsp;posted<br>
 Jan16&nbsp;:&nbsp; <a href="/docs/hw02.md">Hw2</a><br>
 Jan23&nbsp;:&nbsp; <a href="/docs/hw03.md">Hw3</a><br>
 Jan30&nbsp;:&nbsp; <a href="/docs/hw04.md">Hw4</a><br>
-Feb06&nbsp;:&nbsp; Hw5<br>
+Feb06&nbsp;:&nbsp; <a href="/docs/hw05.md">Hw5</a><br>
 Feb13&nbsp;:&nbsp;&nbsp;wellness&nbsp;day<br>
 Feb20&nbsp;:&nbsp; Hw6<br>
 Feb27&nbsp;:&nbsp; Hw7<br>
