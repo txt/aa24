@@ -69,7 +69,7 @@ Jan11&nbsp;:&nbsp;<a href="/docs/00choice.pdf">Choice</a><br>
 Jan16&nbsp;:&nbsp;<a href="/docs/02bayes.pdf">Bayes+Nums</a><br>
 Jan23&nbsp;:&nbsp;<a href="docs/03manage.md">Management</a><br>
 Jan30&nbsp;:&nbsp;<a href="docs/03landscape1.md">Landscape&nbsp;#1</a><br>
-Feb01&nbsp;:&nbsp;<br>
+Feb01&nbsp;:&nbsp;<a href="docs/03landscape2.md">Landscape&nbsp;#2</a><br>
 Feb06&nbsp;:&nbsp;<br>
 Feb08&nbsp;:&nbsp;<br>
 Feb13&nbsp;:&nbsp;&nbsp;wellness day<br>
