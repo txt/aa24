@@ -169,7 +169,7 @@ Let's fix up a few things:
 - The above distance calculation assume all numerics. But what about mixtures of nums and syms?
   - Aha's distance measure [^aha] (note: slow. Ungood for large dimensional spaces. We'll fix that below.)
 
-$$ d(a,b) = \left(\sum_i\Delta(a_i,b_i)^{p}\right)^{1/p}$$
+$$ d(a,b) = \left(\sum_i\left(\Delta(a_i,b_i)\right)^{p}\right)^{1/p}$$
 
   - euclidean : p=2
   - But what is &Delta; :
