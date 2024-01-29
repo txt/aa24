@@ -201,7 +201,11 @@ function NUM:dist(x,y)
   if x=="?" then x=y<.5 and 1 or 0 end
   if y=="?" then y=x<.5 and 1 or 0 end
   return math.abs(x-y) end
+```
 
+`ROW` adds all these `dist`ances across all the _X_ columns:
+
+```lua 
 function ROW:dist(other,data,     d,n,p)
   d, n, p = 0, 0, the.p
   for _, col in pairs(data.cols.x) do
