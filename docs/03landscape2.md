@@ -9,13 +9,6 @@
 
 # Theory of Landscape Analysis and Recursive Random Projections
 
-distances, stange framworks
-
-different measurements p
-
-kernel
-
-feature wiehting, feature selection
 
 ## Relevance to SE
 
@@ -90,6 +83,16 @@ In Proceedings of the 15th International Conference on Mining Software Repositor
 
 
 ## Notes on Distance
+
+### Families of Distance Functions
+
+- Taxicab distance (L1 distance), also called Manhattan distance, which measures distance as the sum of the distances in each coordinate.
+- Eucldean distance (L2 distance)
+- Minkowski distance (Lp distance), a generalization that unifies Euclidean distance, taxicab distance, and Chebyshev distance.
+
+$$ D\left(X,Y\right) = \biggl(\sum_{i=1}^n |x_i-y_i|^p\biggr)^{\frac{1}{p}} $$$
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kernels.svg/1000px-Kernels.svg.png" align=right width=400>
 
 ### Btw, Traditional Random Projections
 
