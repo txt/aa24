@@ -7,13 +7,11 @@
      src="/etc/img/ase24.png"></a></p>
 
 
-# Theory of Landscape Analysis and Recursive Random Projections
+# Background notes, Landscape Analysis, Clustering
 
 
-## Relevance to SE
+## Applications Clustering , SE
 
-
-Applications:
 - as a runtime checker (cluster the data, then report any new inputs that fall outside the range of the clusters of the test data used to test the system)[^liu]
 - as an optimization tool (don't explore the whole space; instead cluster and run your analysis on many small clusters)[^maj18][^riot]
 - as an optimizer in its own right (see below)[^chen]
@@ -133,7 +131,11 @@ Incremetal tactic one:
 
 Incremetal tactic two:
 
-- Mini-batch k-emans [^sculley].
+- General tactic for incremental
+  - Guess an initial theory
+  - Incrementally modify it
+  - Modify LESS the things you have seen the MOST
+- Mini-batch k-means [^sculley].
 
 ```
 1: Given: k, mini-batch size b, iterations t, data set X
@@ -142,7 +144,7 @@ Incremetal tactic two:
 4: for i = 1 to t do
 5:      M ← b examples picked randomly from X
 6:      for x ∈ M do
-7:          d[x] ← f(C, x) // Cache the center nearest to x
+7:          d[x] ← f(C, x)  // Cache the center nearest to x
 8:      end for
 9:      for x ∈ M do
 10:         c ← d[x]        // Get cached center for this x
@@ -159,21 +161,28 @@ Incremetal tactic two:
 
 ## Some Distances don't matter (so much)
 
+<img src="pca.png" width=400 align=right>
+
 The data is linearly transformed onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data can be easily identified.
 
 - The first principal component is the  direction that maximizes the variance of the projected data. 
 - The $N+1$ -th  component  isa direction orthogonal to the first 
  $N$ -th  principal components that maximizes the variance of the projected data.
 
-
-<img src="pca.png" width=400 align=right>
-
-BTW, the recursive Fastmap algorithm described last week is actually a   Nystrom algorithm (an approximation
-to PCA).
+<br clear=all>
+<img src="fmap.png" width=400 align=right>
 
 Common visualization technique: draw N dimensions as 2 on a flat piece of paper, using the first two compoenets
+- e.g. here we've found the first two PCA compoents then divided X,Y on their median value
+- recusive split on median for each quadrant
+- color defective modules (red) and the error-free ones as blue.
 
+
+BTW, the Fastmap algorithm described last week is actually a   Nystrom algorithm (an approximation
+to PCA).
 [^platt]: John Platt FastMap, MetricMap, and Landmark MDS are all Nystrom Algorithms, MSR-TR-2004-26, January 2005  https://proceedings.mlr.press/r5/platt05a/platt05a.pdf
+
+
 
 ### Distance gets weird 
 
