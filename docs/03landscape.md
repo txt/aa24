@@ -148,7 +148,7 @@ Let's fix up a few things:
     - So the above tree only needed 16 evals
     - (No reuse would have needed 30)    
   - Find distant points without looking at everything
-    - the Fastmap heuristic for finding far points [^Faloutsos]  ( $O(2N)$ not $O(N&2)$ )
+    - the Fastmap heuristic for finding far points [^Faloutsos]  ( $O(2N)$ not $O(N^2)$ )
     - pick _any_ point at random
     - find a point far from _any_
     - find a point far from that first _point_ 
