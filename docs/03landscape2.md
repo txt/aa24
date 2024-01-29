@@ -91,6 +91,17 @@ In Proceedings of the 15th International Conference on Mining Software Repositor
 
 ## Notes on Distance
 
+### Btw, Traditional Random Projections
+
+- Take dataset K, of the dimension M x N
+  - M=samples (rows)
+  - N=original dimension/features) (columns)
+- Initialize a random 2d matrix R of size N x D where D= new reduced dimension
+  - just throw down some random numbers
+- Normalize the columns of R making them unit-length vectors.
+- Matrix multiplication:
+  - J=K * R. 
+  - J is the final output with dimension M x D.
 
 ### Distance Calcs are often the Slowest Thing
 
@@ -135,6 +146,26 @@ Incremetal tactic two:
 ```
 
 [^sculley]: Web-scale k-means clustering, D Sculley, Proceedings of the 19th international conference on World wide web, 1177-1178. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=b452a856a3e3d4d37b1de837996aa6813bedfdcf
+
+
+
+## Some Distances don't matter (so much)
+
+The data is linearly transformed onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data can be easily identified.
+
+- The first principal component is the  direction that maximizes the variance of the projected data. 
+- The $N+1$ -th  component  isa direction orthogonal to the first 
+ $N$ -th  principal components that maximizes the variance of the projected data.
+
+
+<img src="pca.png" width=400 align=right>
+
+BTW, the recursive Fastmap algorithm described last week is actually a   Nystrom algorithm (an approximation
+to PCA).
+
+Common visualization technique: draw N dimensions as 2 on a flat piece of paper, using the first two compoenets
+
+[^platt]: John Platt FastMap, MetricMap, and Landmark MDS are all Nystrom Algorithms, MSR-TR-2004-26, January 2005  https://proceedings.mlr.press/r5/platt05a/platt05a.pdf
 
 ### Distance gets weird 
 
