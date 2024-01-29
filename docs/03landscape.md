@@ -170,7 +170,8 @@ to be doing a good job of sorting out $Y$.
 #### Better Distance
 
 - The above distance calculation assume all numerics. But what about mixtures of nums and syms?
-  - Aha's distance measure [^aha] (note: slow. Ungood for large dimensional spaces. We'll fix that below.)
+  - Aha's distance measure [^aha] over the x-attributes
+    (note: slow. Ungood for large dimensional spaces. We'll fix that below.)
 
 $$ d(a,b) = \left(\sum_i\left(\Delta(a_i,b_i)^{p}\right)\right)^{1/p}$$
 
@@ -183,8 +184,8 @@ $$ d(a,b) = \left(\sum_i\left(\Delta(a_i,b_i)^{p}\right)\right)^{1/p}$$
       - to make numbers fair with symbols, normalize x,y 0,1 using (x-min)/(max-min)
   - But what about missing values:
     - assume worst case
-    - if both unknown, assume &delta; = 1
-    - if one symbol missing, assume &delta; = 1
+    - if both unknown, assume &Delta; = 1
+    - if one symbol missing, assume &Delta; = 1
     - if one number missing:
       - let x,y be unknown, known
       - y = normalize(y)
