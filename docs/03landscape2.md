@@ -32,7 +32,7 @@
    - Discard things are aren't blue of green. 
    - She ended up sharing 20% of the rows and around a third of the columns. 1 - 1/5\*1/3 thus offered 93%   privacy
    - As for the remaining 7% of the data, we ran a mutator that pushed up items up the boundary point between classes (and no further). Bu certain common measures of privacy, that made the 7% space 80% private. 
-   - Net effect 93% + .8*7 = 98.4% private,
+   - Net effect 93% + .8\*7 = 98.4% private,
    - And, FYI, inference on the tiny green+blue region was as effective as inference over all
 
 
@@ -80,34 +80,70 @@ In Proceedings of the 15th International Conference on Mining Software Repositor
  in IEEE Transactions on Software Engineering, vol. 45, no. 6, pp. 597-614, 1 June 2019, doi: 10.1109/TSE.2018.2790925.
 
 
-## Notes on Distance
+## Some definitions
 
-### Families of Distance Functions
+Support vectors
 
-- Taxicab distance (L1 distance), also called Manhattan distance, which measures distance as the sum of the distances in each coordinate.
-- Eucldean distance (L2 distance)
-- Minkowski distance (Lp distance), a generalization that unifies Euclidean distance, taxicab distance, and Chebyshev distance.
+- Given some clustering that groups data into THIS and THAT
+- The support vectors are the examples floating either size and nearest the group boundary
+- Questions:
+  - Once we have the support vectors, can we dump everything else?
+  - Connection support vectors to RRP's two distance points?
 
-$$ D\left(X,Y\right) = \biggl(\sum_{i=1}^n |x_i-y_i|^p\biggr)^{\frac{1}{p}} $$$
+Counterfactuals:
+
+- The nearest thing to you... in another grouping
+
+Contrast set
+
+- The delta between you and something in another grouping 
+- Things that never appear in a contrast set are never useful from distiguishing THIS from THAT
+
+- $D\left(X,Y\right) = \biggl(\sum_{i=1}^n |x_i-y_i|^p\biggr)^{\frac{1}{p}}$
+  - Taxicab distance (L1 distance), also called Manhattan distance, which measures distance as the sum of the distances in each coordinate.
+  - Eucldean distance (L2 distance)
+  - Minkowski distance (Lp distance), a generalization that unifies Euclidean distance, taxicab distance, and Chebyshev distance.
+
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kernels.svg/1000px-Kernels.svg.png" align=right width=400>
 
-Common kernel functions:
-
-- Sum up the influences of near-by points
-- eg. k=3 nearest neighbors are cars with speed 40,30,50 (for nearest, next neareest, next-next nearest)
-- What is the speed of this car?
-  - Assume equal infuences? that is a linear kernel. (40+30+50)/3 = 40
-  - Assume near things score more than far things? triangular kernal
-    - weight nearest 3/6; next nearest as 2/6; next at 1/6
-    - (40\*3 + 30\*2 + 50\*1)/6 = 38
+- kernel functions:
+  - Sum up the influences of near-by points
+  - eg. k=3 nearest neighbors are cars with speed 40,30,50 (for nearest, next neareest, next-next nearest)
+  - What is the speed of this car?
+    - Assume equal infuences? that is a linear kernel. (40+30+50)/3 = 40
+    - Assume near things score more than far things? triangular kernal
+      - weight nearest 3/6; next nearest as 2/6; next at 1/6
+      - (40\*3 + 30\*2 + 50\*1)/6 = 38
 
 <br clear=all>
 
-### Btw, Standard  Random Projections
 
-Assumes all numerics; requires polynomial time matrix computations:
+<img src="pca.png" width=400 align=right>
 
+Principle Component Analysis:
+
+- The data is linearly transformed onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data can be easily identified.
+- The first principal component is the  direction that maximizes the variance of the projected data. 
+- The $N+1$ -th  component  isa direction orthogonal to the first 
+ $N$ -th  principal components that maximizes the variance of the projected data.
+- BTW, the Fastmap algorithm described last week is actually a   Nystrom algorithm (an approximation
+  to PCA).
+
+[^platt]: John Platt FastMap, MetricMap, and Landmark MDS are all Nystrom Algorithms, MSR-TR-2004-26, January 2005  https://proceedings.mlr.press/r5/platt05a/platt05a.pdf
+
+<br clear=all>
+<img src="fmap.png" width=400 align=right>
+
+- Common visualization technique: draw N dimensions as 2 on a flat piece of paper, using the first two compoenets
+  - e.g. here we've found the first two PCA compoents then divided X,Y on their median value
+  - recusive split on median for each quadrant
+  - color defective modules (red) and the error-free ones as blue.
+
+
+Random Projections (the standard definition)
+
+- FYI, I'm not a big fan or standard random: assumes all numerics; requires polynomial time matrix computations:
 - Take dataset K, of the dimension M x N
   - M=samples (rows)
   - N=original dimension/features) (columns)
@@ -118,82 +154,8 @@ Assumes all numerics; requires polynomial time matrix computations:
   - J=K * R. 
   - J is the final output with dimension M x D.
 
-### Distance Calcs are often the Slowest Thing
 
-Btw, distance calculations are really slow
-
-- heuristic for faster distance: divide up the space into small pieces (e.g. &sqrt;(N)
-- Space between pieces = &infty;
-- Space inside pieces: L2
-
-Incremetal tactic one:
-
-- Read $N$ instances, generate $C$ clusters in a tree
-- Read next $N$ instances, find their nearest clusters
-  - keep the anomalies in those near clusters (things not close to known clusters)
-  - when anomalizes grow to (say), more than 10%, rejig just that sub-tree
-  - incrementally updating subtrees with anomalies can be 10,000 times faster than
-    globally re-organizing all clusters [^kirk].
-
-[^kirk]:Kiriakidis, K., Gordon-Spears, D.F. (2003). Formal Modeling and Supervisory Control of Reconfigurable Robot Teams. In: Hinchey, M.G., Rash, J.L., Truszkowski, W.F., Rouff, C., Gordon-Spears, D. (eds) Formal Approaches to Agent-Based Systems. FAABS 2002. Lecture Notes in Computer Science(), vol 2699. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-540-45133-4_8
-
-
-Incremetal tactic two:
-
-- General tactic for incremental
-  - Guess an initial theory
-  - Incrementally modify it
-  - Modify LESS the things you have seen the MOST
-- Mini-batch k-means [^sculley].
-
-```
-1: Given: k, mini-batch size b, iterations t, data set X
-2: Initialize each c ∈ C with an x picked randomly from X
-3: v ← 0
-4: for i = 1 to t do
-5:      M ← b examples picked randomly from X
-6:      for x ∈ M do
-7:          d[x] ← f(C, x)  // Cache the center nearest to x
-8:      end for
-9:      for x ∈ M do
-10:         c ← d[x]        // Get cached center for this x
-11:         v[c] ← v[c] + 1 // Update per-center counts
-12:         η ← 1/v[c]      // Get per-center learning rate
-13:         c ← (1 − η)c + ηx // Take gradient step
-14:     end for
-15: end for
-```
-
-[^sculley]: Web-scale k-means clustering, D Sculley, Proceedings of the 19th international conference on World wide web, 1177-1178. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=b452a856a3e3d4d37b1de837996aa6813bedfdcf
-
-
-
-## Some Distances don't matter (so much)
-
-<img src="pca.png" width=400 align=right>
-
-The data is linearly transformed onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data can be easily identified.
-
-- The first principal component is the  direction that maximizes the variance of the projected data. 
-- The $N+1$ -th  component  isa direction orthogonal to the first 
- $N$ -th  principal components that maximizes the variance of the projected data.
-
-<br clear=all>
-<img src="fmap.png" width=400 align=right>
-
-Common visualization technique: draw N dimensions as 2 on a flat piece of paper, using the first two compoenets
-- e.g. here we've found the first two PCA compoents then divided X,Y on their median value
-- recusive split on median for each quadrant
-- color defective modules (red) and the error-free ones as blue.
-
-
-BTW, the Fastmap algorithm described last week is actually a   Nystrom algorithm (an approximation
-to PCA).
-[^platt]: John Platt FastMap, MetricMap, and Landmark MDS are all Nystrom Algorithms, MSR-TR-2004-26, January 2005  https://proceedings.mlr.press/r5/platt05a/platt05a.pdf
-
-
-
-### Distance gets weird 
+## Distances gets weird 
 
 
 [Distance is wierd](https://haralick.org/ML/useful_things_about_machine_learning.pdf):
@@ -226,5 +188,25 @@ Why reduce dimensions?
 - So hard to find nearby (relevant) examples
   - Trick: find a transform to map higher to lower.
   - RRP anyone?
+
+## Distance Calcs are often the Slowest Thing
+
+Btw, distance calculations are really slow
+
+- heuristic for faster distance: divide up the space into small pieces (e.g. &sqrt;(N)
+- Space between pieces = &infty;
+- Space inside pieces: L2
+
+Incremetal tactic one:
+
+- Read $N$ instances, generate $C$ clusters in a tree
+- Read next $N$ instances, find their nearest clusters
+  - keep the anomalies in those near clusters (things not close to known clusters)
+  - when anomalizes grow to (say), more than 10%, rejig just that sub-tree
+  - incrementally updating subtrees with anomalies can be 10,000 times faster than
+    globally re-organizing all clusters [^kirk].
+
+[^kirk]:Kiriakidis, K., Gordon-Spears, D.F. (2003). Formal Modeling and Supervisory Control of Reconfigurable Robot Teams. In: Hinchey, M.G., Rash, J.L., Truszkowski, W.F., Rouff, C., Gordon-Spears, D. (eds) Formal Approaches to Agent-Based Systems. FAABS 2002. Lecture Notes in Computer Science(), vol 2699. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-540-45133-4_8
+
 
 
