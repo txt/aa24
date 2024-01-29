@@ -99,11 +99,14 @@ Contrast set
 - The delta between you and something in another grouping 
 - Things that never appear in a contrast set are never useful from distiguishing THIS from THAT
 
-- $D\left(X,Y\right) = \biggl(\sum_{i=1}^n |x_i-y_i|^p\biggr)^{\frac{1}{p}}$
+
+Distances:
+
   - Taxicab distance (L1 distance), also called Manhattan distance, which measures distance as the sum of the distances in each coordinate.
   - Eucldean distance (L2 distance)
   - Minkowski distance (Lp distance), a generalization that unifies Euclidean distance, taxicab distance, and Chebyshev distance.
 
+$$D\left(X,Y\right) = \biggl(\sum_{i=1}^n |x_i-y_i|^p\biggr)^{\frac{1}{p}}$$
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kernels.svg/1000px-Kernels.svg.png" align=right width=400>
 
