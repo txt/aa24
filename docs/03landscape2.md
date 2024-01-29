@@ -94,10 +94,19 @@ $$ D\left(X,Y\right) = \biggl(\sum_{i=1}^n |x_i-y_i|^p\biggr)^{\frac{1}{p}} $$$
 
 Common kernel functions:
 
+- Sum up the influences of near-by points
+- eg. k=3 nearest neighbors are cars with speed 40,30,50 (for nearest, next neareest, next-next nearest)
+- What is the speed of this car?
+  - Assume equal infuences? that is a linear kernel. (40+30+50)/3 = 40
+  - Assume near things score more than far things? triangular kernal
+    - weight nearest 3/6; next nearest as 2/6; next at 1/6
+    - (40\*3 + 30\*2 + 50\*1)/6 = 38
 
 <br clear=all>
 
-### Btw, Traditional Random Projections
+### Btw, Standard  Random Projections
+
+Assumes all numerics; requires polynomial time matrix computations:
 
 - Take dataset K, of the dimension M x N
   - M=samples (rows)
@@ -194,7 +203,9 @@ to PCA).
 - amount of data needed to support the result grows exponentially with dimensions
  
 
-High-dimensional data can be approximated in lower dimension
+
+## High-dimensional data can be approximated in lower dimensions
+
 - **Continuity Assumption:**  Points which are closer to each other are more likely to have the same output label.
 - **Cluster Assumption:**  Data can be divided into discrete clusters and points in the same cluster are more likely to share an output label.
 - **Manifold Assumption:**   high dimensional data can be randomly projected into a lower dimensional  space while controlling the distortion in the pairwise distances. 
@@ -214,5 +225,6 @@ Why reduce dimensions?
        - Observe how after $n=6$, the volume starts shrinking and hits zero at $n=20$
 - So hard to find nearby (relevant) examples
   - Trick: find a transform to map higher to lower.
+  - RRP anyone?
 
 
