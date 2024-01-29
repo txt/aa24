@@ -168,13 +168,13 @@ Let's fix up a few things:
 
 - The above distance calculation assume all numerics. But what about mixtures of nums and syms?
   - Aha's distance measure [^aha] (note: slow. Ungood for large dimensional spaces. We'll fix that below.)
-  -  d(a,b )= (&sum; (&Delta;(a,b))<sup>p</sup>))<sup>1/p</sup>
+  - d(a,b )= (&sum; (&Delta;(a,b))<sup>p</sup>))<sup>1/p</sup>
   - euclidean : p=2
   - But what is &Delta; :
-    -  &Delta; Symbols: 
+    - &Delta; Symbols: 
       - return 0 if x == y else 1
     - &Delta;  Numbers:
-      -  x - y
+      - x - y
       - to make numbers fair with symbols, normalize x,y 0,1 using (x-min)/(max-min)
   - But what about missing values:
     - assume worst case
