@@ -94,6 +94,11 @@ $$ D\left(X,Y\right) = \biggl(\sum_{i=1}^n |x_i-y_i|^p\biggr)^{\frac{1}{p}} $$$
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kernels.svg/1000px-Kernels.svg.png" align=right width=400>
 
+Common kernel functions:
+
+
+<br clear=all>
+
 ### Btw, Traditional Random Projections
 
 - Take dataset K, of the dimension M x N
