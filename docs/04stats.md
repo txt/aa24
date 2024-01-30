@@ -269,16 +269,16 @@ When such blurring occurs,
 For another example, consider [knn results](https://github.com/timm/lean/blob/master/src/knn.lua) that scores nearest-neighbor regression
 using $100*(predicted-actual)/predicted$
 
-- Using $k$ = 1,2,4,8 nearest neighbors
-- Via  training set that contains $N$ = 512,256,128,32 rows selected at random from auto.csv
+- Using $k \in \{1,2,4,8}$nearest neighbors
+- Via  training set that contains $N \in \{512,256,128,32\}$  rows selected at random from auto.csv
 - Using a distance function $p \in \{1,2,4,8\}$  $(\sum_i (x_i-y_i)^p)^{1/p}$ (ad recall that $p=2$ is Euclidean)
 - Where the conclusions of those near neighbors are combined via a  median or  triangular kernel function
   - median means "pick the middle value"
   - triangular means "closer values are weighted more" 
 
-$$ \mathit{prediction}= \fract{\sum_i n_i/d_i}{\sum_i 1/d_i} $$ 
+$$ \mathit{prediction}= \frac{\sum_i n_i/d_i}{\sum_i 1/d_i} $$ 
 
-Please consider $k=4,p=4, N=32, f=triangle$. Notive anything interesting?
+Please consider $\{k=4,p=4, N=32, f=\mathit{triangle}\}$. Notice anything interesting?
 ## Caution: Runtimes and Storage
 
 Parametric stats are very fast and consume little memory (jsut the memory required for the params).
