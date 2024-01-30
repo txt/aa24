@@ -302,26 +302,26 @@ here,s we asking cfliffsDelta (cd), boostrapping (boot), conjuction of both, and
 
 Note the large areas of agreement, with a small dispute zone in the middle.
 
-|inc  |cd  |boot  |c+b  |sd/3|agree?|
-|---|---|---|--|--|--|
-|1 |False |False |False |False|y|
-|1.02 |False |False |False |False|y|
-|1.04 |False |False |False |False|y|
-|1.061 |False |False |False |False|y|
-|1.082 |False |False |False |False|y|
+|inc  |cd  |boot  |c+b  |sd/3|dispute?|
+|---|---|---|--|--|:--:|
+|1 |False |False |False |False||
+|1.02 |False |False |False |False||
+|1.04 |False |False |False |False||
+|1.061 |False |False |False |False||
+|1.082 |False |False |False |False||
 |1.104 |True |False |False |False|n|
 |1.126 |False |False |False |True|n|
 |1.149 |True |False |False |True|n|
 |1.172 |True |False |False |True|n|
 |1.195 |True |False |False |True|n|
-|1.219 |True |True |True |True|y|
-|1.243 |True |False |False |True|
-|1.268 |True |True |True |True|y|
-|1.294 |True |True |True |True|y|
-|1.319 |True |True |True |True|y|
-|1.346 |True |True |True |True|y|
-|1.373 |True |True |True |True|y|
-|1.4 |True |True |True |True|y|
-|1.428 |True |True |True |True|y|
-|1.457 |True |True |True |True|y|
-|1.486 |True |True |True |True|y|
+|1.219 |True |True |True |True||
+|1.243 |True |False |False |True|n|
+|1.268 |True |True |True |True||
+|1.294 |True |True |True |True||
+|1.319 |True |True |True |True||
+|1.346 |True |True |True |True||
+|1.373 |True |True |True |True||
+|1.4 |True |True |True |True||
+|1.428 |True |True |True |True||
+|1.457 |True |True |True |True||
+|1.486 |True |True |True |True||
