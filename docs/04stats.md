@@ -9,23 +9,31 @@
 
 # Stats
 
-Does 42==44?
+## Tl;DR
+
+Place the numbers seen in different samples in a file, seperated by the treatment name. e.g [stats.txt](https://github.com/timm/lo/blob/main/src/stats.txt)
+
+Change the last line of [stat.py](https://github.com/timm/lo/blob/main/src/stats.py) to `egSlurp()`.
+
+Run `python3 stats.py`.
+
+Collect your Nobel prize.
+
+## Does 42==44?
 
 If we watched 100 women and men walk past us and their mean walking tipped was 42 and 44 cm/second (for men and women respectively), it is true that men walk faster than women?
 
-
-
-This is an example of the problem of comparing distributions. Which can get tricky.
+This is an example of the problem of comparing samples. Which can get tricky.
 
 ![image](https://github.com/txt/aa24/assets/29195/5b1331fc-3bba-470e-a6d1-407bac9b7fb6)
 
 
 These problem as two parts:
 
-- Are the distributions distinguishable?
-  - If we picked a number from one distibtuion, can we tell of it can be found on the other?
+- Are the samples distinguishable?
+  - If we picked a number from one sample, can we tell of it can be found on the other?
   - This is the (badly named) singificance test.
-- Is the different between them non-trivial:
+- Is the difference between them non-trivial:
   - This is the effect size test
   - And we want to ignore small effects.
 
@@ -44,6 +52,16 @@ Now we increase the standard deviation.
 - And now that mean seperation seems less different
 
 ![image](https://github.com/txt/aa24/assets/29195/ee3e7184-4f78-4c88-bd66-34c2d61c98e5)
+
+## Terminology
+
+We _sample_ under different _treatments_ (e.g. we put weights on our people, then ask them to walk around)
+
+- and the _sample size_ is the number of measurements made per _treatment_.
+
+Sometimes we assume _samples_ come from different _distributions_ (e.g. normal, binomial, etc).
+
+We want to know how to seperate _samples_ that are _significty distinguisable_, by more than a _small effect size_.
 
 ## Parametric Statistical Tests
 
@@ -67,16 +85,16 @@ Also, reall world data may be conform to a simple single distribution. For exam,
 
 Many statistical methods (e.g.  t-test, Tukey, Duncan, Newman-Keuls procedures) suffer from  have overlapping
 problems. 
-- By overlapping we mean the possibility of one or more treatments to be classified in
+- By overlapping we mean the possibility of one or more sample to be classified in
 more than one group.
-- In fact, as the number of treatments icnrease, so to does the the number of overlaps, which makes it hard  to
+- In fact, as the number of samples increase, so to does the the number of overlaps, which makes it hard  to
     distinguish the real groups to which the means should belong.
 - The Scott-Knott method [^sk] does not have this problem, what is often cited as a very good quality of this
 procedure.
 
 Scott-Kott is a recursive clustering procedure that 
-- sorts the treatmetns
-- divided them and the larges expects different in the mean before and after division
+- sorts the samples
+- divided them on the largest expected difference in the mean before and after division
 - then recuses on each half, but only if the two halfs are statistically different
 
 The halves are picked to maximize:
@@ -89,7 +107,7 @@ $$    E(\Delta) = \frac{|l_1|}{|l|}abs(E({l_1}) - E({l}))^2 + \frac{|l_2|}{|l|}a
 [^sk]: Scott R.J., Knott M. 1974. A cluster analysis method for grouping mans in the analysis of variance.
 Biometrics, 30, 507-512.
 
-For example, support I had four treatments labelled _x1,x2..._ etc
+For example, support I had four samples labelled _x1,x2..._ etc
 
 ```python
 def eg2():
@@ -103,7 +121,7 @@ def eg0(nums):
   all = NUM([x for num in nums for x in num.has])
   [print(all.bar(num,width=40,word="%4s", fmt="%5.2f")) for num in sk(nums)] 
 ```        
-I would sort them by their median value the draw a littlebox plot of their 10-to-30th values, their median, and their 70-to-90th value:
+I would sort them by their median value the draw a little box plot of their 10-to-30th values, their median, and their 70-to-90th value:
 
 ```
 sk
@@ -115,7 +133,7 @@ rank  rx   median IQR                                              10th   30th  
  2,   x2,  0.80,  0.10,                     |    -----     *--- ,  0.60,  0.70,  0.80,  0.80,  0.89
  2,   x4,  0.80,  0.10,                     |    -----     *----,  0.60,  0.70,  0.80,  0.80,  0.90
 ``` 
-Note the left-handside `sk rank` column. This reports what happens after SK sorts the treatmetns and decides which ones are different
+Note the left-handside `sk rank` column. This reports what happens after SK sorts the samples and decides which ones are different
 - A treatment has the same ranked the one before it, 
   - it is not statistically distinguishable
   - by more than small effect.
@@ -124,9 +142,9 @@ But how does it do it? The Scott & Knott method make use of a top-down clusterin
 the the whole group of observed mean effects, it divides, and keep dividing the sub-groups in such
 a way that the intersection of any two groups formed in that manner is empty.
 
-This means that $N$ treatments might  get ranked using    only $\log_2(N)$ statistical comparisons
-- and even less, if ever sub-trees high up int he process are found to be not statistically different
-- Also, Scott-Knott converts the  problem of ranking treatments becomes more a clustering probkem (which I do understand) than a stats problem (which, in all fairness, I understand only weakly).
+This means that $N$ samples might  get ranked using    only $\log_2(N)$ statistical comparisons
+- and even less, if ever sub-trees high up int the process are found to be not statistically different
+- Also, Scott-Knott converts the  problem of ranking samples to clustering probkem (which I do understand) rather than a stats problem (which, in all fairness, I understand only weakly).
 
 
 ```python
@@ -137,15 +155,15 @@ def sk(nums):
     b4, cut = NUM(all(nums)) ,None
     max =  -1
     for i in range(1,len(nums)):  
-      lhs = NUM(all(nums[:i]));   #everything before "i"
-      rhs = NUM(all(nums[i:]));   #everything from "i" and upwards
+      lhs = NUM(all(nums[:i]));   #every sample before "i"
+      rhs = NUM(all(nums[i:]));   #every sample from "i" and upwards
       tmp = (lhs.n*abs(lhs.mid() - b4.mid()) + rhs.n*abs(rhs.mid() - b4.mid()))/b4.n 
       if tmp > max:
          max,cut = tmp,i
     #-----------------------------------------------------
     if cut and different( all(nums[:cut]), all(nums[cut:])):
       # we have found a difference that matters, se we recurse
-      rank = sk1(nums[:cut], rank, lvl+1) + 1   # the treatmetns after the cut have rank one more than before
+      rank = sk1(nums[:cut], rank, lvl+1) + 1   # the samples after the cut have rank one more than before
       rank = sk1(nums[cut:], rank, lvl+1)
     else:
       # we have not found a different, 
@@ -156,3 +174,86 @@ def sk(nums):
   sk1(nums,0)
   return nums # return the treatements, sorted and ranked.
 ```
+
+## different()
+But how to code up `different`?. Recall that this needs two functions
+
+- Are the sample distinguishable?
+  - If we picked a number from one sample, can we tell of it can be found on the other?
+- Is the difference more than a small effect? 
+  - This is the effect size test
+
+```python
+def different(x,y):
+  "non-parametric effect size and significance test"
+  return _cliffsDelta(x,y) and _bootstrap(x,y)
+```
+Note that that this is a conjuction; i.e. to prove "different" I have to prove both things.
+
+### CliffsDelta (non-parametric effect size)
+
+This code is simple. For everything $x$ in one sample, look in the other sample
+- Count how often there are bigger and larger numbers in the other sample.
+- If $x$ has many numbers less and greater than me, then I tend to be the same as the other sample
+  - Since I tend to fall to the middle of the other sample
+
+```python
+def _cliffsDelta(x, y, effectSize=0.2):
+  """non-parametric effect size. threshold is border between small=.11 and medium=.28 
+     from Table1 of  https://doi.org/10.3102/10769986025002101"""
+  n,lt,gt = 0,0,0
+  for x1 in x:
+    for y1 in y:
+      n += 1
+      if x1 > y1: gt += 1
+      if x1 < y1: lt += 1
+  return abs(lt - gt)/n  > effectSize # true if different
+```
+
+### Bootstrap (non-parametric test for "distinguish-ablity")
+
+- Summarize the difference in   two samples with some `obs` (observartion)
+- Hundreds of times
+  - Sample with replacement from both samples
+  - Count how often the observation is larger than the baseline `obs`.
+- The higher that count, the harder it is to seperate you
+  - so the lower that count, the more we are sure you are different.
+
+Here's the code for that. `yhat` and `zhat` are transforms recommended by 
+ Efron and Tibshirani to level the playing field (ensures that both distribution s
+ are scored on mean value that is common to both distributions).
+ 
+```python
+def _bootstrap(y0,z0,confidence=.05,Experiments=512,):
+  """non-parametric significance test From Introduction to Bootstrap, 
+     Efron and Tibshirani, 1993, chapter 20. https://doi.org/10.1201/9780429246593"""
+  obs = lambda x,y: abs(x.mu-y.mu) / ((x.sd**2/x.n + y.sd**2/y.n)**.5 + 1E-30)
+  x, y, z = NUM(y0+z0), NUM(y0), NUM(z0)
+  d = obs(y,z)
+  yhat = [y1 - y.mu + x.mu for y1 in y0]
+  zhat = [z1 - z.mu + x.mu for z1 in z0]
+  n      = 0
+  for _ in range(Experiments):
+    ynum = NUM(random.choices(yhat,k=len(yhat)))
+    znum = NUM(random.choices(zhat,k=len(zhat)))
+    if obs(ynum, znum) > d:
+      n += 1
+  return n / Experiments < confidence # true if different
+```
+
+## Some Curious Effects
+
+Blurring
+
+
+## Caution: Runtimes and Storage
+
+Parametric stats are very fast and consume little memory (jsut the memory required for the params).
+
+Non-parametric stats are slower (see all that sampling inside `_bootstrap` and that $O(N^2)$ traversal inside `cliffsDelta`). 
+So don't run non-parametric tests inside the inner-most loop of your reasonong.
+
+If you need a quick and dirty check for differences, just check if the mean difference is larger than a third of the standard deviation of the sample. No, this test is not well-founded. But it is useful
+as a heuristic. 
+
+Then,  once you have  collected results from (say) 20 repeated runs, run these non-parametric tests as part of your final report generation.
