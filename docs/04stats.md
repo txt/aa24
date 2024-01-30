@@ -17,9 +17,27 @@ This is an example of the problem of comparing distributions. These problem as t
 
 - Are the distributions distinguishable?
   - If we picked a number from one distibtuion, can we tell of it can be found on the other?
-  - THis is the (badly named) singificance test.
+  - This is the (badly named) singificance test.
 - Is the different between them non-trivial:
   - This is the effect size test
   - And we want to ignore small effects.
 
 
+Easy case: means far away and the curves do not overlap
+
+- So the curves are significantly different
+- with large effect
+
+![image](https://github.com/txt/aa24/assets/29195/3a0eaad2-4986-463b-a1f0-e26d8500efae)
+
+
+Now we increase the standard deviation.
+
+- So much overalp. Curves may not be significantly different
+- And now that mean seperation seems less different
+
+![image](https://github.com/txt/aa24/assets/29195/ee3e7184-4f78-4c88-bd66-34c2d61c98e5)
+
+## Parametric Statistical Tests
+
+If we assume that our data comes from a certain distrubtion
