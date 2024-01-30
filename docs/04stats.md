@@ -249,7 +249,7 @@ def _bootstrap(y0,z0,confidence=.05,Experiments=512,):
 “The point was that you have to look at the world as it is, not as some elegant theory says it ought to be.”   
 — M. Mitchell Waldrop
 
-<img src="blurring.png" align=right width=400>
+<img src="blurring.png" align=right width=500>
 
 When dealing with many treatments with larte variance,
 
