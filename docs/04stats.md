@@ -88,8 +88,39 @@ $$    E(\Delta) = \frac{|l_1|}{|l|}abs(E({l_1}) - E({l}))^2 + \frac{|l_2|}{|l|}a
 
 [^sk]: Scott R.J., Knott M. 1974. A cluster analysis method for grouping mans in the analysis of variance.
 Biometrics, 30, 507-512.
- 
-The Scott & Knott method make use of a clever algorithm of cluster analysis, where, starting from
+
+For example, support I had four treatments labelled _x1,x2..._ etc
+
+```python
+def eg2():
+  eg0([ NUM([0.34, 0.49 ,0.51, 0.6] ,   "x1"),
+        NUM([0.6  ,0.7 , 0.8 , 0.89] ,  "x2"),
+        NUM([0.13 ,0.23, 0.38 , 0.38] , "x3"),
+        NUM([0.6  ,0.7,  0.8 , 0.9] ,   "x4"),
+        NUM([0.1  ,0.2,  0.3 , 0.4] ,   "x5")])
+
+def eg0(nums):
+  all = NUM([x for num in nums for x in num.has])
+  [print(all.bar(num,width=40,word="%4s", fmt="%5.2f")) for num in sk(nums)] 
+```        
+I would sort them by their median value the draw a littlebox plot of their 10-to-30th values, their median, and their 70-to-90th value:
+
+```
+sk
+rank  rx   median IQR                                              10th   30th   50th   70th   90th
+====  ==   ====== ====                                             =====  ====   =====  ====   ====
+ 0,   x5,  0.30,  0.10, -----    *-----     |                   ,  0.10,  0.20,  0.30,  0.30,  0.40
+ 0,   x3,  0.38,  0.15,  -----        *     |                   ,  0.13,  0.23,  0.38,  0.38,  0.38
+ 1,   x1,  0.51,  0.02,             ------- *----               ,  0.34,  0.49,  0.51,  0.51,  0.60
+ 2,   x2,  0.80,  0.10,                     |    -----     *--- ,  0.60,  0.70,  0.80,  0.80,  0.89
+ 2,   x4,  0.80,  0.10,                     |    -----     *----,  0.60,  0.70,  0.80,  0.80,  0.90
+``` 
+Note the left-handside `sk rank` column. This reports what happens after SK sorts the treatmetns and decides which ones are different
+- A treatment has the same ranked the one before it, 
+  - it is not statistically distinguishable
+  - by more than small effect.
+    
+But how does it do it? The Scott & Knott method make use of a top-down clustering algorithm, where, starting from
 the the whole group of observed mean effects, it divides, and keep dividing the sub-groups in such
 a way that the intersection of any two groups formed in that manner is empty.
 
@@ -98,7 +129,7 @@ This means that $N$ treatments might  get ranked using    only $\log_2(N)$ stati
 - Also, Scott-Knott converts the  problem of ranking treatments becomes more a clustering probkem (which I do understand) than a stats problem (which, in all fairness, I understand only weakly).
 
 
-```lua
+```python
 def sk(nums):
   "sort nums on median. give adjacent nums the same rank if they are statistically the same"
   def sk1(nums, rank,lvl=1):
@@ -106,19 +137,22 @@ def sk(nums):
     b4, cut = NUM(all(nums)) ,None
     max =  -1
     for i in range(1,len(nums)):  
-      lhs = NUM(all(nums[:i])); 
-      rhs = NUM(all(nums[i:])); 
+      lhs = NUM(all(nums[:i]));   #everything before "i"
+      rhs = NUM(all(nums[i:]));   #everything from "i" and upwards
       tmp = (lhs.n*abs(lhs.mid() - b4.mid()) + rhs.n*abs(rhs.mid() - b4.mid()))/b4.n 
       if tmp > max:
-         max,cut = tmp,i 
-    if cut and different( all(nums[:cut]), all(nums[cut:])): 
-      rank = sk1(nums[:cut], rank, lvl+1) + 1
+         max,cut = tmp,i
+    #-----------------------------------------------------
+    if cut and different( all(nums[:cut]), all(nums[cut:])):
+      # we have found a difference that matters, se we recurse
+      rank = sk1(nums[:cut], rank, lvl+1) + 1   # the treatmetns after the cut have rank one more than before
       rank = sk1(nums[cut:], rank, lvl+1)
     else:
-      for num in nums: num.rank = rank
+      # we have not found a different, 
+      for num in nums: num.rank = rank # all treatments get the same rank
     return rank
   #------------ 
-  nums = sorted(nums, key=lambda num:num.mid())
+  nums = sorted(nums, key=lambda num:num.mid())   # before we start, make sure we sort things
   sk1(nums,0)
-  return nums
+  return nums # return the treatements, sorted and ranked.
 ```
