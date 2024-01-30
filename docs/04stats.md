@@ -243,9 +243,42 @@ def _bootstrap(y0,z0,confidence=.05,Experiments=512,):
 
 ## Some Curious Effects
 
-Blurring
+### Blurring
 
 
+“The point was that you have to look at the world as it is, not as some elegant theory says it ought to be.”   
+— M. Mitchell Waldrop
+
+<img src="blurring.png" align=right width=400>
+
+When dealing with many treatments with larte variance,
+
+- results may "_blur_"
+- i.e. many of them are statistically indistinguishable.
+
+For example, at left,  51 of the 55
+treatments all receive the same rank. 
+
+When such blurring occurs,
+
+- we can conclude is that some of the distinctions made during sampling were unimportant
+  (in the sense that it does not distinguish the individual treatments).
+- Which can lead to some startling results....
+
+
+For another example, consider [knn results](https://github.com/timm/lean/blob/master/src/knn.lua) that scores nearest-neighbor regression
+using $100*(predicted-actual)/predicted$
+
+- Using $k$ = 1,2,4,8 nearest neighbors
+- Via  training set that contains $N$ = 512,256,128,32 rows selected at random from auto.csv
+- Using a distance function $p \in \{1,2,4,8\}$  $(\sum_i (x_i-y_i)^p)^{1/p}$ (ad recall that $p=2$ is Euclidean)
+- Where the conclusions of those near neighbors are combined via a  median or  triangular kernel function
+  - median means "pick the middle value"
+  - triangular means "closer values are weighted more" 
+
+$$ \mathit{prediction}= \fract{\sum_i n_i/d_i}{\sum_i 1/d_i} $$ 
+
+Please consider $k=4,p=4, N=32, f=triangle$. Notive anything interesting?
 ## Caution: Runtimes and Storage
 
 Parametric stats are very fast and consume little memory (jsut the memory required for the params).
