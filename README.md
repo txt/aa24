@@ -70,9 +70,9 @@ Jan16&nbsp;:&nbsp;<a href="/docs/02bayes.pdf">Bayes+Nums</a><br>
 Jan23&nbsp;:&nbsp;<a href="docs/03manage.md">Management</a><br>
 Jan30&nbsp;:&nbsp;<a href="docs/03landscape1.md">Landscape&nbsp;#1</a><br>
 Feb01&nbsp;:&nbsp;<a href="docs/03landscape2.md">Landscape&nbsp;#2</a><br>
-Feb06&nbsp;:&nbsp;<br>
+Feb06&nbsp;:&nbsp; no class<br>
 Feb08&nbsp;:&nbsp;<br>
-Feb13&nbsp;:&nbsp;&nbsp;wellness day<br>
+Feb13&nbsp;:&nbsp;no&nbsp;class<br>
 Feb15&nbsp;:&nbsp;<br>
 Feb20&nbsp;:&nbsp;<br>
 Feb22&nbsp;:&nbsp;<br>
