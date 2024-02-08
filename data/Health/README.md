@@ -1,4 +1,15 @@
 # Health datasets 0-35
+
+Data from for 3 goals in 12   projects (selected via the STABLIZE process [^suv]
+
+[^suv]: Suvodeep Majumder, Tianpei Xia, Rahul Krishna, and Tim Menzies. 2022. Methods for stabilizing models across large samples of projects (with case studies on predicting defect and project health). In Proceedings of the 19th International Conference on Mining Software Repositories (MSR '22). Association for Computing Machinery, New York, NY, USA, 566–578. https://doi.org/10.1145/3524842.3527934
+
+|data set | goal|
+|----------|-----|
+| 0-11 | commits |
+
+(Note: dataset25 has been removed due to local corruptions.).
+
 Each of the health datasets contains 11 columns.
 The left hand side  columns (MRE, ACC, PRED40) are
 
