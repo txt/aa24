@@ -1,4 +1,4 @@
-max_spout,spliters,counters,<$throughput,<$latency
+Max_spout,Spliters,Counters,Throughput+,Latency-
 1,1,1,4255.3,2.5621
 1,1,3,4160.1,2.6057
 1,1,6,4089.5,2.55
