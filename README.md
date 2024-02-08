@@ -71,7 +71,7 @@ Jan23&nbsp;:&nbsp;<a href="docs/03manage.md">Management</a><br>
 Jan30&nbsp;:&nbsp;<a href="docs/03landscape1.md">Landscape&nbsp;#1</a><br>
 Feb01&nbsp;:&nbsp;<a href="docs/03landscape2.md">Landscape&nbsp;#2</a><br>
 Feb06&nbsp;:&nbsp; no class<br>
-Feb08&nbsp;:&nbsp;<br>
+Feb08&nbsp;:&nbsp;<a href="docs/04stats.md">Stats</a></br>
 Feb13&nbsp;:&nbsp;no&nbsp;class<br>
 Feb15&nbsp;:&nbsp;<br>
 Feb20&nbsp;:&nbsp;<br>
@@ -101,13 +101,12 @@ Jan23&nbsp;:&nbsp; <a href="/docs/hw03.md">Hw3</a><br>
 Jan30&nbsp;:&nbsp; <a href="/docs/hw04.md">Hw4</a><br>
 Feb06&nbsp;:&nbsp; <a href="/docs/hw05.md">Hw5</a><br>
 Feb13&nbsp;:&nbsp;&nbsp;wellness&nbsp;day<br>
-Feb20&nbsp;:&nbsp; Hw6<br>
-Feb27&nbsp;:&nbsp; Hw7<br>
-Mar05&nbsp;:&nbsp; Hw8<br>
+Feb27&nbsp;:&nbsp; <a href="/docs/hw06.md">Hw6</a><br>
+Mar05&nbsp;:&nbsp; Hw7<br>
 Mar12&nbsp;:&nbsp; break<br>
 Mar19&nbsp;:&nbsp; midterm<br>
-Mar26&nbsp;:&nbsp; Hw9<br>
-Apr02&nbsp;:&nbsp; Hw10<br>
+Mar26&nbsp;:&nbsp; Hw8<br>
+Apr02&nbsp;:&nbsp; Hw9<br>
 Apr09&nbsp;:&nbsp; - <br>
 Apr16&nbsp;:&nbsp; - <br>
 Apr22&nbsp;:&nbsp;&nbsp;monday,&nbsp;project<br>

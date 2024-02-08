@@ -11,9 +11,9 @@
 
 ## Tl;DR
 
-Place the numbers seen in different samples in a file, seperated by the treatment name. e.g [stats.txt](https://github.com/timm/lo/blob/main/src/stats.txt)
+Place the numbers seen in different samples in a file, separated by the treatment name. e.g [stats.txt](stats.txt)
 
-Change the last line of [stats.py](https://github.com/timm/lo/blob/main/src/stats.py) to `egSlurp()`.
+Change the last line of [stats.py](stats.py) to `egSlurp()`.
 
 Run `python3 stats.py`.
 
