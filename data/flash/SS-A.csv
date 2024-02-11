@@ -1,4 +1,4 @@
-spout_wait,spliters,counters,<$throughput,<$latency
+Spout_wait,Spliters,Counters,Throughput+,Latency-
 1,1,1,8006.2,419.16
 1,1,2,10818,316.58
 1,1,3,11601,286.42
