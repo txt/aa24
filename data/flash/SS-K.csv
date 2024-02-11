@@ -1,4 +1,4 @@
-spouts,max_spout,spout_wait,spliters,counters,netty_min_wait,<$throughput,<$latency
+Spouts,Max_spout,Spout_wait,Spliters,Counters,Netty_min_wait,Throughput+,Latency-
 1,1,1,1,1,10,2221.3,4.4468
 1,1,1,1,1,100,2252.4,4.405
 1,1,1,1,1,1000,2339.1,4.4484
