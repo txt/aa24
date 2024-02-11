@@ -1,4 +1,4 @@
-$spouts,$max_spout,$sorters,$emit_freq,$chunk_size,$message_size,<$throughput,<$latency
+Spouts,Max_spout,Sorters,Emit_freq,Chunk_size,Message_size,Throughput+,Latency-
 1,10,1,1,1.00E+05,1000,22657,3.9833
 1,10,1,1,1.00E+05,10000,3596.3,18.415
 1,10,1,1,1.00E+05,1.00E+05,112.56,217.63
