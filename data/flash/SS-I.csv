@@ -1,4 +1,4 @@
-spout,split,count,buffer-size,heap,<$throughput,<$latency
+Spout,Split,Count,Buffer_size,Heap,Throughput+,Latency-
 1,1,1,2.62E+05,512,9260,104.57
 1,1,1,2.62E+05,1024,9282.3,103.32
 1,1,1,2.62E+05,2048,9375.7,101.58
