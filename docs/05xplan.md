@@ -84,7 +84,8 @@ by excessive reflection and (b) there is more space in their STM
 to reason about new information. 
 
 While first proposed in 1981,
-this STM/LTM theory still remains relevant [^ma13]. This theory can
+this STM/LTM theory still remains relevant [^ma13]
+(but see a more nuanced view of STM, [here](https://a-levelpsychology.fandom.com/wiki/Cognitive_Psychology)). This theory can
 be used to explain both expert competency and incompetency in
 software engineering tasks such as understanding code [^wieden].
 
