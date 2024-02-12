@@ -92,9 +92,7 @@ software engineering tasks such as understanding code [^wieden].
 mental representations of novice and expert programmers: an empirical study.
 International Journal of Man-Machine Studies 39, 5 (1993), 793–812.[^]
 
-[^phillips]: Nathaniel D Phillips, Hansjoerg Neth, Jan K Woike, and Wolfgang Gaissmaier.
-2017. FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision
-trees. Judgment and Decision Making 12, 4 (2017), 344–368.
+[^phillips]: Nathaniel D Phillips, Hansjoerg Neth, Jan K Woike, and Wolfgang Gaissmaier. 2017. FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees. Judgment and Decision Making 12, 4 (2017), 344–368.
 
 Phillips et al. [^phillips] discuss how models containing tiny rule fragments can be quickly comprehended by doctors in emergency
 rooms making rapid decisions; or by soldiers on guard making snap
