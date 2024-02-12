@@ -105,7 +105,9 @@ That's one theory of "explanation". There are many more [^vilone] [^linardatos].
 [^vilone]: Vilone, G., & Longo, L. (2020). Explainable artificial intelligence: a systematic review. arXiv preprint [arXiv:2006.00093.](https://arxiv.org/pdf/2006.00093.pdf)
 [^linardatos]: Linardatos, Pantelis, Vasilis Papastefanopoulos, and Sotiris Kotsiantis. "Explainable ai: A review of machine learning interpretability methods." Entropy 23.1 (2020): 18. https://www.mdpi.com/1099-4300/23/1/18/pdf
 
-<img align=right src="xplan2.png" width=400>
+<br clear=all>
+
+<img align=right src="xplan3.png" width=400>
 
 In fact "explanation" is often cited as core sub-routine in 40+ AI tasks.
 
