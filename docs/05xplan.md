@@ -60,7 +60,7 @@ which, in turn, can trigger other rules.
 Short term memory is very small, perhaps even as small as four
 to seven items [^ma13]
 
-[^larkin80]: Jill Larkin, John McDermott, Dorothea P. Simon, and Herbert A. Simon. 1980.
+[^larkin]: Jill Larkin, John McDermott, Dorothea P. Simon, and Herbert A. Simon. 1980.
 Expert and Novice Performance in Solving Physics Problems. Science 208,
 4450 (1980), 1335–1342. DOI:http://dx.doi.org/10.1126/science.208.4450.1335
 arXiv:http://science.sciencemag.org/content/208/4450/1335.full.pdf
