@@ -49,7 +49,9 @@ For more on writing models can understand, see  "fast and frugal trees"
 
 ## Explanation
 
-Larkin et al. [36] characterize human expertise in terms of:
+### Theory1. Explanation = small rules
+
+Larkin et al. [^larkin] characterize human expertise in terms of:
 
 - a  very
 small short term memory, or STM (used as a temporary scratch
@@ -64,8 +66,20 @@ an LTM rule triggers, its consequence can rewrite STM contents
 which, in turn, can trigger other rules.
 
 Short term memory is very small, perhaps even as small as four
-to seven items 
-- Experts are experts, says Larkin et al. [36]
+to seven items [^ma13]
+
+[^larkin80]: Jill Larkin, John McDermott, Dorothea P. Simon, and Herbert A. Simon. 1980.
+Expert and Novice Performance in Solving Physics Problems. Science 208,
+4450 (1980), 1335–1342. DOI:http://dx.doi.org/10.1126/science.208.4450.1335
+arXiv:http://science.sciencemag.org/content/208/4450/1335.full.pdf
+
+[^ma13]: Recently, Ma et al. used evidence from neuroscience and functional MRIs to
+argue that STM capacity might be better measured using other factors than “number of
+items”. But even they conceded that “the concept of a limited (STM) has considerable
+explanatory power for behavioral data”. Wei Ji Ma, Masud Husain, and Paul M Bays. 2014. Changing concepts of working
+memory. Nature neuroscience 17, 3 (2014), 347–356.
+
+- Experts are experts, says Larkin et al.  
 because the patterns in their LTM patterns dictate what to do,
 without needing to pause for reflection. 
 - Novices perform worse
@@ -78,23 +92,46 @@ by excessive reflection and (b) there is more space in their STM
 to reason about new information. 
 
 While first proposed in 1981,
-this STM/LTM theory still remains relevant [40]. This theory can
+this STM/LTM theory still remains relevant [^ma13]. This theory can
 be used to explain both expert competency and incompetency in
-software engineering tasks such as understanding code [69].
+software engineering tasks such as understanding code [^wieden].
 
-Phillips et al. [57] discuss how models containing tiny rule fragments can be quickly comprehended by doctors in emergency
+[^wieden]: Susan Wiedenbeck, Vikki Fix, and Jean Scholtz. 1993. Characteristics of the
+mental representations of novice and expert programmers: an empirical study.
+International Journal of Man-Machine Studies 39, 5 (1993), 793–812.[^]
+
+[^phillips]: Nathaniel D Phillips, Hansjoerg Neth, Jan K Woike, and Wolfgang Gaissmaier.
+2017. FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision
+trees. Judgment and Decision Making 12, 4 (2017), 344–368.
+
+Phillips et al. [^phillips] discuss how models containing tiny rule fragments can be quickly comprehended by doctors in emergency
 rooms making rapid decisions; or by soldiers on guard making snap
 decisions about whether to fire or not on a potential enemy; or by
 stockbrokers making instant decisions about buying or selling stock.
 
-- That is, according to this psychological science theory [9, 14, 22–
-24, 42, 43, 54, 57], humans best understand a model:
-
+- That is, according to this   theory   humans best understand a model:
   - When they can “fit” it into their LTM; i.e., when that model
 comprises many small rule fragments;
   - Further, to have an expert-level comprehension of some domain
 meaning having rules that can very quickly lead to decisions,
 without clogging up memory.
+
+### Theory2. Explanation =  inference
+
+When we explain something, we do **not** just spit out some trite rule.
+
+- Rather, we reflect over the current context, the goals and background knowledge of the audience
+- To generate some artifact that is appropriate in that context for those goals, given that background knowledge.
+
+We partially honor this definition in RRP:
+
+- by building our clusters, 
+- then offering a different cluster for the
+delta between each pair of clusters
+
+### Theory3,4,5,6,7.... . 
+
+So many other theories of explanation.
 
 <img align=right src="xplan1.png" width=400><img align=right src="xplan2.png" width=400>
 
@@ -120,7 +157,11 @@ In fact "explanation" is often cited as core sub-routine in 40+ AI tasks.
 
 [^menzies96]: Tim Menzies, [Applications of abduction: knowledge-level modelling](menzies1.pdf), Int. J. Human–Computer Studies (1996) 45, 305–335
 
-## Ranges
+## Returning to our Homeworkds
+
+Lets keep it simple and produce rules that describe the delta between two clusters.
+
+### Ranges
 
 Here's a magic trick to make inference simpler, and to generate tiny theories:
 
