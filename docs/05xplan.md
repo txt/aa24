@@ -26,28 +26,20 @@ Some algorithms are model-based:
 - Predictions are made from the model
 - THis approach returns conclusions _and_ some summary of the data
 
-Some models are not human-friendly
+For example, here is a model called  "fast and frugal tree":
 
-- e.g. nodes in a neural nets 
-  - are so numerous you can't look at them all
-  - do not represent   concepts in the world (there is "grandmoter cell" that holds together all you kow about granny in one local area)
-- e.g. Bayes classifiers
-  - I've had no success in showing business users my  Bayes classifier's frequency counts,
-    - "But what", they please, " does it all mean?"
-
-Some models are more comprehensible
-
-- e.g. rules that   refer to volumes in data space (e.g. age > 50 and income < 50000) and not just a set of points
-
-For more on writing models can understand, see  "fast and frugal trees"
-
+- designed for fast comprehsnabilty
+- binary tree, max depth = small (say, 3,4,5)
+  - each node is either a decision or a sub-tree.
 - [background theory](https://pure.mpg.de/rest/items/item_2100099/component/file_2100098/content)
 - [code](https://github.com/ndphillips/FFTrees) in "R"
 - the standard example: 
 
 ![](https://github.com/ndphillips/FFTrees/blob/master/man/figures/README-example-heart-plot-1.png)
 
-## Explanation
+
+
+## Theories of Explanation
 
 ### Theory1. Explanation = small rules
 
