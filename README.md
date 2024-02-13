@@ -96,13 +96,13 @@ Apr23&nbsp;:&nbsp;no&nbsp;class<br>
 May3&nbsp;:&nbsp;Grades&nbsp;posted<br>
 </td>
 <td valign=top>
-Jan16&nbsp;:&nbsp; <a href="/docs/hw02.md">Hw2</a><br>
-Jan23&nbsp;:&nbsp; <a href="/docs/hw03.md">Hw3</a><br>
-Jan30&nbsp;:&nbsp; <a href="/docs/hw04.md">Hw4</a><br>
-Feb06&nbsp;:&nbsp; <a href="/docs/hw05.md">Hw5</a><br>
+Jan16&nbsp;:&nbsp;<a href="/docs/hw02.md">Hw2</a><br>
+Jan23&nbsp;:&nbsp;<a href="/docs/hw03.md">Hw3</a><br>
+Jan30&nbsp;:&nbsp;<a href="/docs/hw04.md">Hw4</a><br>
+Feb06&nbsp;:&nbsp;<a href="/docs/hw05.md">Hw5</a><br>
 Feb13&nbsp;:&nbsp;&nbsp;wellness&nbsp;day<br>
-Feb27&nbsp;:&nbsp; <a href="/docs/hw06.md">Hw6</a><br>
-Mar05&nbsp;:&nbsp; Hw7<br>
+Feb27&nbsp;:&nbsp;<a href="/docs/hw06.md">Hw6</a><br>
+Mar05&nbsp;:&nbsp;<a href="/docs/hw07.md">Hw7</a><br>
 Mar12&nbsp;:&nbsp; break<br>
 Mar19&nbsp;:&nbsp; midterm<br>
 Mar26&nbsp;:&nbsp; Hw8<br>
