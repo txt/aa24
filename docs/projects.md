@@ -8,6 +8,9 @@
 
 # projects
 
+replace NB with FFT.  use B0=6, see if youc an get  model and optimization is  one go. Note: yu will have to implemt ft trees. not hard.
+but rememember the $2^D$ trick 
+
 so many asusmptions in the maths. what
 happens if they are vioalated? can you
 build an isntane generator that cretes
