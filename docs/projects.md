@@ -8,6 +8,8 @@
 
 # projects
 
+rules with disjunctions. just conjucts? other tricks for redcing the ranges to slots?
+
 replace NB with FFT.  use B0=6, see if youc an get  model and optimization is  one go. Note: yu will have to implemt ft trees. not hard.
 but rememember the $2^D$ trick 
 
