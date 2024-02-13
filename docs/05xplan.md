@@ -29,12 +29,24 @@ For example, here is a model called  "fast and frugal tree":
 - designed for fast comprehsnabilty
 - binary tree, max depth = small (say, 3,4,5)
   - each node is either a decision or a sub-tree.
+  - For binary classification, each node can exit to either class X or class Y
+    - so there are $2^D$  possible trees of depth $D$
 - [background theory](https://pure.mpg.de/rest/items/item_2100099/component/file_2100098/content)
 - [code](https://github.com/ndphillips/FFTrees) in "R"
 - the standard example: 
 
 ![](https://github.com/ndphillips/FFTrees/blob/master/man/figures/README-example-heart-plot-1.png)
 
+Technical detail: 
+
+- Bottom right, generate all possible $2^D$ trees, show their performance.
+- See Chen et al. 2018 [^chen18] for a study that
+  - Used  $D=4$,
+  - Built all $2^D$  trees and assessed them on the training data. 
+  - Best tree was then applied to the test data. 
+  - This approach _destroyed_ the opposition (see Figures 3,4)
+
+[^chen18]: Di Chen, Wei Fu, Rahul Krishna, and Tim Menzies. 2018. Applications of psychological science for actionable analytics. In Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2018). Association for Computing Machinery, New York, NY, USA, 456–467. https://doi-org.prox.lib.ncsu.edu/10.1145/3236024.3236050 https://arxiv.org/pdf/1803.05067.pdf#page=8
 
 
 ## Theories of Explanation
