@@ -21,7 +21,7 @@ For another example of this, here the magic applied to diabetes data. Note that:
     - `plas=hi` is strongly associated with  for `diabetic`
     - `mass=lo` or `plas=lo` is strongly associated with `not`
 
-<img src="/etc/img/diabetes.png" width=600>
+<img src="https://github.com/timm/tested/raw/main/etc/img/diabetes.png" width=600>
 
 
 
