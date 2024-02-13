@@ -73,7 +73,9 @@ Feb01&nbsp;:&nbsp;<a href="docs/03landscape2.md">Landscape&nbsp;#2</a><br>
 Feb06&nbsp;:&nbsp; no class<br>
 Feb08&nbsp;:&nbsp;<a href="docs/04stats.md">Stats</a></br>
 Feb13&nbsp;:&nbsp;no&nbsp;class<br>
-Feb15&nbsp;:&nbsp;<br>
+Feb15&nbsp;:&nbsp;<a href="docs/05xplan.md">Xplan</a>;
+<a href="docs/06ranges.md">Ranges</a>;
+<a href="docs/07rules.md">Rules</a></br>
 Feb20&nbsp;:&nbsp;<br>
 Feb22&nbsp;:&nbsp;<br>
 Feb27&nbsp;:&nbsp;<br>
