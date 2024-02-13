@@ -153,5 +153,7 @@ In fact "explanation" is often cited as core sub-routine in 40+ AI tasks.
 - Explanation is... everything?
    - Once you clarify "explanation" in logical terms [^menzies96], that clarification also covers many other tasks
     (validation, prediction, classification,   tutoring, qualitative reasoning, planning, monitoring, set-covering diagnosis, and consistency-based diagnosis).
+- So once you can explain "it" you can do "it", simpler
+  - So the explanation module replaces the thing it is explaining?
 
 [^menzies96]: Tim Menzies, [Applications of abduction: knowledge-level modelling](menzies1.pdf), Int. J. Human–Computer Studies (1996) 45, 305–335
