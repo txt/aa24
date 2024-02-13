@@ -136,8 +136,6 @@ So many other theories of explanation.
 
 <img align=right src="xplan1.png" width=400><img align=right src="xplan2.png" width=400>
 
- 
- 
 That's one theory of "explanation". There are many more [^vilone] [^linardatos].
 
 [^vilone]: Vilone, G., & Longo, L. (2020). Explainable artificial intelligence: a systematic review. arXiv preprint [arXiv:2006.00093.](https://arxiv.org/pdf/2006.00093.pdf)
@@ -157,7 +155,3 @@ In fact "explanation" is often cited as core sub-routine in 40+ AI tasks.
     (validation, prediction, classification,   tutoring, qualitative reasoning, planning, monitoring, set-covering diagnosis, and consistency-based diagnosis).
 
 [^menzies96]: Tim Menzies, [Applications of abduction: knowledge-level modelling](menzies1.pdf), Int. J. Human–Computer Studies (1996) 45, 305–335
-
-
-
-
