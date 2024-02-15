@@ -7,6 +7,8 @@ Data from for 3 goals in 12   projects (selected via the STABLIZE process [^suv]
 |data set | goal|
 |----------|-----|
 | 0-11 | commits |
+| 12-23 | open PRs | 
+| 24-35 | open Issues | 
 
 (Note: dataset25 has been removed due to local corruptions.).
 
