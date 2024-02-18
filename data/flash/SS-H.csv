@@ -1,4 +1,4 @@
-$width,$complexity,$fifo,$multiplier,<$energy,<$inv_runtime
+Width,Complexity,Fifo,Multiplier,Energy-,Inv_runtime-
 3,1,4,1,7.835102979,4.33936051
 3,1,1,1,7.836833049,4.309193816
 3,1,2,100,9.965784285,5.066154451
