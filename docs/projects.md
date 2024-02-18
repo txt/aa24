@@ -8,6 +8,33 @@
 
 # projects
 
+flash. 30 is enough with tabu. what about just do 30 rand with tabu?
+- had to do tabu for lasrge spaces maybe prune anything . 
+  - incrementally prune rows
+    - crete a row object with a flag "alive"
+      - delete anything that is closwer than 20,40,60,80% sum distance to max? (so 4 runs)
+    - dont do distance to all
+
+```
+budget0 = 4  (say)
+buddget = 30 (say)
+alpha=2 # but might have values -3 to +3
+done,todo = rows[:budget0],rows[budget0:]
+ds=NUM()
+max=0
+for i in range(budget0+1, budget-budget0):
+  tmp = todo
+  todo = []
+  for now in tmp:
+    d=sum(dist(now,b4) for b4 in done)
+    ds.add(d)
+    if d > max: max,best=d,now
+    if d > d.mu + alpha *d.sd: todo += [row] # only keep distant things in todo
+  done += [best]
+  done = sorted(done, key=self.d2h)
+  print(i, done[0]) 
+```
+
 rules with disjunctions. just conjucts? other tricks for redcing the ranges to slots?
 
 replace NB with FFT.  use B0=6, see if youc an get  model and optimization is  one go. Note: yu will have to implemt ft trees. not hard.
