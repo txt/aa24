@@ -10,6 +10,8 @@
 
 ## how may adta points can we get  
 
+results from promise 2006
+
 ## how many data points did we need
 
 starndard view
