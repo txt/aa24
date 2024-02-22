@@ -1,4 +1,4 @@
-N_MRE-,N_ACC+,N_PRED40+,MRE-,ACC+,PRED40+,N_estimators,criterion,Min_sample_leaves,Min_impurity_decrease,Max_depth
+XN_MRE,XN_ACC,XN_PRED40,MRE-,ACC+,PRED40+,N_estimators,criterion,Min_sample_leaves,Min_impurity_decrease,Max_depth
 0.5054282267792523,0.3677121416201655,0.0,75.4,2.19,0.0,40,squared_error,3,2.75,10
 0.47084841174105363,0.470848566480662,0.6666666666666666,73.68,7.55,25.0,190,squared_error,18,4.25,6
 0.5054282267792523,0.5483933038291322,1.0,75.4,11.58,37.5,130,squared_error,1,0.75,15
