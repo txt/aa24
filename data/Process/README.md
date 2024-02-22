@@ -4,13 +4,13 @@ These descriptions were taken from [8].
 
 ## XOMO
 
-XOMO was introduced in [1] and is a general framework for Monte Carlo simulations that combine four COCOMO-like process models from Barry Boehm's group at USC. XOMO has four objectives:
+XOMO was introduced in [^me05] and is a general framework for Monte Carlo simulations that combine four COCOMO-like process models from Barry Boehm's group at USC. XOMO has four objectives:
 - Reduce project risk
 - Reduce development effort
 - Reduce predicted defects
 - Reduce total months of development
 
-The variables used are described below, and takes values in the range [1, 6].
+The variables used are described below, and takes values in the range  [^me05][6].
 
 | Variable  | Description   |
 |-------------- | -------------- |
@@ -72,7 +72,7 @@ There are three sets of POM models: POM3a covers a wide range of projects; POM3b
 
 ## References
 
-[1] Menzies, Tim, and Julian Richardson. "Xomo: Understanding development options for autonomy." COCOMO forum. Vol. 2005. 2005.
+[me05]: Menzies, Tim, and Julian Richardson. "Xomo: Understanding development options for autonomy." COCOMO forum. Vol. 2005. 2005.
 [2] Boehm, Barry, and Richard Turner. "Using risk to balance agile and plan-driven methods." Computer 36.6 (2003): 57-66.
 [3] Boehm, Barry W., and Richard Turner. Balancing agility and discipline: A guide for the perplexed. Addison-Wesley Professional, 2004.
 [4] Port, Dan, Alexy Olkov, and Tim Menzies. "Using simulation to investigate requirements prioritization strategies." 2008 23rd IEEE/ACM International Conference on Automated Software Engineering. IEEE, 2008.
