@@ -10,7 +10,7 @@ XOMO was introduced in [^me05] and is a general framework for Monte Carlo simula
 - Reduce predicted defects
 - Reduce total months of development
 
-The variables used are described below, and takes values in the range  [^me05] [6].
+The variables used are described below, and takes values in the range  1..6.
 
 | Variable  | Description   |
 |-------------- | -------------- |
@@ -41,7 +41,7 @@ This directory contains four scenarios taken from NASA's Jet Propulsion Lab [7].
 
 ## POM3
 
-POM3 is a model of the management challenge specific to Agile development [2-4]. In particular, it simulates Boehm & Turner's model of agile programming [5] where teams select tasks as they appear in the scrum backlog. The goals of POM3 are:
+POM3 is a model of the management challenge specific to Agile development [^boehm03] [3-4]. In particular, it simulates Boehm & Turner's model of agile programming [5] where teams select tasks as they appear in the scrum backlog. The goals of POM3 are:
 - Increase completion rates
 - Reduce idle rates
 - Reduce overall cost
@@ -72,8 +72,8 @@ There are three sets of POM models: POM3a covers a wide range of projects; POM3b
 
 ## References
 
-[^me05]: Menzies, Tim, and Julian Richardson. "Xomo: Understanding development options for autonomy." COCOMO forum. Vol. 2005. 2005.
-[2] Boehm, Barry, and Richard Turner. "Using risk to balance agile and plan-driven methods." Computer 36.6 (2003): 57-66.
+[^me05]: Menzies, Tim, and Julian Richardson. "Xomo: Understanding development options for autonomy." COCOMO forum. Vol. 2005. 2005. 
+[^boehm03]: Boehm, Barry, and Richard Turner. "Using risk to balance agile and plan-driven methods." Computer 36.6 (2003): 57-66. 
 [3] Boehm, Barry W., and Richard Turner. Balancing agility and discipline: A guide for the perplexed. Addison-Wesley Professional, 2004.
 [4] Port, Dan, Alexy Olkov, and Tim Menzies. "Using simulation to investigate requirements prioritization strategies." 2008 23rd IEEE/ACM International Conference on Automated Software Engineering. IEEE, 2008.
 [5] Boehm, Barry W., et al. Software cost estimation with Cocomo II with Cdrom. Prentice Hall PTR, 2000.
