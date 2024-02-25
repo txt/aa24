@@ -9,6 +9,13 @@
 
 # Applications of "Explanation"
 
+Previosly it was argued that "explanation is everything". In support of this:
+
+- Here  I define an explanation algorithm
+- THen I show how many other tasks can be accomplished with the same architecture as explanation generation.
+
+## RRP is Everything?
+
 Given data divided recursively into a tree with leaf clusters $C_1, C_2,...$, suppose we can guess (or look up) labels $L(C_i)$  for each cluster:
 
 - E.g. all those labels are actually available;
@@ -32,7 +39,7 @@ Then:
 ||Streaming| (a) Collect the anomalies at their nearest cluster; <br> (b) If more than $N$ anomalies, rebuild clusters from that point downwards|
 ||Classification | Localization + report mode class label in relevant leaf|
 ||Regression | Localization + report median class label in relevant leaf|
-||Pollution marking|(a) Measure the variance or the inaccuracies of predictions at each leaf. <br>(b) Starting at the leaves and working up the tree, delete any note that is too variable or inaccurate.|
+||Pollution marking|(a) Measure the variance or the inaccuracies of predictions at each leaf. <br>(b) Starting at the leaves and working up the tree, delete any node that is too variable or inaccurate.|
 ||Compression| Report whole contrast tree as just the two distant points (at each level) and the median point (where you cut the data, left right)|
 ||Optimization| see planning|
 ||Envy| (a) Localization to find $C_i$. <br> (b) Find other leaves $C_j$ where $L(C_j) > L(C_i)$ |
@@ -51,11 +58,21 @@ Then:
 ||Sharing| (a) Pass around the compressed private data to each stakeholder.<br>(b) Each stakeholder only adds in their local data that is anomalous (i.e. do not add in things that are already there)|
 ||Transfer Learning| After sharing, data from N sources will be all mixed up in the contrast tree (in different leaves). Your local data can then transfer knowledge from other sites by localizing into that space.|
 
+## SMO is Everything?
+Can the above be adapted to SMO? Perhaps. 
 
-```
-   localize
-   |classify
-   ||regression
-   |||explanation
+- If we used the `best` and `rest` models to select groups of $C_i$ (good examples) and $C_j$ (bad examples);
+- How much of the previous section could be repeated?
 
-```
+## Open Issues
+
+What about other tasks? Is there a list somewhere of all the tasks people want to achieve? 
+
+Well, yes. See Buse and Zimmermann [^buse12].
+
+![](buse.png)
+
+[^buse12]: Raymond P. L. Buse and Thomas Zimmermann. 2012. Information needs for software development analytics. In Proceedings of the 34th International Conference on Software Engineering (ICSE '12). IEEE Press, 987–996.
+
+
+
