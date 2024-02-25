@@ -75,11 +75,6 @@ Remember in all the following, we want to:
    - Replace NB with FFT.  Use, say, B0=6. Note: you will have to implemt FFT trees. not hard.
      But rememember the $2^D$ trick  (generate mulitple trees, pick the best, using _done_, apply
      that to test data).. 
-1. Some of the goals we are exploring are a little dull. Can we do better?
-   - For https://arxiv.org/pdf/2311.17483.pdf, fig 9, what support can you add to support (say) 5 of the 
-     lefthand side reqirements? 
-   - This one is challenging. How would you generate the data to explore?
-     - But wait! we only need < 30 examples. Does that help us?
 1. Why start from scratch? Can we reuse old results:
    - For our larger data sets...
      - Divide the data in half
@@ -92,6 +87,11 @@ Remember in all the following, we want to:
    - What if your Y labels come from N oracles who disagree X percent of the time (say 10,20,30,40% of the time).
    - Which of our methods can handle this uncertainty best?
    - Can we adjust our methods to better handle uncertainty?
+1. Table 1 of this paper [^casamayor] discussed ways to reduce human fatigue. Any of their methods work at our scale? (les than 30 labels)?
+1. Another approach than the one  to do fix the daa drougth via data synthesis
+   - Take all that is known of the independent attributes
+   - Generate a very large sample of those attributes. Attach known labels. Label everything 
+     else via (e.g.) expected value k=2 nearest neighbors.
 1. Lets do LLM stuff?
    - Anyway to map subjective opinions (from chatgpt) into search-based?
      - https://arxiv.org/pdf/2311.11081.pdf
@@ -100,14 +100,11 @@ Remember in all the following, we want to:
    - hint: maybe dont use chatgpt but a local LLMso
      - see  "LLMs on the command line" at https://www.infoworld.com/article/3705035/5-easy-ways-to-run-an-llm-locally.html
      - see also https://www.infoworld.com/article/3700869/14-llms-that-arent-chatgpt.html
-1. Table 1 of this paper [^casamayor] discussed ways to reduce human fatigue. Any work at our scale? (les than 30 questions)
-1. Another approach than the one  to do fix the daa drougth via data synthesis
-   - take all that is known of the independent attributes
-   - generate a very large sample of those attributes. attach known labels. label everything 
-     else via (e.g.) expected value k=2 nearest neighbors.
-     - then do (say) classification on the result
-     - or do optimizaiton and when new isntaces are proposed, apply k=2 nNN.
-
+1. Some of the goals we are exploring are a little dull. Can we do better?
+   - For https://arxiv.org/pdf/2311.17483.pdf, fig 9, what support can you add to support (say) 5 of the 
+     lefthand side reqirements? 
+   - This one is challenging. How would you generate the data to explore?
+     - But wait! we only need < 30 examples. Does that help us?
 
 [^agrawal]: A. Agrawal, X. Yang, R. Agrawal, R. Yedida, X. Shen and T. Menzies, "Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?," in IEEE Transactions on Software Engineering, vol. 48, no. 8, pp. 2939-2954, 1 Aug. 2022, doi: 10.1109/TSE.2021.3073242.
 keywords: {Software;Optimization;Clustering algorithms;Text mining;Measurement;Computer bugs;Task analysis;Software analytics;hyperparameter optimization;defect prediction;bad smell detection;issue close time;bug reports},
