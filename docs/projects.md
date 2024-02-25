@@ -6,55 +6,86 @@
   <a href="/README.md#top"><img width=600  
      src="/etc/img/ase24.png"></a></p>
 
-# projects
+# Project Ideas
 
-flash. 30 is enough with tabu. what about just do 30 rand with tabu?
-- had to do tabu for lasrge spaces maybe prune anything . 
-  - incrementally prune rows
-    - crete a row object with a flag "alive"
-      - delete anything that is closwer than 20,40,60,80% sum distance to max? (so 4 runs)
-    - dont do distance to all
+Case study data: [here](https://github.com/txt/aa24/tree/main/data)
 
-```
-budget0 = 4  (say)
-buddget = 30 (say)
-alpha=2 # but might have values -3 to +3
-done,todo = rows[:budget0],rows[budget0:]
-ds=NUM()
-max=0
-for i in range(budget0+1, budget-budget0):
-  tmp = todo
-  todo = []
-  for now in tmp:
-    d=sum(dist(now,b4) for b4 in done)
-    ds.add(d)
-    if d > max: max,best=d,now
-    if d > d.mu + alpha *d.sd: todo += [row] # only keep distant things in todo
-  done += [best]
-  done = sorted(done, key=self.d2h)
-  print(i, done[0]) 
-```
+Basic idea:
+- given RRP and SMO
+- invent a small variant to these algorithms
+- test them, using the stats tests shown in lectures
 
-rules with disjunctions. just conjucts? other tricks for redcing the ranges to slots?
+Or
+- think of something cool based on this subject's work
+- do it
 
-replace NB with FFT.  use B0=6, see if youc an get  model and optimization is  one go. Note: yu will have to implemt ft trees. not hard.
-but rememember the $2^D$ trick 
+Full idea:
+- there will be much structure offered from that report, soon.
+- 8 page document,  Latex, pdf, etc etc
 
-so many asusmptions in the maths. what
-happens if they are vioalated? can you
-build an isntane generator that cretes
-problems that are easily solved/ hard to solve
-via the methods of this class?
+Remember in all the following, we want to:
 
-## basic
+- Compare some new idea against some baseline
+  - How to find a baseline? suppose someone has NOT had this class. What algorithm would they turn use?
+  - And that comparison requires  20 random repeats comparing  your methods to that baseline.
 
-banchmark smo againt random, rrp
+## Cool ideas (maybe you have better)
 
-for https://arxiv.org/pdf/2311.17483.pdf, fig 9, what support can you add to support (say) 5 of the lefthand side reqirements? comparing mylo and gate, which is better than the other
+1. Hyperparameter optimization. List all the control variables in RRL and SMO
+   - Run a second level SMO to find good values from those variables.
+   - So that would be using SMO to optimize SMO.
+1. Why not try for things other than just optimization?
+   - e.g.  try 2 or 3 of the things [listed here](10all.md)
+   - At first, try something simple, like comparing regression or classification against standard data miners (logistic regression,
+     random forest regression, decision tree reression [^regression]) to the same task with RRP or SMO.
+1. This whole subject has assumed "just a little is best". But is that true?
+   - What happens if we use standard optimizers and do $10^4$ to $10^6$ evaluations.
+     - There are many such Python packages:
+       - Optuna
+       - Hyperopt
+       - scikit-optimize.github.io
+   - The challenge here is that most optimization packages do not start with data
+     - Rather, then incude models from which you can generate data
+     - e.g  [Pymoo](https://github.com/anyoptimization/pymoo) has hundreds
+        of such models
+        - See [here](https://pymoo.org/problems/test_problems.html)
+        - Try to avoid the really simple ones.
+        - The DTLZ models are really widely used (but I fret they are simplistic).
+1. The DODGE algorithm tried to evalute a small number of items using a tabu trick [^agrawal]. If ever we do things, pick things
+   that are far away from what we picked before.
+   - "far away": 
+     - pick the "todo" items with max distance to what is currently in "done";
+     - pick the "todo" items with least $b+r$ (no seen them before).
+1. The rules we generate are model-based summaries, describing volumes of interest.
+   - Are these models "weaker" than the instance-based methods? Do they lose important deails?
+   - To check, generate rules using RRP or SMO, then see if they are effective.
+   - One thing to check here. In the code I gave you, my rules have conjuncts and disjuncts
+     - What if we just stay with conjuncts?
+1. Its a little strange  that we use instance-based reasoning to select our next thing to try
+   then, afterwards, go to rule generation.
+   - Would it not be better to replace the instance-based method woth a rule-based method?
+   - Replace NB with FFT.  Use, say, B0=6. Note: you will have to implemt FFT trees. not hard.
+     But rememember the $2^D$ trick  (generate mulitple trees, pick the best, using _done_, apply
+     that to test data).. 
+1. Some of the goals we are exploring are a little dull. Can we do better?
+   - For https://arxiv.org/pdf/2311.17483.pdf, fig 9, what support can you add to support (say) 5 of the 
+     lefthand side reqirements? 
+   - This one is challenging. How would you generate the data to explore?
+     - But wait! we only need < 30 examples. Does that help us?
+1. Why start from scratch? Can we reuse old results:
+   - For our larger data sets...
+     - Divide the data in half
+       - Do what we normally do on the first half
+       - When we get to the second half, what can we reuse?
+     - Now try messing with the second half so that it is X percent different to the first half.
+       - As X increases, can we still reuse stuff from the first half?
+       - Are there better ways to handle the first half such that it is easier to explore the second half?
+1. We are assuming that our labels are accurate. What is that is not true?
 
-table7 of https://arxiv.org/pdf/2311.17483.pdf: how many of these have goals we can optimize for?
+[^agrawal]: A. Agrawal, X. Yang, R. Agrawal, R. Yedida, X. Shen and T. Menzies, "Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?," in IEEE Transactions on Software Engineering, vol. 48, no. 8, pp. 2939-2954, 1 Aug. 2022, doi: 10.1109/TSE.2021.3073242.
+keywords: {Software;Optimization;Clustering algorithms;Text mining;Measurement;Computer bugs;Task analysis;Software analytics;hyperparameter optimization;defect prediction;bad smell detection;issue close time;bug reports},
 
-table9 of https://arxiv.org/pdf/2311.17483.pdf: how well do any of those work with < 30 samples? can you think of some hybrid of gate/mylo that mught augment/replace any of these?
+[^regression]: https://scikit-learn.org/stable/search.html?q=regression
 
 ## process
 

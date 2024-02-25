@@ -8,6 +8,12 @@
 
 # size
 
+# how many points can we get (time restraits)
+
+# how many were enough (justorical case studyeis were a few were ok)
+
+- how many should we have
+
 ## how may adta points can we get  
 
 results from promise 2006
