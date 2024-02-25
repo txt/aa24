@@ -32,7 +32,7 @@ Each cluster $C_i$ has a delta $\delta = C_i - Ci$ to another cluster $C_j$. Tha
 Then:
 
 |cite|  |Task| Implementation|
-||--|----|----------------|
+|-|--|----|----------------|
 |||Localization | take current example, walk it down the cluster tree to find its relevant leaf|
 | [^peters15] ||Anomaly detection|Anomalous if you are far away from everything else in your relevant leaf|
 |||Certification| Warn if any new example is anomalous. <br>For efficient certification, use compression (see below).|
