@@ -31,6 +31,13 @@ Remember in all the following, we want to:
 
 ## Cool ideas (maybe you have better)
 
+(Warning assessing the following very carefully. Some are **HARD**.)
+
+1. What are you great ideas?
+   - Run them by me first but go go go!
+1. Currently, my results suggest SMO and better than RRP. But how much of that is due to our choice of clustering algorithm?
+   - There are so many [others clustering algorithms](https://scikit-learn.org/stable/modules/clustering.html).
+   - Which might be better?
 1. Hyperparameter optimization. List all the control variables in RRL and SMO
    - Run a second level SMO to find good values from those variables.
    - So that would be using SMO to optimize SMO.
@@ -50,7 +57,8 @@ Remember in all the following, we want to:
         of such models
         - See [here](https://pymoo.org/problems/test_problems.html)
         - Try to avoid the really simple ones.
-        - The DTLZ models are really widely used (but I fret they are simplistic).
+        - The DTLZ models are really widely used (but I fret they are simplistic):
+          - and [DF](https://pymoo.org/problems/dynamic/df.html) looks pretty cool.
 1. The DODGE algorithm tried to evalute a small number of items using a tabu trick [^agrawal]. If ever we do things, pick things
    that are far away from what we picked before.
    - "far away": 
@@ -81,77 +89,30 @@ Remember in all the following, we want to:
        - As X increases, can we still reuse stuff from the first half?
        - Are there better ways to handle the first half such that it is easier to explore the second half?
 1. We are assuming that our labels are accurate. What is that is not true?
-
-[^agrawal]: A. Agrawal, X. Yang, R. Agrawal, R. Yedida, X. Shen and T. Menzies, "Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?," in IEEE Transactions on Software Engineering, vol. 48, no. 8, pp. 2939-2954, 1 Aug. 2022, doi: 10.1109/TSE.2021.3073242.
-keywords: {Software;Optimization;Clustering algorithms;Text mining;Measurement;Computer bugs;Task analysis;Software analytics;hyperparameter optimization;defect prediction;bad smell detection;issue close time;bug reports},
-
-[^regression]: https://scikit-learn.org/stable/search.html?q=regression
-
-## process
-
-- prior knowledge
-   - LLMs
-   - assume that we've already run a choice session before
-     - so divide training data in half
-     - do what we nornally do on one half
-       - see how quickly we can do it again 
-- multiple xperts
-  - dont ask one oracle, ask n
-  - warning: experts often disagree. how to handle disputes between experts
-    - some rig where the level of disagreement is a dial and can crank "disagree" up from 0 to always (with many stops in between)
-- management team: milestones management, user liason,
-  task priorization
-- tooling team: doc, scripts, short cuts, pre-, post- commit hooks
-  - please consider pdoc or pycco
-- testing team: lots of tests, maintaining the test suite,
-  running the test suite, test case prioriization
-- coding team; new functionality
-  - divide the code base into N bits
-- the optimization team. welcome to software 2.0
-  - Software 2.0 most often the source code comprises 
-   -  the dataset that defines the desirable behavior 
-   - the architecture that gives the rough skeleton of the code, 
-     but with many details (the config options) to be filled in. 
-   - some optimizaion strategy that keeps reviewing the
-     data to adjust the config options.
-
-lcocal vs gloab, reset at each stage
-
-check if (b+r)/(b-r) does better
-
-## Tasks
-- apply rrp to some new domain (in se)
-- x is y and when i code it that way, i get results (for x or y) that
-  beat the prior state of the art (simpler and faster or better)
-- destroy all this tech. find someway to improta tables
-  of data with no goal info and after minimal questions
-  learn which rows a preferred by most users
-  - note: I don't know how to do this. 
-- sway vs sequential model optimize (bayes)
-- try different clustering. different recursive bi-cluster
-- try a project managers toolkit. 
-- try and improve xiao's stuff
-- anyway to map subjective opinions (from chatgpt) into search-based?
-  - https://arxiv.org/pdf/2311.11081.pdf
-  - anyway to bias (in a good way), sway's search using LLMs?   
+   - What if your Y labels come from N oracles who disagree X percent of the time (say 10,20,30,40% of the time).
+   - Which of our methods can handle this uncertainty best?
+   - Can we adjust our methods to better handle uncertainty?
+1. Lets do LLM stuff?
+  - Anyway to map subjective opinions (from chatgpt) into search-based?
+    - https://arxiv.org/pdf/2311.11081.pdf
+  - anyway to bias (in a good way), our  search using LLMs?    Don't ask the data for labels, but ask an LLM
     - maybe not https://arxiv.org/pdf/2306.13298.pdf (\*)
   - hint: maybe dont use chatgpt but a local LLMso
     - see  "LLMs on the command line" at https://www.infoworld.com/article/3705035/5-easy-ways-to-run-an-llm-locally.html
     - see also https://www.infoworld.com/article/3700869/14-llms-that-arent-chatgpt.html
-- testing our tools via chatgpt https://dl.acm.org/doi/pdf/10.1145/3624032.3624035
-  - make sure you have a baseline (testing via some other defendable approach)
-
-(\*) but see vivek's paper suggesting that don't matter.
-
-- comapre rrp vs cloassification or regresison algorithms for SE taksks
-- Table 1,2 of [this paper](https://csdl-downloads.ieeecomputer.org/trans/ts/5555/01/10314766.pdf?Expires=1703969010&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jc2RsLWRvd25sb2Fkcy5pZWVlY29tcHV0ZXIub3JnL3RyYW5zL3RzLzU1NTUvMDEvMTAzMTQ3NjYucGRmIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzAzOTY5MDEwfX19XX0_&Signature=vkbhgVvW8l9aPJz9K14TAH178rlS9sBiht6nrLq8X~BcgvnTax~LL6GRoIhRLUVMkmWVgyMW-eSqfi3Pe1WlHb5oMxmQxSSIyz4gN5tjAr3MYergqd4OPSfTxjEm2hN-pBXwVpaeMHZTJ077YMVcTIqMqn9bJmzaOHvhDKYeJa3K~ZmFQuvUzDL4263mT8NQr-nPTi6136O1DmqtxIOKXVpMSddcPhNx~2GWrEX63O7mEkSfS6vBfZpsYXMHqeEkqsoxd3H5SziuAcoHt0kr7ttdYGSUrmjicDXEOd19gXC8ksZmgx2Mw2dBLI-LBEvTsCfgwF0d8ueYR1F3AiFeFw__&Key-Pair-Id=K12PMWTCQBDMDT)
-  discussed ways to reduce human fatigure. any work at our scale? (les than 30 questions)
-  - R. Casamayor, C. Cetina, O. Pastor and F. Perez, "Studying the Influence and Distribution of the Human Effort in a Hybrid Fitness Function for Search-Based Model-Driven Engineering" in IEEE Transactions on Software Engineering, vol. 49, no. 12, pp. 5189-5202, 2023.
-doi: 10.1109/TSE.2023.3329730
-- another approach is to do fix the daa drougth via data synthesis
+1. Table 1 of this paper [^casamayor] discussed ways to reduce human fatigue. Any work at our scale? (les than 30 questions)
+1. Another approach than the one  to do fix the daa drougth via data synthesis
   - take all that is known of the independent attributes
   - generate a very large sample of those attributes. attach known labels. label everything 
     else via (e.g.) expected value k=2 nearest neighbors.
     - then do (say) classification on the result
     - or do optimizaiton and when new isntaces are proposed, apply k=2 nNN.
 
+
+[^agrawal]: A. Agrawal, X. Yang, R. Agrawal, R. Yedida, X. Shen and T. Menzies, "Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?," in IEEE Transactions on Software Engineering, vol. 48, no. 8, pp. 2939-2954, 1 Aug. 2022, doi: 10.1109/TSE.2021.3073242.
+keywords: {Software;Optimization;Clustering algorithms;Text mining;Measurement;Computer bugs;Task analysis;Software analytics;hyperparameter optimization;defect prediction;bad smell detection;issue close time;bug reports},
+
+[^regression]: https://scikit-learn.org/stable/search.html?q=regression
+
+[^casamayor]: R. Casamayor, C. Cetina, O. Pastor and F. Perez, "Studying the Influence and Distribution of the Human Effort in a Hybrid Fitness Function for Search-Based Model-Driven Engineering" in IEEE Transactions on Software Engineering, vol. 49, no. 12, pp. 5189-5202, 2023.
+doi: 10.1109/TSE.2023.3329730
