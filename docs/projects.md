@@ -93,20 +93,20 @@ Remember in all the following, we want to:
    - Which of our methods can handle this uncertainty best?
    - Can we adjust our methods to better handle uncertainty?
 1. Lets do LLM stuff?
-  - Anyway to map subjective opinions (from chatgpt) into search-based?
-    - https://arxiv.org/pdf/2311.11081.pdf
-  - anyway to bias (in a good way), our  search using LLMs?    Don't ask the data for labels, but ask an LLM
-    - maybe not https://arxiv.org/pdf/2306.13298.pdf (\*)
-  - hint: maybe dont use chatgpt but a local LLMso
-    - see  "LLMs on the command line" at https://www.infoworld.com/article/3705035/5-easy-ways-to-run-an-llm-locally.html
-    - see also https://www.infoworld.com/article/3700869/14-llms-that-arent-chatgpt.html
+   - Anyway to map subjective opinions (from chatgpt) into search-based?
+     - https://arxiv.org/pdf/2311.11081.pdf
+   - anyway to bias (in a good way), our  search using LLMs?    Don't ask the data for labels, but ask an LLM
+     - maybe not https://arxiv.org/pdf/2306.13298.pdf (\*)
+   - hint: maybe dont use chatgpt but a local LLMso
+     - see  "LLMs on the command line" at https://www.infoworld.com/article/3705035/5-easy-ways-to-run-an-llm-locally.html
+     - see also https://www.infoworld.com/article/3700869/14-llms-that-arent-chatgpt.html
 1. Table 1 of this paper [^casamayor] discussed ways to reduce human fatigue. Any work at our scale? (les than 30 questions)
 1. Another approach than the one  to do fix the daa drougth via data synthesis
-  - take all that is known of the independent attributes
-  - generate a very large sample of those attributes. attach known labels. label everything 
-    else via (e.g.) expected value k=2 nearest neighbors.
-    - then do (say) classification on the result
-    - or do optimizaiton and when new isntaces are proposed, apply k=2 nNN.
+   - take all that is known of the independent attributes
+   - generate a very large sample of those attributes. attach known labels. label everything 
+     else via (e.g.) expected value k=2 nearest neighbors.
+     - then do (say) classification on the result
+     - or do optimizaiton and when new isntaces are proposed, apply k=2 nNN.
 
 
 [^agrawal]: A. Agrawal, X. Yang, R. Agrawal, R. Yedida, X. Shen and T. Menzies, "Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?," in IEEE Transactions on Software Engineering, vol. 48, no. 8, pp. 2939-2954, 1 Aug. 2022, doi: 10.1109/TSE.2021.3073242.
