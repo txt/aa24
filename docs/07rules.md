@@ -49,7 +49,7 @@ function RULES:top(t,       u)
   for _,x in pairs(t) do
     if x.scored >= t[1].scored * the.Cut then
       u[1+#u] = x end end
-  return l.slice(u, 1, the.Beam) end
+  return l.slice(u, 1, the.Beam) end -- e.g. Beam=10
 ```
 
 And we'll need a function that sorts `score`s things and returns the top items:
@@ -117,7 +117,7 @@ function RULE:_or(ranges, row, x, lo, hi)
   return false end
 ```
 
-## Pretty pring
+## Pretty print
 
 By the way, it is a little tricky displaying a rule. So ranges are contiguous and,
 for those rules, we can show less than all the ranges. To combine
