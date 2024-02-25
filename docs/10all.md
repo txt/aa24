@@ -56,9 +56,9 @@ Then:
 ||Minimal|Monitoring| Monitoring that maximizes loss while minimizing  the change  from $C_i$ to $C_j$|
 |||Data Synthesis| Generate examples by interpolating between items in each cluster|
 |||Privatization| Use data synthesis, favoring regions close to other examples (so you can't distinguish new from old)|
-||Compressed|Privatization| Only share compressed data (so the data not in the compression is 100% private)|
-|||Sharing| (a) Pass around the compressed private data to each stakeholder.<br>(b) Each stakeholder only adds in their local data that is anomalous (i.e. do not add in things that are already there)|
-|||Transfer Learning| After sharing, data from N sources will be all mixed up in the contrast tree (in different leaves). Your local data can then transfer knowledge from other sites by localizing into that space.|
+| [^peters15] |Compressed|Privatization| Only share compressed data (so the data not in the compression is 100% private)|
+| [^peters15] ||Sharing| (a) Pass around the compressed private data to each stakeholder.<br>(b) Each stakeholder only adds in their local data that is anomalous (i.e. do not add in things that are already there)|
+| [^peters15] ||Transfer Learning| After sharing, data from N sources will be all mixed up in the contrast tree (in different leaves). Your local data can then transfer knowledge from other sites by localizing into that space.|
 
 [^lustosa23]: Andre Lustosa and Tim Menzies. 2023. Learning from Very Little Data: On the Value of Landscape Analysis for Predicting Software Project Health. ACM Trans. Softw. Eng. Methodol. Just Accepted (November 2023). https://doi.org/10.1145/3630252
 
