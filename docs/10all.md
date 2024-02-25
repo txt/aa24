@@ -41,8 +41,8 @@ Then:
 |||Regression | Localization + report median class label in relevant leaf|
 |||Pollution marking|(a) Measure the variance or the inaccuracies of predictions at each leaf. <br>(b) Starting at the leaves and working up the tree, delete any node that is too variable or inaccurate.|
 |||Compression| Report whole contrast tree as just the two distant points (at each level) and the median point (where you cut the data, left right)|
-|[^chen19]||Optimization| see planning. Note that this kind of planning does not need $O(N)$ evals but just the $O(2{\times}log(N))$  evals needed for the optimization|
-|[^chen19] [^lustosa23]||Hyperparameter optimization (see optimziation)|
+| [^nair16] [^chen19]||Optimization| see planning. Note that this kind of planning does not need $O(N)$ evals but just the $O(2{\times}log(N))$  evals needed for the optimization|
+| [^nair16] [^chen19] [^lustosa23]||Hyperparameter optimization (see optimziation)|
 |||Configuration| see optimization, but seek good configs with very few samples|
 |||Envy| (a) Localization to find $C_i$. <br> (b) Find other leaves $C_j$ where $L(C_j) > L(C_i)$ |
 |||Fear| (a) Localization to find $C_i$. <br> (b) Find other leaves $C_j$ where $L(C_j) < L(C_i)$ |
@@ -59,6 +59,8 @@ Then:
 | [^peters15] |Compressed|Privatization| Only share compressed data (so the data not in the compression is 100% private)|
 | [^peters15] ||Sharing| (a) Pass around the compressed private data to each stakeholder.<br>(b) Each stakeholder only adds in their local data that is anomalous (i.e. do not add in things that are already there)|
 | [^peters15] ||Transfer Learning| After sharing, data from N sources will be all mixed up in the contrast tree (in different leaves). Your local data can then transfer knowledge from other sites by localizing into that space.|
+
+[^nair16]: Nair, Vivek, Tim Menzies, and Jianfeng Chen. "An (accidental) exploration of alternatives to evolutionary algorithms for sbse." Search Based Software Engineering: 8th International Symposium, SSBSE 2016, Raleigh, NC, USA, October 8-10, 2016, Proceedings 8. Springer International Publishing, 2016.
 
 [^lustosa23]: Andre Lustosa and Tim Menzies. 2023. Learning from Very Little Data: On the Value of Landscape Analysis for Predicting Software Project Health. ACM Trans. Softw. Eng. Methodol. Just Accepted (November 2023). https://doi.org/10.1145/3630252
 
