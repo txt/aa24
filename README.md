@@ -107,7 +107,7 @@ Feb27&nbsp;:&nbsp;<a href="/docs/hw06.md">Hw6</a><br>
 Mar05&nbsp;:&nbsp;<a href="/docs/hw07.md">Hw7</a><br>
 Mar12&nbsp;:&nbsp; break<br>
 Mar19&nbsp;:&nbsp; midterm<br>
-Mar26&nbsp;:&nbsp; Hw8<br>
+Mar26&nbsp;:&nbsp; <a href="/docs/hw08.md">Hw8</a><br>
 Apr02&nbsp;:&nbsp; Hw9<br>
 Apr09&nbsp;:&nbsp; - <br>
 Apr16&nbsp;:&nbsp; - <br>
