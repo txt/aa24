@@ -6,9 +6,85 @@
   <a href="/README.md#top"><img width=600  
      src="/etc/img/ase24.png"></a></p>
 
-# size
+# How much data is enough?
 
-# how many points can we get (time restraits)
+## Standard line: more is better
+
+- “The Unreasonable Effectiveness of Data,” by Google’s then Chief Scientist
+  Peter Norvig 
+  - “Billions of trivial data points can
+    lead to understanding” [^norving11] (a claim he supports with numerous
+    examples from vision research).
+- In software analytics,  data-hungry researchers assume that if
+  data is useful, then even more data is much more useful. For
+  example:
+  - “..as long as it is large; the resulting prediction performance is likely to be boosted more by the size of the
+    sample than it is hindered by any bias polarity that may
+    exist” [^rahman13].
+  - “It is natural to think that a closer previous release
+    has more similar characteristics and thus can help to
+    train a more accurate defect prediction model. It is also
+    natural to think that accumulating multiple releases can
+    be beneficial because it represents the variability of a
+    project” [^amasaki20].
+  - “Long-term JIT models should be trained using a cache
+    of plenty of changes” [^mcintosh17].
+
+[^rahman13]: F. Rahman, D. Posnett, I. Herraiz, and P. Devanbu,
+“Sample size vs.  bias in defect prediction,” in Proceedings of the
+2013 9th joint meeting on foundations of software engineering. ACM,
+2013, pp. 147–157.
+
+[^amasaki20]: S. Amasaki, “Cross-version defect prediction: use
+historical data, crossproject data, or both?” Empirical Software
+Engineering, pp. 1–23, 2020.
+
+[^mcintosh17]: S. McIntosh and Y. Kamei, “Are fix-inducing changes
+a moving target?  a longitudinal case study of just-in-time defect
+prediction,” IEEE Transactions on Software Engineering, vol. 44,
+no. 5, pp. 412–428, 2017.
+
+[^norvig11]: P. Norvig. (2011) The Unreasonable Effectiveness of
+Data. Youtube.  https://www.youtube.com/watch?v=yvDCzhbjYWs
+
+## A more informed position: The question is wrong
+
+- Its the wrong question
+  - It depends on the nature of the data
+  - e.g. if i show you, one at a time, 100 "1"s then we are pretty sure the 101-th thing will be "1".
+  - So if data clusters to regions with not much variance
+    - then once we find those regions, we can stop
+- And sometimes its not
+- strutural coherence of the data (stream of 1, ext is 1)
+  - menzies funciton of # udnerlying dimensions and dicretiona results
+  - number of supprt vectors: 200-300
+
+to explore structureal similarity, one of our methods will clsuter before reasoming (to find maximize region similarities)
+
+## How many points can we get (time restraits)
+
+How fast can we gather expert oppinion?
+
+- Some can monitor products on an assembly line, 1000s of items per day
+  - And there will be some error rate
+- But suppose we have a panel of experts?
+  - And suppose they have to check with everyone else before making a decision?
+  - Then everything they conclude has to be analysed, certified
+
+### Evidence from "Repertory Grids"
+
+A structure interview technique
+1. Take three examples $E_1,E_2,E_3$: 
+  - Which one is most distant?
+  - Along what dimension $D_i$ is it distant?
+  - Score those examples on this dimensions. 
+2. Goto to step 1.
+
+<img align=600 
+     src="https://csdl-images.ieeecomputer.org/mags/so/2007/02/figures/s20534.gif">
+
+Advice on how long to fill in a rep grid?
+-
 
 # how many were enough (justorical case studyeis were a few were ok)
 
@@ -16,7 +92,16 @@
 
 ## how may adta points can we get  
 
-results from promise 2006
+results from promise 2008 [^Me08]
+
+[^Me08]: Menzies, T., Turhan, B., Bener, A., Gay, G., Cukic, B., &
+Jiang, Y. (2008, May). Implications of ceiling effects in defect
+predictors. In Proceedings of the 4th international workshop on
+Predictor models in software engineering (pp. 47-54).
+
+-defet prediction down to 50 examples
+
+<img src="platuea.png">
 
 ## how many data points did we need
 
@@ -39,14 +124,6 @@ of events per variable in logistic regression analysis. Journal of
 clinical epidemiology, 49(12):1373–1379, 1996
 
 if low recall is ok, 100s per hour
-
-wrong questionL
-- where does the data come from (early bird)
-- strutural coherence of the data (stream of 1, ext is 1)
-  - menzies funciton of # udnerlying dimensions and dicretiona results
-  - number of supprt vectors: 200-300
-
-to explore structureal similarity, one of our methods will clsuter before reasoming (to find maximize region similarities)
 
 Zhu, X., Vondrick, C., Fowlkes, C.C. et al. Do We Need More Training Data?. Int J Comput Vis 119, 76–92 (2016). https://doi-org.prox.lib.ncsu.edu/10.1007/s11263-015-0812-2
 - numerous examples from facila recongition where face accuracary plateaus after M 100
