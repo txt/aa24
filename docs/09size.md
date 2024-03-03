@@ -164,8 +164,7 @@ Advice on how long to fill in a rep grid?
 The repertory grid technique: Its place in empirical software engineering research,
 Information and Software Technology, Volume 51, Issue 4, 2009, Pages 785-798, ISSN 0950-5849,
 
-[^king09]: Kington, Alison. "Defining Teachers' Classroom Relationships." (2009).
-https://eprints.worc.ac.uk/1885/1/Kington%202009.pdf
+[^king90]: Kington, Alison. "Defining Teachers' Classroom Relationships." (2009).  https://eprints.worc.ac.uk/1885/1/Kington%202009.pdf
 
 [^easter80]: Easterby-Smith, Mark. “The Design, Analysis and Interpretation of 
 Repertory Grids.” Int. J. Man Mach. Stud. 13 (1980): 3-24.
@@ -233,7 +232,7 @@ cells:
   - $k \in \{ 1, 2, 3, 4, 5\}$
   - $d \in \{ 3, 4, 5, 6, 7\}$  dimensions;
   - $b \in \{ 2 , 3, 4, 5, 6, 7\}$ bins;
-  - $p \in \{0.1, 0.2, 0,3, 0.4\}
+  - $p \in \{0.1, 0.2, 0,3, 0.4\}$
   - We gave the whole thing to a decision tree learner, asking what factors
     predicts for more than 67% chance of finding the target.
     - and the learnt tree told us:
@@ -281,7 +280,7 @@ IEEE Transactions on Software Engineering, vol. 44, no. 9, pp. 874-896, 1 Sept. 
 ## In summary
 
 What | N
------|-------
+----:|-------
 Standard theory: |  more is always better
 Cognitive Science: | 7 plus or minus 2
 From human studies (cost estimation, rep grids) : |  10 to 20 examples per 1-4 hours
