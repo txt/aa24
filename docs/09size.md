@@ -59,6 +59,8 @@ Data. Youtube.  https://www.youtube.com/watch?v=yvDCzhbjYWs
   - menzies funciton of # udnerlying dimensions and dicretiona results
   - number of supprt vectors: 200-300
 
+<img width="898" alt="image" src="https://github.com/txt/aa24/assets/29195/51809d84-6c32-4d86-849d-0af40273c83f">
+
 to explore structureal similarity, one of our methods will clsuter before reasoming (to find maximize region similarities)
 
 ## How many points can we get (time restraits)
