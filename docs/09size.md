@@ -261,13 +261,16 @@ Some what ifs:
 scenario |d  | p | C |  n(c,p) | $\log_2(n(c,p))$
 ---------|---|---|---|---------|-----------------
 medium effect, non-safety critical|0.35|0.06|0.95|50|6
-small effect, safety critical|0.2|0.03|0.9999|272|8
+small effect, safety criticali     |0.2   |0.03            |0.9999|272|8
+tiny effects, ultra-safety critical | n/a | one in a million|six sigma<br> (0.999999)|13,815,504| 24
 
 Note the above table makes some very optimistic assumptions about the problem:
 
 - It is single variable gaussian
 - Solutions are spaced equally across the x-axis
 
+But it also tells us that the only way we can reason about safety critical systems
+is via some sorting heuristic (so we can get the log2 effect)
 [^call]:  Application of machine learning techniques in small sample clinical studies, 
 from StackExchange.com
 https://stats.stackexchange.com/questions/1856/application-of-machine-learning-techniques-in-small-sample-clinical-studies
