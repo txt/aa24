@@ -15,13 +15,16 @@
       - Applied to  **10-20 data sets** you understand and can **motivate** their application in an SE context
         - Analyzed with the **[statistics](04stats.md) introduced in class** (please show me you undersatnd that when we reason about stochastic devices, we need to discuss not just middle behaviour, but also variations about that middle)
 
-https://www.overleaf.com/latex/templates/ieee-access-latex-template/cdxrhtbjgszv (no bios or pictures at back)
+What to hand in:
+- A pdf gerenated by latex  in the [IEEE Access](https://www.overleaf.com/latex/templates/ieee-access-latex-template/cdxrhtbjgszv) format (no bios or pictures at back)
+- The first line of the latex must be `\documentclass{ieeeaccess}`.
+- Do not mess with font sizes, line higheights, column widths, margins. Your paper really needs to look like:
 
 
-Headings for report:
+## Headings for report:
 
-(For an example of a paper with many of these headings, see  https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10438420)
-
+For an example of a paper with many of these headings, 
+see  https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10438420.
 
 
 |Section | Subsections (these subsections may be in ant order) | Notes|
@@ -43,6 +46,7 @@ Background  |    | Often includes related work plus a general overview of the fi
  |            | Threats to Validity| For a table of such threats, see Table1 of [^feldt]. For  an example of  threats to validity section, see section V.D of [^peters]|
  |           | Future work | if you have done this work right, there should be 1000 things you know you could ahve done, but did not do. which of those d you recomend to others as improtant next steps?)|
 |Conclusion | | sumamrize the why and how of the paper andwhat was learned (perhaps mentioning some of the details of the results)|
+|References| | |
  
 
 
