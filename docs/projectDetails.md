@@ -26,7 +26,8 @@ Headings for report:
 
 |Section | Subsections (these subsections may be in ant order) | Notes|
 |---------|------------|-------|
- |Abstract|      .      | .|
+ |Abstract|             |  State the problem, your approach and solution, and the main contributions of the paper. Include little if any background and motivation. Be factual but comprehensive. The material in the abstract should not be repeated later word for word in the paper.|
+|
  |Introduction |      |  Oftens consist of five paragraphs answering the following five questions: <br>1. What is the problem?<br>2. Why is it interesting and important?<br>3. Why is it hard? (E.g., why do naive approaches fail?)<br>4. Why hasn't it been solved before? (Or, what's wrong with previous proposed solutions? How does mine differ?)<br>5. What are the key components of my approach and results? Also include any specific limitations.|
 |         | Research Questions | .|
 |         | Contributions  |.|
