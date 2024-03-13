@@ -24,25 +24,25 @@ Headings for report:
 
 
 
-Section | Subsections (these subsections may be in ant order) | Notes
----------|------------|-------
- Abstract|      .      | .
- Introduction |      |  Oftens consist of five paragraphs answering the following five questions: <br>1. What is the problem?<br>2. Why is it interesting and important?<br>3. Why is it hard? (E.g., why do naive approaches fail?)<br>4. Why hasn't it been solved before? (Or, what's wrong with previous proposed solutions? How does mine differ?)<br>5. What are the key components of my approach and results? Also include any specific limitations.
-         | Research Questions |
-         | Contributions  |
-         | Structure  | This is a one para section that starts with "The rest of this paper is structured as follows".
-Background  |    | Often includes related work plus a general overview of the field before going into details (in later sections)
-Algorithms|       | Show me you understand   the code you use, that you can make a sensible case for the variants you explore, and that you can explain those variants
-Methods |        | The details
-        | Data | HJere you need to show me you undersstand data. pick data set sfor which you can make a business justification that theya re actually solving an SE prpblem
-        | Experimental Set up |
-        | Evaluation metrics  | how you score each run
-        | Statistical Methods | Please show me you udnerstand what is effect size and a signficance test 
-Results|                    | Divide into the research questions (and each resaerch queston section ends with a pargarph,in bold, sumamrize what is your answer to that question
-Discussion | What was Learned| ANd what was surprising
-             | Threats to Validity| For a table of such threats, see Table1 of [^feldt]. For  an example of  threats to validity section, see section V.D of [^peters]
-            | Future work | if you have done this work right, there should be 1000 things you know you could ahve done, but did not do. which of those d you recomend to others as improtant next steps?)
-Conclusion | | sumamrize the why and how of the paper andwhat was learned (perhaps mentioning some of the details of the results)
+|Section | Subsections (these subsections may be in ant order) | Notes|
+|---------|------------|-------|
+ |Abstract|      .      | .|
+ |Introduction |      |  Oftens consist of five paragraphs answering the following five questions: <br>1. What is the problem?<br>2. Why is it interesting and important?<br>3. Why is it hard? (E.g., why do naive approaches fail?)<br>4. Why hasn't it been solved before? (Or, what's wrong with previous proposed solutions? How does mine differ?)<br>5. What are the key components of my approach and results? Also include any specific limitations.|
+|         | Research Questions | .|
+|         | Contributions  |.|
+ ||        | Structure  | This is a one para section that starts with "The rest of this paper is structured as follows".|
+Background  |    | Often includes related work plus a general overview of the field before going into details (in later sections)|
+|Algorithms|       | Show me you understand   the code you use, that you can make a sensible case for the variants you explore, and that you can explain those variants|
+|Methods |        | The details
+ |       | Data | HJere you need to show me you undersstand data. pick data set sfor which you can make a business  justification that theya re actually solving an SE prpblem|
+ |      | Experimental Set up |.|
+  |      | Evaluation metrics  | how you score each run|
+  |      | Statistical Methods | Please show me you udnerstand what is effect size and a signficance test |
+|Results|                    | Divide into the research questions (and each resaerch queston section ends with a pargarph,in bold, sumamrize what is your answer to that question|
+|Discussion | What was Learned| ANd what was surprising|
+ |            | Threats to Validity| For a table of such threats, see Table1 of [^feldt]. For  an example of  threats to validity section, see section V.D of [^peters]|
+ |           | Future work | if you have done this work right, there should be 1000 things you know you could ahve done, but did not do. which of those d you recomend to others as improtant next steps?)|
+|Conclusion | | sumamrize the why and how of the paper andwhat was learned (perhaps mentioning some of the details of the results)|
  
 
 
