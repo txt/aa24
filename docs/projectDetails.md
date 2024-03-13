@@ -28,15 +28,15 @@ Headings for report:
 |---------|------------|-------|
  |Abstract|             |  State the problem, your approach and solution, and the main contributions of the paper. Include little if any background and motivation. Be factual but comprehensive. The material in the abstract should not be repeated later word for word in the paper.|
  |Introduction |      |  Oftens consist of five paragraphs answering the following five questions: <br>1. What is the problem?<br>2. Why is it interesting and important?<br>3. Why is it hard? (E.g., why do naive approaches fail?)<br>4. Why hasn't it been solved before? (Or, what's wrong with previous proposed solutions? How does mine differ?)<br>5. What are the key components of my approach and results? Also include any specific limitations.|
-|         | Research Questions | .|
-|         | Contributions  |.|
- ||        | Structure  | This is a one para section that starts with "The rest of this paper is structured as follows".|
+|         | Research Questions | |
+|         | Contributions  | |
+ |        | Structure  | This is a one para section that starts with "The rest of this paper is structured as follows".|
 Background  |    | Often includes related work plus a general overview of the field before going into details (in later sections)|
-|Algorithms|       | Show me you understand   the code you use, that you can make a sensible case for the variants you explore, and that you can explain those variants|
+|Algorithms|       | Show me you understand   the code you use, that you can make a sensible case for the variants you explore, and that you can explain those variants.<br>If you are using some well-established algorithm from the literature, show me you understand it and tell me why you are using it.|
 |Methods |        | The details
- |       | Data | HJere you need to show me you undersstand data. pick data set sfor which you can make a business  justification that theya re actually solving an SE prpblem|
- |      | Experimental Set up |.|
-  |      | Evaluation metrics  | how you score each run|
+ |       | Data | HJere you need to show me you undersstand data. pick data set sfor which you can make a business  justification that they are actually solving an SE prpblem|
+ |      | Experimental Set up | What you ran. Why. If you made "magic parameter choices" (e.g. I used a k=5 nearest neighbor), justify those choices (e.g. that is what was done in that famous paper) |
+  |      | Evaluation metrics  | How you scored each run|
   |      | Statistical Methods | Please show me you udnerstand what is effect size and a signficance test |
 |Results|                    | Divide into the research questions (and each resaerch queston section ends with a pargarph,in bold, sumamrize what is your answer to that question|
 |Discussion | What was Learned| ANd what was surprising|
@@ -77,18 +77,17 @@ Points | Notes
 -----|-------
 -40 | Not using the Latex IEEE access tempalte
 -10 | Poor Essay Stricture: We want coherent paragraphs, not a bullet list. References are used in a way that enhances the argument. Paragraphs should be content-full (rather that a set of irrelevances). Arguments should be defended and not just be opinions of the form "I think that..." (with no supporting clauses). Each section should start with some clarification/structuring preamble.
- -5 | if not 20 repeated trails with different seeds (exception: if you are using some ultra slow deep learning thing then make the case in the text that such slow processes cannot be explored more some small number (perhaps even one))
--5 | if you do not compare to some kind of random selection
--5 | if you results have no effect size test
--5 | if your results have no significance test
--3 | for any of the above headings missing
+ -5 | If not 20 repeated trails with different seeds (exception: if you are using some ultra slow deep learning thing then make the case in the text that such slow processes cannot be explored more some small number (perhaps even one))
+-5 | If you do not compare to some kind of random selection
+-5 | If you results have no effect size test
+-5 | If your results have no significance test
+-5 | If shorter than 8 pages
+-5 | If longer than 13 pages (including references)
+-5 | if your text does not justify the use of your data from an SE perspective (exception: using DTLZ is ok just as long as you as it is only half your data sets)
+-3 | For each of the above headings missing
+-5 | You include those sections but the section is just badly done.
 -3 | if yu have have figures or tables that are no discussed in the text.
 -2 | if your text mentions figures or tables that are not in the paper.
--5 | if shorter than 8 pages
--5 | if longer than 13 pages (including references)
--5 | if your text does not justify the use of your data from an SE perspective (exception: using DTLZ is ok just as long as you as it is only half your data sets)
-
-
 
 
 [^feldt]: R. Feldt and A. Magizinius, “Validity threats in empirical software engineering research
