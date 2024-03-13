@@ -111,7 +111,7 @@ Mar26&nbsp;:&nbsp; <a href="/docs/hw08.md">Hw8</a><br>
 Apr02&nbsp;:&nbsp; <strike>Hw9</strike><br>
 Apr09&nbsp;:&nbsp; - <br>
 Apr16&nbsp;:&nbsp; - <br>
-Apr22&nbsp;:&nbsp;&nbsp;monday,&nbsp;<a href="docs/projects.md">Project</a>;<a href="docs/tbd.md">details</a><br>
+Apr22&nbsp;:&nbsp;&nbsp;monday,&nbsp;<a href="docs/projects.md">Project</a>;<a href="docs/projectDetails.md">details</a><br>
 May3&nbsp;:&nbsp;&nbsp;grades&nbsp;posted<br>
 </td>
 </tr>
