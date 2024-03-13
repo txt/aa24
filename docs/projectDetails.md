@@ -96,8 +96,8 @@ Points | Notes
 -2 | If your text mentions figures or tables that are not in the paper.
 
 
-[^feldt]: R. Feldt and A. Magizinius, “Validity threats in empirical software engineering research
-- an initial survey,” in Proc. of the Int’l Conf. on Software Engineering and Knowledge
+[^feldt]: R. Feldt and A. Magizinius, “Validity threats in empirical software engineering research-
+an initial survey,” in Proc. of the Int’l Conf. on Software Engineering and Knowledge
 Engineering, 2010, pp. 374–379. http://www.robertfeldt.net/publications/feldt_2010_validity_threats_in_ese_initial_survey.pdf
 
 [^peters]: Peters, F., Menzies, T., & Layman, L. (2015, May). LACE2: Better privacy-preserving data sharing for cross project defect prediction. In 2015 IEEE/ACM 37th IEEE International Conference on Software Engineering (Vol. 1, pp. 801-811). IEEE. http://now.unbox.org/timm/pdf/15lace2.pdf
