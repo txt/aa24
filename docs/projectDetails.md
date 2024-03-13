@@ -1,0 +1,98 @@
+<a name=top><br>
+  <p align=center>&nbsp;<a href="/README.md#top">home</a> ::
+  <a href="/docs/syllabus.md#top">syllabus</a> ::
+  <a href="https://docs.google.com/spreadsheets/d/16yxmklx4zvmfAHE7QocOQZZ4v4UxD5ktJHWMJEjBcMI/edit#gid=0">groups</a> ::
+  <a href="/LICENSE.md#top">&copy;&nbsp;2024</a>, <a href="http:/timm.fyi">Tim Menzies</a><br>
+  <a href="/README.md#top"><img width=600  
+     src="/etc/img/ase24.png"></a></p>
+
+
+# Project Details
+
+- **20 repeats** of
+  - **Several variants** of some sampling technique (plus random selection, so at least three)
+    - **Applied to  some task** (by default, you will probablty be working some multi-obecive optimization problem for SE/ But please consider project [idea#6](projects.md)
+      - Applied to  **10-20 data sets** you understand and can **motivate** their application in an SE context
+        - Analyzed with the [statistics](04stats.md) introduced in class (please show me you undersatnd that when we reason about stochastic devices, we need to discuss not just middle behaviour, but also variations about that middle)
+
+https://www.overleaf.com/latex/templates/ieee-access-latex-template/cdxrhtbjgszv (no bios or pictures at back)
+
+
+Headings for report:
+
+(For an example of a paper with many of these headings, see  https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10438420)
+
+
+
+Section | Subsections (these subsections may be in ant order) | Notes
+---------|------------|-------
+ Abstract|            | 
+- Introduction |       |  Oftens consist of five paragraphs answering the following five questions: <br>1. What is the problem?<br>2. Why is it interesting and important?<br>3. Why is it hard? (E.g., why do naive approaches fail?)<br>4. Why hasn't it been solved before? (Or, what's wrong with previous proposed solutions? How does mine differ?)<br>5. What are the key components of my approach and results? Also include any specific limitations.
+         | Research Questions |
+         | Contributions  |
+         | Structure  | This is a one para section that starts with "The rest of this paper is structured as follows".
+Background  |    | Often includes related work plus a general overview of the field before going into details (in later sections)
+Algorithms|       | Show me you understand   the code you use, that you can make a sensible case for the variants you explore, and that you can explain those variants
+Methods |        | The details
+        | Data | HJere you need to show me you undersstand data. pick data set sfor which you can make a business justification that theya re actually solving an SE prpblem
+        | Experimental Set up |
+        | Evaluation metrics  | how you score each run
+        | Statistical Methods | Please show me you udnerstand what is effect size and a signficance test 
+Results|                    | Divide into the research questions (and each resaerch queston section ends with a pargarph,in bold, sumamrize what is your answer to that question
+Discussion | What was Learned| ANd what was surprising
+             | Threats to Validity| For a table of such threats, see Table1 of [^feldt]. For  an example of  threats to validity section, see section V.D of [^peters]
+            | Future work | if you have done this work right, there should be 1000 things you know you could ahve done, but did not do. which of those d you recomend to others as improtant next steps?)
+Conclusion | | sumamrize the why and how of the paper andwhat was learned (perhaps mentioning some of the details of the results)
+ 
+
+
+
+## Selection of Data
+
+What ever data, you use, at least half of it has to solve some interesting SE problem. When, in you repor you describe your data, it hasd better come witha  good justification of why it represents a good SE problem.
+
+
+For example data, see https://github.com/txt/aa24/tree/main/data.
+
+For notes on those data sets, look for any PDF or .md file in that directory.
+
+For more notes on DLTZ; see 
+
+Do NOT use
+- antyhing in hea;th
+- anything in Process/large
+
+
+## Selection of Models
+
+If you don't want to use my data, then feel free to do something else.
+
+You can generate data from other models (e.g. see  https://pymoo.org/problems/test_problems.html)
+- as long as  at least half your results come from an SE domain
+- so if you are going to to use DTLZ, make sure you use something else as well
+
+## Grading Rubric
+
+Points | Notes
+-----|-------
+-40 | Not using the Latex IEEE access tempalte
+-10 | Poor Essay Stricture: We want coherent paragraphs, not a bullet list. References are used in a way that enhances the argument. Paragraphs should be content-full (rather that a set of irrelevances). Arguments should be defended and not just be opinions of the form "I think that..." (with no supporting clauses). Each section should start with some clarification/structuring preamble.
+ -5 | if not 20 repeated trails with different seeds (exception: if you are using some ultra slow deep learning thing then make the case in the text that such slow processes cannot be explored more some small number (perhaps even one))
+-5 | if you do not compare to some kind of random selection
+-5 | if you results have no effect size test
+-5 | if your results have no significance test
+-3 | for any of the above headings missing
+-3 | if yu have have figures or tables that are no discussed in the text.
+-2 | if your text mentions figures or tables that are not in the paper.
+-5 | if shorter than 8 pages
+-5 | if longer than 13 pages (including references)
+-5 | if your text does not justify the use of your data from an SE perspective (exception: using DTLZ is ok just as long as you as it is only half your data sets)
+
+
+
+
+[^feldt]: R. Feldt and A. Magizinius, “Validity threats in empirical software engineering research
+- an initial survey,” in Proc. of the Int’l Conf. on Software Engineering and Knowledge
+Engineering, 2010, pp. 374–379. http://www.robertfeldt.net/publications/feldt_2010_validity_threats_in_ese_initial_survey.pdf
+
+[^peters] Peters, F., Menzies, T., & Layman, L. (2015, May). LACE2: Better privacy-preserving data sharing for cross project defect prediction. In 2015 IEEE/ACM 37th IEEE International Conference on Software Engineering (Vol. 1, pp. 801-811). IEEE. http://now.unbox.org/timm/pdf/15lace2.pdf
