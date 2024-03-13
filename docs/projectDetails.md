@@ -81,7 +81,8 @@ You can generate data from other models (e.g. see  https://pymoo.org/problems/te
 Points | Notes
 -----|-------
 -40 | Not using the Latex IEEE access template
--10 | Poor Essay Stricture: We want coherent paragraphs, not a bullet list. References are used in a way that enhances the argument. Paragraphs should be content-full (rather that a set of irrelevances). Arguments should be defended and not just be opinions of the form "I think that..." (with no supporting clauses). Each section should start with some clarification/structuring preamble.
+-15 | Poor macro structure. You paper needs to be a story, a river that takes the reader from some common shared place to a some new place. Along the way, terms are defined before they are used and if something is complex to explain, before you get there, there is some structuring text that helps the reader through that difficulty bit. You should anticipate what questions the reader will have at any point so at (or before) that point you have an answer for that question already available.
+-10 | Poor micro Stricture: We want coherent paragraphs, not a bullet list. References are used in a way that enhances the argument. Paragraphs should be content-full (rather that a set of irrelevances). Arguments should be defended and not just be opinions of the form "I think that..." (with no supporting clauses). Each section should start with some clarification/structuring preamble.
  -5 | If not 20 repeated trails with different seeds (exception: if you are using some ultra slow deep learning thing then make the case in the text that such slow processes cannot be explored more some small number (perhaps even one))
 -5 | If you do not compare to some kind of random selection
 -5 | If you results have no effect size test
