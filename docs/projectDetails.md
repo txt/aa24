@@ -13,7 +13,7 @@
   - **Several variants** of some sampling technique (plus random selection, so at least three)
     - **Applied to  some task** (by default, you will probablty be working some multi-obecive optimization problem for SE/ But please consider project [idea#6](projects.md)
       - Applied to  **10-20 data sets** you understand and can **motivate** their application in an SE context
-        - Analyzed with the [statistics](04stats.md) introduced in class (please show me you undersatnd that when we reason about stochastic devices, we need to discuss not just middle behaviour, but also variations about that middle)
+        - Analyzed with the **[statistics](04stats.md) introduced in class** (please show me you undersatnd that when we reason about stochastic devices, we need to discuss not just middle behaviour, but also variations about that middle)
 
 https://www.overleaf.com/latex/templates/ieee-access-latex-template/cdxrhtbjgszv (no bios or pictures at back)
 
