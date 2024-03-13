@@ -26,8 +26,8 @@ Headings for report:
 
 Section | Subsections (these subsections may be in ant order) | Notes
 ---------|------------|-------
- Abstract|            | 
-- Introduction |       |  Oftens consist of five paragraphs answering the following five questions: <br>1. What is the problem?<br>2. Why is it interesting and important?<br>3. Why is it hard? (E.g., why do naive approaches fail?)<br>4. Why hasn't it been solved before? (Or, what's wrong with previous proposed solutions? How does mine differ?)<br>5. What are the key components of my approach and results? Also include any specific limitations.
+ Abstract|      .      | .
+ Introduction |      |  Oftens consist of five paragraphs answering the following five questions: <br>1. What is the problem?<br>2. Why is it interesting and important?<br>3. Why is it hard? (E.g., why do naive approaches fail?)<br>4. Why hasn't it been solved before? (Or, what's wrong with previous proposed solutions? How does mine differ?)<br>5. What are the key components of my approach and results? Also include any specific limitations.
          | Research Questions |
          | Contributions  |
          | Structure  | This is a one para section that starts with "The rest of this paper is structured as follows".
