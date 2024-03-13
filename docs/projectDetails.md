@@ -20,6 +20,9 @@ What to hand in:
 - The first line of the latex must be `\documentclass{ieeeaccess}`.
 - Do not mess with font sizes, line higheights, column widths, margins. Your paper really needs to look like:
 
+<img width=400 src="https://github.com/txt/aa24/assets/29195/95c399e9-db9f-44e1-a00e-fcd565deb4e7">
+
+
 
 ## Headings for report:
 
