@@ -30,6 +30,10 @@ Beware optimization traps:
 
 More generally: Search-based software engineering
 
+![image](https://github.com/txt/aa24/assets/29195/4cef3022-db51-4051-b36c-f647a884e160)
+
+![image](https://github.com/txt/aa24/assets/29195/05b343f4-af0f-46c4-aeef-1c389513b813)
+
 
 
 ## Data Mining and optimization
