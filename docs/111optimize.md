@@ -8,8 +8,19 @@
      
 # Optimization
 
+## Why optimize?
 
-Life is wondering  around look for ways to get ahead without falling down holes.
+Next-release planning?
+- What to do next?
+- Such that next-next is better?
+- Sometimes you have to pause in delivering functionality to clients in order to re-organize
+- So next release planning is global inference to plan local steps
+
+Beware optimization traps:
+
+- holes and poles
+- narrow ridges
+- flat terrains with distant ridges
 
 
 ![](https://github.com/timm/tested/raw/main/etc/img/3dfront.png)  
@@ -17,6 +28,11 @@ Life is wondering  around look for ways to get ahead without falling down holes.
 
 [![](https://github.com/timm/tested/raw/main/etc/img/birds.png)](https://www.youtube.com/watch?v=KnndQgIUraQ)
 
+More generally: Search-based software engineering
+
+
+
+## Data Mining and optimization
 
 Data mining = "what is"; i.e they divide things up. 
 
