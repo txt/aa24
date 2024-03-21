@@ -85,7 +85,7 @@ Mar07&nbsp;:&nbsp;<br>
 Mar12&nbsp;:&nbsp;&nbsp;break<br>
 Mar14&nbsp;:&nbsp;&nbsp;break<br>
 Mar19&nbsp;:&nbsp;<br>
-Mar21&nbsp;:&nbsp;<br>
+Mar21&nbsp;:&nbsp;<a href="https://github.com/txt/aa24/blob/main/docs/111optimize.md">Other.optimizers</a>;<br>
 Mar26&nbsp;:&nbsp;<br>
 Mar28&nbsp;:&nbsp;<br>
 Apr02&nbsp;:&nbsp;<br>
