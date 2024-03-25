@@ -204,5 +204,13 @@ DE = Differential evolution
        - pick three other items  (a,b,c) via some strategy (e.g. random, best)
        - build a new solution using `vectorMutate`
        - replace X if new better than X
+     
+## A parting thought
+
+- Mutating via uniform distributions and wrapping is very simple and crazy fast. 
+- Combined with SMO, you could create (say) 100,000 candidate solutions very faster
+- Then use the models you built in SMO to select for some property you cared about
+  - e.g. test something you have not tested before? 1/(b+r).
+
 
 I've had a lot of success with DE
