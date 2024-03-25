@@ -125,22 +125,28 @@ function any(a) return a[ math.random(#a) ] end
 
 By what about when you  mutating vectors, not points?
 - how to maintain the associations between items in the vector (e.g. do not mutate such that whales have wings or men can get pregnant)
-- tactic1: constraint rule
-  - have an explicit constraint predicate that checks (e.g.) if `day=saturday then sleepLate=true end`
-  - ok for simple constraints.
-- tactic2: for complex constraints,
-    - use a theorem prover that will only generate vectors that satisfy the constraints
-    -  e.g. if all your variables are boolean, try [picoSat](https://fmv.jku.at/picosat/).
-    -  and if all your variables come from numbers, lists, etc, try [Z3](https://microsoft.github.io/z3guide/).
-- tactic3: muate by vector
-  - let `F` be the amount you want to mutate.
-    - e.g. F=0.1
-  - let `CF` by the cross-over frequency
-    -e g. CF = .5
-  - pick three vectors
-    - a = [1,2,3,4]
-    - b = [10,20,30,40]
-    - c  =[15,25,35,45]
+
+### tactic1: constraint rule
+- have an explicit constraint predicate that checks (e.g.) if `day=saturday then sleepLate=true end`
+- ok for simple constraints.
+
+### tactic2: for complex constraints: use a theorem prover
+
+- use a theorem prover that will only generate vectors that satisfy the constraints
+-  e.g. if all your variables are boolean, try [picoSat](https://fmv.jku.at/picosat/).
+-  and if all your variables come from numbers, lists, etc, try [Z3](https://microsoft.github.io/z3guide/).
+
+### Tactic3 : mutate by vector
+
+
+- let `F` be the amount you want to mutate.
+  - e.  g. F=0.1
+- let `CF` by the cross-over frequency
+  -e   g. CF = .5
+- pick three vectors using a "stragegy" (e.g. rand, best, etc)
+  - a = [1,2,3,4]
+  - b = [10,20,30,40]
+  - c  =[15,25,35,45]
 
 ```lua
 def delta(       a,b,c): return a+F*(b-c)
@@ -150,6 +156,20 @@ def vectorMutate(a,b,c): retrun [delta(a[i], b[i], c[i]) for i,_ in enumuerate(a
 
 e..g. a + F*(b-c) = [1,2,3,4] + [1,1,1,1] = [2,3,4,5] 
 
+### Tactic4 : Cluster, then mutate by vector
+
+Same as Tactic3 but first recursively cluster the data, then mutate by vector only fro eamples within each leaf
+
+- N times
+  - pick a cluster (via some preference; e.g. random or some bias)
+    - run mutateVector only from the data in that cluster
+- Why?
+  -   Ensures that you are only mutating similar examples.
+
+Btw, **tactic4** can also be used for data set repair
+
+- e.g. if you have N leaves and some of them have undesirable properties (e.g. some fariness predicate) then bias preference can avoid that bad cluster.
+  
 ## From Mutation to Optimization
 
 In the following, the "energy function" is the thing that gets the y-labels. We will assume below that more enegery is better (but that could be reversed).
@@ -181,7 +201,7 @@ DE = Differential evolution
 - if optimizing n variables, create a vector for n*NP randomly assigned solutions
 - for G generations
     - for every item X in frontier
-       - pick three other items at random (a,b,c)
+       - pick three other items  (a,b,c) via some strategy (e.g. random, best)
        - build a new solution using `vectorMutate`
        - replace X if new better than X
 
