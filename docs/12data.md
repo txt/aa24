@@ -12,15 +12,34 @@ Some details from last week.
 
 Optimizers explore a sapce of options? Where does that data come from?
 
-## Souce1: Mutate Parametrically
+## Before we beign... remember your seeds
 
-Say you know the background shape of your data (e.g. gaussian or trianguate
+We are about to sample randomly. Which means drawing from a string of random numbers. For reasons of repeatability and debug-ability, we want to be
+able to replay that random number generation.
+
+so we do not want realy random numbers
+
+We want psuedo-randoms where 
+- Some _seed_ is fiddled to make number1 (and update the seed). 
+- Then the seed is fiddled again to make number2 (and update the seed)
+- And so on
+
+So if we reset the seed, then we can recereate the same sequence.
+
+So maintain and watch over your seeds!
+
+
+##  Mutate Parametrically
+
+Say you know the background shape of your data (e.g. gaussian or triangular).
 
 ![](https://i.stack.imgur.com/WfSV0.png)
 
 triangles can be skewed
 
-![](https://www.researchgate.net/profile/Alta-De-Waal/publication/361793675/figure/fig1/AS:1174808092000256@1657107484341/Histogram-and-density-plots-of-the-triangular-distribution-with-th-025_W640.jpg)
+![image](https://github.com/txt/aa24/assets/29195/0ebdf749-c0a2-4768-a575-c7958fbad3c7)
+
+So lets mutate:
 
 ```lua
 egs={}
@@ -61,9 +80,43 @@ function s.norm(mu,sd)
                         * math.cos(2*math.pi*r())) end
 ```
 
-And so on for 100 different distributions:
+And if we knew nothing except the `lo`, `hi` values:
 
-Mutate cf (cross-over frequency) percent of the x-attributes
+```lua
+function s.uniform(lo,hi)
+  return lo + math.random()*(hi - lo) end
+```
+
+And so on for 100 different distributions (from ![](https://www.itl.nist.gov/div898/handbook/eda/section3/eda366.htm)):
+
+![image](https://github.com/txt/aa24/assets/29195/38a1f698-f11c-420a-9976-8d9114bd3323)
+
+
+##  Mutate Non-Parametrically
+
+Qhy nake parametric guesses? What not respect the distributions in the data.
+
+Say you ahve some numbers from the domain
+
+```
+lst={1,3,5,10,17,18,22,23,28,31,32,34,35,36,38,39,40,43,
+     46,47,49,53,55,56,61,65,74,75,76,83,85,87,88,90,91,93,94,95,96,99}
+```
+
+You could compute the mean (_sum/n_) or   standard deviation (90th-10th)/2.56
+
+Or, if you are lazy, you could
+
+```lua
+function any(a) return a[ math.random(#a) ] end
+```
+
+- interpolate
+  - `new = any(lst) + f*(any(lst) - any(lst))`
+  - if `f` is small, say 0.2, you will get numbers within the list
+- if the `new` falls outside of `lo..hi` then you can
+  - truncate : `return max(lo, min(hi, new))`
+  - wrap: 
 
 ## Why optimize?
 
