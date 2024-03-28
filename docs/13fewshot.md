@@ -9,9 +9,9 @@
 
 # Few shot Learning 
 
-In the following, the author says "LLMs" not "learners" but given the results of this subject, I think an edit is in order:
+In the following, the author says **LLMs** not **learners** but given the results of this subject, I think an edit is in order:
 
-- A particularly exciting aspect of <learners> is their knack for few-shot and zero-shot learning: they can learn to perform a task with very few examples. Few- shotting has particular synergies in software engineering, where there are a lot of phenomena (identifier names, APIs, terminology, coding patterns) that are known to be highly project-specific. However, project-specific data can be quite limited, especially early in the history of a project; thus the few-shot learning capacity of <learners> might be very relevant. 
+- A particularly exciting aspect of **learners** is their knack for few-shot and zero-shot learning: they can learn to perform a task with very few examples. Few- shotting has particular synergies in software engineering, where there are a lot of phenomena (identifier names, APIs, terminology, coding patterns) that are known to be highly project-specific. However, project-specific data can be quite limited, especially early in the history of a project; thus the few-shot learning capacity of **learners** might be very relevant. 
 - In the extreme case, training data consists of only one instance for each target class, which is known as one-shot learning
 
 Need another name
