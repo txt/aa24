@@ -103,3 +103,7 @@ Use LLMs as the oracle?
 
 - But were to get the model trained on the specifics of our data?
   - https://arxiv.org/pdf/2308.10620.pdf#page=15
+ 
+May use SMO to select better training examples from LLM?
+
+- so active learning to minimize training data / time needed for LLMs?
