@@ -80,7 +80,7 @@ In the first 100 returns, after paper70, no more published few shot learning pap
 In the remaining 70 papers:
 
 |year|citations|venue|j=journal; c=conf; w=workshop|title|pdf|data|
-|--|--|--|--|--|--|--|--
+|--|--|--|--|--|--|--|--|
 |2023|1|Icse_NLBSE|w|Few-Shot Learning for Issue Report Classification|[pdf](Few-Shot_Learning_for_Issue_Report_Classification.pdf)|200 + 200|
 |2023|2|SSBSE|c|Search-based Optimisation of LLM Learning Shots for Story Point Estimation|[pdf](SB_LLM_Shot_optimisation.pdf)|6 to 10|
 |2023|2|ICSE|c|Log Parsing with Prompt-based Few-shot Learning|[pdf](Log_Parsing_with_Prompt-based_Few-shot_Learning.pdf)|4 to 128. most improvement before 16|
