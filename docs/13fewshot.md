@@ -79,21 +79,21 @@ In the first 100 returns, after paper70, no more published few shot learning pap
 
 In the remaining 70 papers:
 
-year|citations|venue|j=journal; c=conf; w=workshop|title|pdf|data
---|--|--|--|--|--|--|--
-2023|1|Icse_NLBSE|w|Few-Shot Learning for Issue Report Classification|[pdf](Few-Shot_Learning_for_Issue_Report_Classification.pdf)|200 + 200
-2023|2|SSBSE|c|Search-based Optimisation of LLM Learning Shots for Story Point Estimation|[pdf](SB_LLM_Shot_optimisation.pdf)|6 to 10
-2023|2|ICSE|c|Log Parsing with Prompt-based Few-shot Learning|[pdf](Log_Parsing_with_Prompt-based_Few-shot_Learning.pdf)|4 to 128. most improvement before 16
-2023|3|AST|c|FlakyCat: Predicting Flaky Tests Categories using Few-Shot Learning|[pdf](FlakyCat_Predicting_Flaky_Tests_Categories_using_Few-Shot_Learning.pdf)|400+
-2023|5|ICSE|c|Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning|[pdf](Retrieval-Based_Prompt_Selection_for_Code-Related_Few-Shot_Learning.pdf)|6-7 (for code generation (40 to 50 (for code repair)
-2022|7|Soft.Lang.Eng|c|Neural Language Models and Few Shot Learning for Systematic Requirements Processing in MDSE|[pdf](3567512.3567534.pdf)|8 to 11
-2023|12|ICSE|c|Towards using Few-Shot Prompt Learning for Automating Model Completion|[pdf](Towards_using_Few-Shot_Prompt_Learning_for_Automating_Model_Completion.pdf)|212 classes
-2020|15|IEEE ACCECSS|j|Few-Shot Learning Based Balanced Distribution Adaptation for Heterogeneous Defect Prediction|[pdf](Few-Shot_Learning_Based_Balanced_Distribution_Adaptation_for_Heterogeneous_Defect_Prediction.pdf)|100s - 1000s
-2019|21| Big Data|j|Exploring the applicability of low-shot learning in mining software repositories|[pdf](s40537-019-0198-z.pdf)|100 =>70% accuracy; 100s ==> 90% accuracy
-2021|27|ESEM|c|An Empirical Examination of the Impact of Bias on Just-in-time Defect Prediction||10^3 samples of defects
-2020|29|ICSE|c|Unsuccessful Story about Few Shot Malware Family Classification and Siamese Network to the Rescue|3377811.3380354.pdf|"10|000s ?"
-2022|65|ASE|c|Few-shot training LLMs for project-specific code-summarization|[pdf](3551349.3559555.pdf)|10 samples
-2022|101|FSE|c|Less Training_ More Repairing Please: Revisiting Automated Program Repair via Zero-Shot Learning|[pdf](3540250.3549101.pdf)|?
+|year|citations|venue|j=journal; c=conf; w=workshop|title|pdf|data|
+|--|--|--|--|--|--|--|--
+|2023|1|Icse_NLBSE|w|Few-Shot Learning for Issue Report Classification|[pdf](Few-Shot_Learning_for_Issue_Report_Classification.pdf)|200 + 200|
+|2023|2|SSBSE|c|Search-based Optimisation of LLM Learning Shots for Story Point Estimation|[pdf](SB_LLM_Shot_optimisation.pdf)|6 to 10|
+|2023|2|ICSE|c|Log Parsing with Prompt-based Few-shot Learning|[pdf](Log_Parsing_with_Prompt-based_Few-shot_Learning.pdf)|4 to 128. most improvement before 16|
+|2023|3|AST|c|FlakyCat: Predicting Flaky Tests Categories using Few-Shot Learning|[pdf](FlakyCat_Predicting_Flaky_Tests_Categories_using_Few-Shot_Learning.pdf)|400+|
+|2023|5|ICSE|c|Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning|[pdf](Retrieval-Based_Prompt_Selection_for_Code-Related_Few-Shot_Learning.pdf)|6-7 (for code generation (40 to 50 (for code repair)|
+|2022|7|Soft.Lang.Eng|c|Neural Language Models and Few Shot Learning for Systematic Requirements Processing in MDSE|[pdf](3567512.3567534.pdf)|8 to 11|
+|2023|12|ICSE|c|Towards using Few-Shot Prompt Learning for Automating Model Completion|[pdf](Towards_using_Few-Shot_Prompt_Learning_for_Automating_Model_Completion.pdf)|212 classes|
+|2020|15|IEEE ACCECSS|j|Few-Shot Learning Based Balanced Distribution Adaptation for Heterogeneous Defect Prediction|[pdf](Few-Shot_Learning_Based_Balanced_Distribution_Adaptation_for_Heterogeneous_Defect_Prediction.pdf)|100s - 1000s|
+|2019|21| Big Data|j|Exploring the applicability of low-shot learning in mining software repositories|[pdf](s40537-019-0198-z.pdf)|100 =>70% accuracy; 100s ==> 90% accuracy|
+|2021|27|ESEM|c|An Empirical Examination of the Impact of Bias on Just-in-time Defect Prediction||10^3 samples of defects|
+|2020|29|ICSE|c|Unsuccessful Story about Few Shot Malware Family Classification and Siamese Network to the Rescue|3377811.3380354.pdf|"10|000s ?"|
+|2022|65|ASE|c|Few-shot training LLMs for project-specific code-summarization|[pdf](3551349.3559555.pdf)|10 samples|
+|2022|101|FSE|c|Less Training_ More Repairing Please: Revisiting Automated Program Repair via Zero-Shot Learning|[pdf](3540250.3549101.pdf)|?|
 
 
 
