@@ -91,7 +91,7 @@ In the remaining 70 papers:
 |2020|15|IEEE ACCECSS|j|Few-Shot Learning Based Balanced Distribution Adaptation for Heterogeneous Defect Prediction|[pdf](Few-Shot_Learning_Based_Balanced_Distribution_Adaptation_for_Heterogeneous_Defect_Prediction.pdf)|100s - 1000s|
 |2019|21| Big Data|j|Exploring the applicability of low-shot learning in mining software repositories|[pdf](s40537-019-0198-z.pdf)|100 =>70% accuracy; 100s ==> 90% accuracy|
 |2021|27|ESEM|c|An Empirical Examination of the Impact of Bias on Just-in-time Defect Prediction||10^3 samples of defects|
-|2020|29|ICSE|c|Unsuccessful Story about Few Shot Malware Family Classification and Siamese Network to the Rescue|3377811.3380354.pdf|"10|000s ?"|
+|2020|29|ICSE|c|Unsuccessful Story about Few Shot Malware Family Classification and Siamese Network to the Rescue|[pdf](3377811.3380354.pdf)|10,000s ?|
 |2022|65|ASE|c|Few-shot training LLMs for project-specific code-summarization|[pdf](3551349.3559555.pdf)|10 samples|
 |2022|101|FSE|c|Less Training_ More Repairing Please: Revisiting Automated Program Repair via Zero-Shot Learning|[pdf](3540250.3549101.pdf)|?|
 
