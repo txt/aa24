@@ -36,7 +36,7 @@ e.g. maxWalkSat (to roll your own), _Pycosat_ (for boolean variables) _Z3_ for o
 - Program verification: now demanded by several widely applied aerospace software standards.
 - Verifying security properties
   - Amazon runs btheorem provers billions of times a day on config files of their user's cloud-based apps (to check if everyone is playing nice)
-    -     See [One-click format methods](https://www.amazon.science/publications/one-click-formal-methods)
+    -  See [One-click format methods](https://www.amazon.science/publications/one-click-formal-methods)
     - "We can now use automated reasoning to provide 
        inexpensive and provable assurance to customers.”
 - - Designing a build startegy:
