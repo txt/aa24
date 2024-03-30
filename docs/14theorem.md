@@ -8,10 +8,7 @@
 
 # Theorem Proving and SE
 
-## More on Formal Methods (example)
-
-### "Testing" and Product Lines and Formal Methods
-
+## Example, Theorem Proving and SE
 A feature model is a "product line"; i.e. a description of a space 
 of products.
 
@@ -52,6 +49,7 @@ e.g. maxWalkSat (to roll your own), _Pycosat_ (for boolean variables) _Z3_ for o
     - in genetic algorithms, if mummy and daddy are valid,
       - the set to "?" any value not seen in mummy and daddy
       - ask the theorem prover to fill in the rest
+- etc etc
 
 
 ## The dream
